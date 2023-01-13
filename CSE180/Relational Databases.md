@@ -1,3 +1,5 @@
+## Keys
+
 - Every key is a super key
 - But every super key is not a key
 
@@ -11,3 +13,12 @@ studentId is a key because two different students can't have the same key, it is
 Any combination would be a super key
 
 Only one key can be a primary key while all others will be candidate keys.
+
+## Elements
+
+If D1 has n1 elements, and Dn has n elements
+What is the Cartesian Product of D1 x ... x Dn?
+Willl be n1 x n2 ... x n
+
+
+
