@@ -38,3 +38,8 @@ Manhattan Distance is always less than the true cost.
 Most of the work in solving hard search problems optimally is coming up with admissable heuristics
 
 Relaxed problems are where some constraints are removed. For example, removing walls in pacman.
+
+## Inventing admissible heuristics
+
+- Can be derived from the exact solution cost of a relaxed version of the problem
+- Relaxed problem always easier to solve, hence admissible
