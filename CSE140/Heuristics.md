@@ -20,3 +20,17 @@ Determine "how good" a state is. How far the state is from the goal. Not true co
 If using manhattan distance, minimizes distance from state to goal.
 
 Not optimal.
+
+### Informed Search (A* Search)
+
+Combine Cost with Heuristics to Minimize Path
+For example, add the cost along with the heuristic. That way an optimal path with a high cost would be considered suboptimal.
+
+A* Search terminates when it reaches a goal state or visits all possible states
+
+### Admissible:
+
+In order for a Heuristic to be admissible, it must never overestimate the actual cost.
+h(n) < h*(n) where h*(n) is the true cost to a nearest goal
+
+Manhattan Distance is always less than the true cost.
