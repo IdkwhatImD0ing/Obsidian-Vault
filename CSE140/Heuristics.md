@@ -34,3 +34,7 @@ In order for a Heuristic to be admissible, it must never overestimate the actual
 h(n) < h*(n) where h*(n) is the true cost to a nearest goal
 
 Manhattan Distance is always less than the true cost.
+
+Most of the work in solving hard search problems optimally is coming up with admissable heuristics
+
+Relaxed problems are where some constraints are removed. For example, removing walls in pacman.
