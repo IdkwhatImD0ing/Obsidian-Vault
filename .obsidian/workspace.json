@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE180/Relational Databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE180/Relational Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE180/Relational Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/Heuristics.md"
+                "file": "CSE180/Relational Databases.md"
               }
             }
           }
@@ -171,13 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c19dc8bb21a6f7c3",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
+    "CSE140/Heuristics.md",
     "CSE180/Relational Databases.md",
     "Fun/Neural Networks.md",
     "Untitled.canvas",
     "2023-01-18.md",
-    "CSE140/Heuristics.md",
     "Testing.md",
     "2023-01-11.md"
   ]
