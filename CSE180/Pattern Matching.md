@@ -33,3 +33,12 @@ Unique Truth Table
 
 Unknown is very similar to False but not the same
 Examaple,  Not Unknown != Not False
+
+
+## Multiple Tables
+If two tables have the same attribute, cannot use the attribute name alone
+Must use:
+
+SELECT * FROM Movies m, StarsIn s WHERE m.movieTitle = s.movieTitle;
+
+Could also write Movies.movieTitle = StarsIn.movieTitle, and not bother having the tuple variables m and s.
