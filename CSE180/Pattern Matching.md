@@ -19,6 +19,7 @@ Orders the results returned by the sql call
 For example SELECT * FROM R1, ORDER BY <list of attributes\>
 
 Either ASC or DESC
+NULL will always probably be the smallest or largest value
 
 ## Comparing
 You can compare almost any constant in  with eadh other
