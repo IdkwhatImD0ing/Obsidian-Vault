@@ -45,3 +45,9 @@ Multiple attributes in primary key
 
 Can make an attribute UNIQUE, but is not the same as Primary Key
 Can do it shorthand or for multiple attributes the same as Primary Key
+
+## Subqueries
+
+A subquery is a query that contains another query.
+
+For example SELECT * FROM E1 where a = (SELECT * FROM E2)
