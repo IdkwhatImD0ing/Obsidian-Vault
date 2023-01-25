@@ -35,6 +35,11 @@ Unknown is very similar to False but not the same
 Examaple,  Not Unknown != Not False
 
 
+## Distinct
+Removes duplicate tuples from the results.
+
+For example if searching actors in movies, if he stars in multiple he would show up multiple times without the distinct keyword.
+
 ## Multiple Tables
 If two tables have the same attribute, cannot use the attribute name alone
 Must use:
