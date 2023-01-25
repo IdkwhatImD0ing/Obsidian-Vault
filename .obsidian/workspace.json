@@ -4,64 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "008017d0ad4da520",
+        "id": "5a57691b4b1d940a",
         "type": "tabs",
         "children": [
           {
-            "id": "c94a204ed927d5e8",
+            "id": "2c4da37fcd13aa40",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Pattern Matching.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc0e8ce8e0ace7ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Relational Databases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c19dc8bb21a6f7c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Relational Databases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ff5ae9cd5b31b51a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE140/Heuristics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ddef054df7c029d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Examples.md",
+                "file": "CSE180/Set and Bag Operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Pattern Matching.md",
+                "file": "CSE180/Set and Bag Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Pattern Matching.md",
+                "file": "CSE180/Set and Bag Operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Pattern Matching.md"
+                "file": "CSE180/Set and Bag Operations.md"
               }
             }
           }
@@ -194,15 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c94a204ed927d5e8",
+  "active": "2c4da37fcd13aa40",
   "lastOpenFiles": [
-    "CSE180/Relational Databases.md",
+    "CSE180/Examples.md",
     "CSE140/Heuristics.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Set and Bag Operations.md",
+    "CSE180/Rare Commands.md",
     "CSE180/Pattern Matching.md",
     "Fun/Neural Networks.md",
     "Untitled.canvas",
     "2023-01-18.md",
-    "Testing.md",
-    "2023-01-11.md"
+    "Testing.md"
   ]
 }

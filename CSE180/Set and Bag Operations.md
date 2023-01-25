@@ -1,0 +1,31 @@
+## Set Union
+### Input to union 
+Must have the same attributes, same types, and same order
+
+### Output of union
+Same Schema as either
+
+### Meaning
+Set of all tuples from Q1 and from S. Built in Distinct Keyword
+
+```(SELECT * from Q1) UNION (SELECT * from Q2)```
+
+## Set Intersection
+### Input to intersection
+Must have the same attributes, types, and order
+
+### Output
+Same Schema
+
+### Meaning
+Distinct elements in both Q1 and Q2
+
+## Set Difference
+### Input to difference
+Must have the same attributes, types, and order
+
+### Output
+Same Schema
+
+### Meaning
+Distinct elements that are in Q1 but not in Q2
