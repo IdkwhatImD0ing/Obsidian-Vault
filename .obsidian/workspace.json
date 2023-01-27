@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Pattern Matching.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7497bcfc630890ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Examples.md",
+                "file": "CSE180/Subqueries.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Examples.md",
+                "file": "CSE180/Subqueries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Examples.md",
+                "file": "CSE180/Subqueries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Examples.md"
+                "file": "CSE180/Subqueries.md"
               }
             }
           }
@@ -159,14 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7497bcfc630890ce",
+  "active": "2c4da37fcd13aa40",
   "lastOpenFiles": [
-    "CSE180/Subqueries.md",
-    "CSE180/Examples.md",
-    "CSE180/Pattern Matching.md",
-    "CSE180/Rare Commands.md",
-    "CSE180/Relational Databases.md",
     "CSE180/Set and Bag Operations.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Examples.md",
+    "CSE180/Rare Commands.md",
+    "CSE180/Pattern Matching.md",
+    "CSE180/Subqueries.md",
     "CSE140/Heuristics.md",
     "Fun/Neural Networks.md",
     "Untitled.canvas",

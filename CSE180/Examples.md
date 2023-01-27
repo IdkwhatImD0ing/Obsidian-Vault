@@ -18,3 +18,26 @@ AND ms.starName = si.starName
 
 Last line is required: Or else the tuples will have no relationship to each other
 Last line basically says this person starred in the movie
+
+
+### Find the id and name of each customer who did some activity on 01/07/21
+
+```
+Select c.cid, c.name FROM Customers c, Activities a
+WHERE a.day = DATE '01/07/21' AND a.cid = c.cid 
+```
+
+No duplicate version:
+```
+SELECT c.cid, c.cname FROM Customers c
+WHERE c.cid IN (SELECT a.cid FROM Activities
+				WHERE a.day = DATE '01/07/21')
+```
+Can also replace ```IN``` with ```= ANY```
+
+### Find the id and name who did not do an activity
+```
+SELECT c.cid, c.cname FROM Customers c
+WHERE c.cid NOT IN (SELECT a.cid FROM Activities
+				WHERE a.day = DATE '01/07/21')
+```
