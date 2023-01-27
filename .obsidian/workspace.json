@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Examples.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Examples.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Subqueries.md"
+                "file": "CSE180/Examples.md"
               }
             }
           }
@@ -161,15 +161,15 @@
   },
   "active": "7497bcfc630890ce",
   "lastOpenFiles": [
+    "CSE180/Subqueries.md",
+    "CSE180/Examples.md",
     "CSE180/Pattern Matching.md",
     "CSE180/Rare Commands.md",
     "CSE180/Relational Databases.md",
     "CSE180/Set and Bag Operations.md",
-    "CSE180/Examples.md",
     "CSE140/Heuristics.md",
     "Fun/Neural Networks.md",
     "Untitled.canvas",
-    "2023-01-18.md",
-    "Testing.md"
+    "2023-01-18.md"
   ]
 }
