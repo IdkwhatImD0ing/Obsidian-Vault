@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Pattern Matching.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de97b0a98e1b5d67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Examples.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb81647de6e4728e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Subqueries.md",
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Subqueries.md"
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md"
               }
             }
           }
@@ -146,17 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c4da37fcd13aa40",
+  "active": "cb81647de6e4728e",
   "lastOpenFiles": [
-    "CSE180/Set and Bag Operations.md",
     "CSE180/Relational Databases.md",
-    "CSE180/Examples.md",
-    "CSE180/Rare Commands.md",
     "CSE180/Pattern Matching.md",
-    "CSE180/Subqueries.md",
+    "CSE180/Rare Commands.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Lecture 4, Subqueries.md",
+    "CSE180/Set and Bag Operations.md",
+    "CSE180/Examples.md",
+    "CSE180/Important Details.md",
     "CSE140/Heuristics.md",
-    "Fun/Neural Networks.md",
-    "Untitled.canvas",
-    "2023-01-18.md"
+    "Fun/Neural Networks.md"
   ]
 }
