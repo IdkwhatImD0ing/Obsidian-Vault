@@ -3,10 +3,10 @@
 Can do something like where # in (Select * ....)
 This finds all the tuples where the value is in the result of a select query
 
-IN is equal to =  ANY ([[Important Details]])
+IN is equal to =  ANY ([[Important Details#Some / Any|Details]])
 Finds one inside multiset
 
-NOT IN is equal to != ALL ([[Important Details]] )
+NOT IN is equal to != ALL ([[Important Details#All|Details]])
 Finds no matching value inside multiset
 
 != Any

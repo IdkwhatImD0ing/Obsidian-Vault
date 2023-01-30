@@ -25,3 +25,10 @@ Example:
 This return one tuple that combines all the different tuples into one based on studioName
 
 Group By _DOES NOT_ ignore Null. There will a group called Null
+
+
+## Having
+
+Appears after a Group By
+
+Only adds to solution if the Tuple fits the condition as well as meeting the group requirements

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Important Details.md"
+                "file": "CSE180/Lecture 5, Aggregates and Group By.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "c8140703f46a30d6",
   "lastOpenFiles": [
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Important Details.md",
-    "CSE180/Pattern Matching.md",
     "CSE180/Lecture 4, Subqueries.md",
+    "CSE180/Important Details.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Pattern Matching.md",
     "[.md",
     "CSE180/Relational Databases.md",
     "CSE180/Set and Bag Operations.md",
