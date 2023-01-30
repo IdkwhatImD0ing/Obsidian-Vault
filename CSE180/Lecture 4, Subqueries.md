@@ -3,10 +3,10 @@
 Can do something like where # in (Select * ....)
 This finds all the tuples where the value is in the result of a select query
 
-IN is equal to = ANY
+IN is equal to =  ANY ([[Important Details]])
 Finds one inside multiset
 
-NOT IN is equal to != ALL
+NOT IN is equal to != ALL ([[Important Details]] )
 Finds no matching value inside multiset
 
 != Any
@@ -26,11 +26,11 @@ Returns true if Q is a non-empty collection
 ```x in Q```
 Returns true if Q is a non-empty collection and x is in Q
 
-## Any
+## Any [[Important Details]]
 
 Matches one or more tuples in a table
 
-## All
+## All [[Important Details]]
 
 Matches all tuples in a table
 

@@ -11,3 +11,14 @@ Must find a counterexample to return False
 Else Returns True
 
 Example: Taller than all martians on Earth returns True, because cannot find a counter example where is is not taller
+
+## Sum
+
+Sum of empty set is Null
+
+## Count
+
+^4c59eb
+
+Count of an empty set is 0
+Count * is 1
