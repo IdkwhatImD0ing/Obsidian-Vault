@@ -171,17 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb81647de6e4728e",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "CSE180/Relational Databases.md",
-    "CSE180/Pattern Matching.md",
     "CSE180/Rare Commands.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
     "CSE180/Lecture 4, Subqueries.md",
-    "CSE180/Set and Bag Operations.md",
-    "CSE180/Examples.md",
     "CSE180/Important Details.md",
     "CSE140/Heuristics.md",
+    "CSE180/Examples.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Pattern Matching.md",
+    "CSE180/Set and Bag Operations.md",
     "Fun/Neural Networks.md"
   ]
 }

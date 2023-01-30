@@ -6,7 +6,7 @@ This finds all the tuples where the value is in the result of a select query
 IN is equal to = ANY
 Finds one inside multiset
 
-NOT IN is equal != ALL
+NOT IN is equal to != ALL
 Finds no matching value inside multiset
 
 != Any
