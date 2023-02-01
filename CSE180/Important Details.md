@@ -22,3 +22,9 @@ Sum of empty set is Null
  - Count of an empty set is 0
  - Count * is 1
  - Count(Distinct) Counts Number of Non Null Values
+
+## Aggregates
+
+^e5486f
+
+ - Aggregrades cannot appear in WHERE clause, unless where it is part of a subquery

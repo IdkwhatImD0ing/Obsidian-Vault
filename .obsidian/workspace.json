@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Pattern Matching.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Pattern Matching.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Important Details.md",
+                "file": "CSE180/Pattern Matching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Important Details.md"
+                "file": "CSE180/Pattern Matching.md"
               }
             }
           }
@@ -172,15 +172,15 @@
   },
   "active": "c8140703f46a30d6",
   "lastOpenFiles": [
-    "CSE180/Relational Databases.md",
-    "CSE180/Important Details.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Rare Commands.md",
     "CSE180/Pattern Matching.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Set and Bag Operations.md",
+    "CSE180/Examples.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Important Details.md",
     "CSE180/Lecture 4, Subqueries.md",
     "[.md",
-    "CSE180/Set and Bag Operations.md",
-    "CSE180/Rare Commands.md",
-    "Fun/Neural Networks.md",
-    "CSE180/Examples.md"
+    "Fun/Neural Networks.md"
   ]
 }

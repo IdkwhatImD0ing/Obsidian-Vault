@@ -12,7 +12,9 @@ Only Count can be applied to non Scalar Values
 Count: Counts the number of tuples.
 
 Nulls Are Ignored in all Aggregates EXCEPT Count * 
-COUNT * also counts the numbre of Nulls that appear
+COUNT * also counts the number of Nulls that appear
+
+[[Important Details#^e5486f|Cannot appear in Where]]
 
 ## Group By
 
