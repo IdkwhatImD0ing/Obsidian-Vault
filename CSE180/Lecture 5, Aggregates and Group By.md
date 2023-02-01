@@ -31,4 +31,4 @@ Group By _DOES NOT_ ignore Null. There will a group called Null
 
 Appears after a Group By
 
-Only adds to solution if the Tuple fits the condition as well as meeting the group requirements
+Only adds the Group to the Solution if it meets the conditions

@@ -19,6 +19,6 @@ Sum of empty set is Null
 ## Count
 
 ^4c59eb
-
-Count of an empty set is 0
-Count * is 1
+ - Count of an empty set is 0
+ - Count * is 1
+ - Count(Distinct) Counts Number of Non Null Values
