@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8140703f46a30d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE140/Adversarial Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7133aeb2d6261ea2",
+            "id": "7c1f9e324ff39af1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,41 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fa79f43985823aef",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "52d29432b148ce2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE140/Adversarial Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c1f9e324ff39af1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fun/Convolutional Neural Networks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,13 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7133aeb2d6261ea2",
+  "active": "7c1f9e324ff39af1",
   "lastOpenFiles": [
     "Fun/Convolutional Neural Networks.md",
-    "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Adversarial Learning.md",
-    "CSE180/Pattern Matching.md",
     "Fun/186.md",
+    "CSE140/MDP and Reinforcement Learning.md",
+    "CSE180/Pattern Matching.md",
     "CSE180/Rare Commands.md",
     "CSE180/Relational Databases.md",
     "CSE180/Set and Bag Operations.md",
