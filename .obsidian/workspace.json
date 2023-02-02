@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "Fun/186.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "Fun/186.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "Fun/186.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
+                "file": "Fun/186.md"
               }
             }
           }
@@ -193,6 +193,8 @@
   },
   "active": "7133aeb2d6261ea2",
   "lastOpenFiles": [
+    "Fun/Convolutional Neural Networks.md",
+    "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Adversarial Learning.md",
     "CSE180/Pattern Matching.md",
     "Fun/186.md",
@@ -200,8 +202,6 @@
     "CSE180/Relational Databases.md",
     "CSE180/Set and Bag Operations.md",
     "CSE180/Examples.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Important Details.md",
-    "CSE180/Lecture 4, Subqueries.md"
+    "CSE180/Lecture 5, Aggregates and Group By.md"
   ]
 }
