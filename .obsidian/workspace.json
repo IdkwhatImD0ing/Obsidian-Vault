@@ -68,6 +68,30 @@
             }
           },
           {
+            "id": "42ac58678a3b1e8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Modification.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "61be665d6b80e88b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/ACID.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "fa79f43985823aef",
             "type": "leaf",
             "state": {
@@ -100,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -166,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Update.md",
+                "file": "CSE180/ACID.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Update.md",
+                "file": "CSE180/ACID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Update.md"
+                "file": "CSE180/ACID.md"
               }
             }
           }
@@ -227,8 +251,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cdd62ed1adb1d259",
+  "active": "61be665d6b80e88b",
   "lastOpenFiles": [
+    "CSE180/Modification.md",
+    "CSE180/Update.md",
     "CSE180/Delete.md",
     "CSE180/Insert.md",
     "CSE180/Lecture 4, Subqueries.md",
@@ -236,8 +262,6 @@
     "CSE180/Lecture 5, Aggregates and Group By.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Adversarial Learning.md",
-    "CSE180/Pattern Matching.md",
-    "Fun/186.md",
-    "CSE180/Rare Commands.md"
+    "CSE180/Pattern Matching.md"
   ]
 }

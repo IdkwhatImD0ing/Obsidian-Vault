@@ -1,0 +1,2 @@
+ - Modification statements are completed evaluated on the old state before producing a new state of the database
+ - Basically and Select in the modification statement is before **ANY** modifications are made
