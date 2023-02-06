@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Modification Statements.md",
+                "file": "CSE180/Insert.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b0a8e8e8405650f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Delete.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cdd62ed1adb1d259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Update.md",
                 "mode": "source",
                 "source": false
               }
@@ -76,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Modification Statements.md",
+                "file": "CSE180/Update.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Modification Statements.md",
+                "file": "CSE180/Update.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Modification Statements.md"
+                "file": "CSE180/Update.md"
               }
             }
           }
@@ -203,8 +227,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4f88e3370f227833",
+  "active": "cdd62ed1adb1d259",
   "lastOpenFiles": [
+    "CSE180/Delete.md",
+    "CSE180/Insert.md",
     "CSE180/Lecture 4, Subqueries.md",
     "CSE180/Set and Bag Operations.md",
     "CSE180/Lecture 5, Aggregates and Group By.md",
@@ -212,8 +238,6 @@
     "CSE140/Adversarial Learning.md",
     "CSE180/Pattern Matching.md",
     "Fun/186.md",
-    "CSE180/Rare Commands.md",
-    "CSE180/Relational Databases.md",
-    "CSE180/Examples.md"
+    "CSE180/Rare Commands.md"
   ]
 }
