@@ -20,13 +20,40 @@ If D1 has n1 elements, and Dn has n elements
 What is the Cartesian Product of D1 x ... x Dn?
 Willl be n1 x n2 ... x n
 
+## Creating Tables
+
+CREATE
+
 ## Modifying Tables
+
+### Alter
 
 To add a column, 
 ```ALTER TABLE MovieStar ADD phone CHAR(16);```
 
 To remove a column
 ```ALTER TABLE MovieStar DROP birthdate;```
+
+!! Some systems does not allow you to drop a column
+
+Can also change the type of a column in limited ways
+
+### Drop TABLE
+Deletes a table
+
+Cannot assume that rolling back a transaction will bring back the table!!
+Dropping may not be transactional based on the database
+
+## What can you create/Drop?
+
+ - Table
+ - [[Views]]
+ - Index
+ - Assertion
+ - Trigger
+ - Shema
+ - Procedure/function/type
+	 - SQL2003 Standard but there are variations in implementation
 
 ### Default Values
 Default Value: Gives a column a default value if none is given

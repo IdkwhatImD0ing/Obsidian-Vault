@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "95cf5f0a82fceee6",
+        "id": "59f6600ebda2cea7",
         "type": "tabs",
         "children": [
           {
-            "id": "2d0be9d0d8d8c21c",
+            "id": "93bfc9b4e94999ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "CSE180/Views.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "CSE180/Views.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "CSE180/Views.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Modification.md"
+                "file": "CSE180/Views.md"
               }
             }
           }
@@ -146,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d0be9d0d8d8c21c",
+  "active": "93bfc9b4e94999ea",
   "lastOpenFiles": [
-    "CSE180/ACID.md",
     "CSE180/Delete.md",
-    "CSE180/Important Details.md",
-    "CSE180/Examples.md",
     "CSE180/Update.md",
-    "CSE180/Modification.md",
-    "Fun/Convolutional Neural Networks.md",
-    "CSE140/Adversarial Learning.md",
+    "CSE180/Views.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Rare Commands.md",
+    "CSE180/Set and Bag Operations.md",
+    "CSE180/Pattern Matching.md",
     "CSE180/Lecture 4, Subqueries.md",
-    "CSE180/Insert.md"
+    "CSE180/Insert.md",
+    "CSE180/Important Details.md"
   ]
 }

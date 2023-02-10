@@ -8,4 +8,8 @@ UPDATE R
 
 ### Update with Subquery
 
+[[Lecture 4, Subqueries|Rules]]
+
+
+
 
