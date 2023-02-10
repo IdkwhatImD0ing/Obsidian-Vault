@@ -34,3 +34,17 @@ Modifying the table means the View is modified as well
  - Logical data independence
 	 - No need to rewrite query or application
 	 - Even if table changes
+
+
+### Materialized Views
+
+Some databases support this
+Which means tuples in views are physically sored in database
+
+If the tuples of the table are updated, Materialized View becomes out of date.
+Expensive and time consuming
+
+### Insert
+Can insert into Views as if its a Tuple
+
+Insert will fail if column with a value doesn't have a default and doesn't allow Null Values
