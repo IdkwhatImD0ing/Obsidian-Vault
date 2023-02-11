@@ -42,7 +42,7 @@ This is legal query
 
 ## Inner Subqueries can Rely on Outside Queries
 
-Called a correlation
+Called a Correlation
 Select *  FROM Movies m where m.movieYear < ANY (Select ... where m2.movieTitle = m.movieTitle)
 
 Correlation via tuple variable m
