@@ -10,6 +10,9 @@
 
 ## Isolation
 
+ - Seperation of resource
+ - Mutexes
 
+### Durability
 
-## Durability
+ - 
