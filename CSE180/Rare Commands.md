@@ -1,6 +1,10 @@
 ## Join On
-??
+Combines two tables based on a shared piece of information
+```
+R JOIN S ON r.a = s.b is the same as
 
+SELECT * from R, S WHERE r.a=r.b
+```
 ## Cross Join
 ```R CROSS JOIN S;```
 Same as

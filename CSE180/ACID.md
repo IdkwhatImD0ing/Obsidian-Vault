@@ -15,4 +15,5 @@
 
 ### Durability
 
- - 
+ - Ensures data remains available even with power outage/other reasons
+ - Log file records transactions

@@ -148,15 +148,15 @@
   },
   "active": "c83299b12ec47854",
   "lastOpenFiles": [
-    "CSE180/Insert.md",
-    "CSE180/Lecture 4, Subqueries.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Pattern Matching.md",
-    "CSE180/Important Details.md",
-    "CSE180/Views.md",
-    "CSE180/Delete.md",
+    "CSE180/Rare Commands.md",
+    "CSE180/Set and Bag Operations.md",
     "CSE180/Update.md",
     "CSE180/Relational Databases.md",
-    "CSE180/Rare Commands.md"
+    "CSE180/Modification.md",
+    "CSE180/Lecture 4, Subqueries.md",
+    "CSE180/Insert.md",
+    "CSE180/Important Details.md",
+    "CSE180/Examples.md",
+    "CSE180/Delete.md"
   ]
 }
