@@ -27,4 +27,4 @@ Sum of empty set is Null
 
 ^e5486f
 
- - Aggregrades cannot appear in WHERE clause, unless where it is part of a subquery
+ - Aggregrates cannot appear in WHERE clause, unless where it is part of a subquery
