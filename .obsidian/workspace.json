@@ -11,11 +11,9 @@
             "id": "c83299b12ec47854",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20230213180149.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "Pasted image 20230213180149.png",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "Pasted image 20230213180149.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
+                "file": "Pasted image 20230213180149.png"
               }
             }
           }
@@ -148,6 +146,7 @@
   },
   "active": "c83299b12ec47854",
   "lastOpenFiles": [
+    "CSE140/MDP and Reinforcement Learning.md",
     "CSE180/Lecture 4, Subqueries.md",
     "Fun/186.md",
     "CSE180/ACID.md",
@@ -156,7 +155,6 @@
     "CSE180/Update.md",
     "CSE180/Relational Databases.md",
     "CSE180/Modification.md",
-    "CSE180/Insert.md",
-    "CSE180/Important Details.md"
+    "CSE180/Insert.md"
   ]
 }

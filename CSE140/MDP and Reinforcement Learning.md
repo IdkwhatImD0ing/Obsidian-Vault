@@ -78,3 +78,8 @@ summarized as a utility function
 	 - ![[Pasted image 20230213183207.png]]
 	 - Incorporate the new estimate into a running average:
 	 - ![[Pasted image 20230213183225.png]]
+- Amazing result: Q-learning converges to optimal policy
+	- If you explore enough
+	- If you make the learning rate small enough
+	- ... but not decrease it too quickly!
+	- Basically doesn’t matter how you select actions (!)
