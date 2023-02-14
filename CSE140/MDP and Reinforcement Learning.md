@@ -51,3 +51,30 @@ summarized as a utility function
 	 - Count outcomes for each s,a
 	 - Normalize to give estimate of T(s,a,s')
 	 - Discover R(s,a,s') when we experience (s,a,s')
+
+### Temporal Difference Learning
+ - Learn from every experience
+	 - Update V(s) each time we experience (s,a,s',r)
+	 - Likely s' will contribute to updates more often
+ - Policy is still fixed
+ - Move values towards value of whatever successor occurs: running average
+ - ![[Pasted image 20230213182111.png]]
+
+### Exponential Moving Average
+ - Average, but most recent samples more important
+ - ![[Pasted image 20230213182226.png]]
+ - Forgets about the past since those values are wrong anyways
+ - Easy to compute from running average
+ - ![[Pasted image 20230213182307.png]]
+ - Decreasing learning rate makes averages converge
+
+## Q-Learning
+
+ - Q-Learning: sample-based Q-value iteration
+ - Learn Q*(s,a) values
+	 - Receive a sample (s,a,s’,r)
+	 - Consider your old estimate: Q(s,a)
+	 - Consider your new sample estimate:
+	 - ![[Pasted image 20230213183207.png]]
+	 - Incorporate the new estimate into a running average:
+	 - ![[Pasted image 20230213183225.png]]
