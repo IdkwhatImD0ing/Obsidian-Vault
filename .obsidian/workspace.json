@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md"
+                "file": "CSE140/MDP and Reinforcement Learning.md"
               }
             }
           }
@@ -149,6 +148,7 @@
   },
   "active": "c83299b12ec47854",
   "lastOpenFiles": [
+    "CSE180/Lecture 4, Subqueries.md",
     "Fun/186.md",
     "CSE180/ACID.md",
     "CSE180/Rare Commands.md",
@@ -156,7 +156,6 @@
     "CSE180/Update.md",
     "CSE180/Relational Databases.md",
     "CSE180/Modification.md",
-    "CSE180/Lecture 4, Subqueries.md",
     "CSE180/Insert.md",
     "CSE180/Important Details.md"
   ]
