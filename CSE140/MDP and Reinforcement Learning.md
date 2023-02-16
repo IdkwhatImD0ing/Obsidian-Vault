@@ -7,8 +7,9 @@
 summarized as a utility function
 
 ## MDPs
- - Markov Decision PRoperties
- -  MDPs are a family of non-deterministic search problems
+ - Markov Decision Properties
+ - Common formulation for problems with uncertainty
+ - MDPs are a family of non-deterministic search problems
  - An MDP is defined by:
 	 - A set of states s ∈ S
 	 - A set of actions a ∈ A
@@ -20,6 +21,7 @@ summarized as a utility function
 	 - Sometimes just R(s) or R(s’)
 	 - A start state (or distribution)
 	 - Maybe a terminal state
+ - MDP Solution is a policy rather than a plan
 
 ### Bellman Equations
 ![[Pasted image 20230213180052.png]]
@@ -83,3 +85,15 @@ summarized as a utility function
 	- If you make the learning rate small enough
 	- ... but not decrease it too quickly!
 	- Basically doesn’t matter how you select actions (!)
+- Cannot learn about every state in realistic situation
+	- Too many states to visit them all in training
+	- Too many states to hold q values in memory
+- Must generalize states
+	- Transfer learning???
+### Linear Features
+ - Using features to generalize states
+ - Write a q funciton for any state using a few weights
+ - Advantage
+	 - Experienced summed up in few but powerful numbers
+ - Disadvantage
+	 - States share features but value very different
