@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/Minimax.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/Minimax.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/Minimax.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/Minimax.md"
+                "file": "CSE140/MDP and Reinforcement Learning.md"
               }
             }
           }
@@ -173,15 +173,15 @@
   },
   "active": "af9aa3c325ee949e",
   "lastOpenFiles": [
+    "CSE140/Knowledge-Based Agent.md",
+    "CSE140/Minimax.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Adversarial Learning.md",
-    "CSE140/Knowledge-Based Agent.md",
     "CSE140/Heuristics.md",
     "Images/Pasted image 20230213180052.png",
     "Image.md",
     "Images/Pasted image 20230213182111.png",
     "Images/Pasted image 20230213180149.png",
-    "CSE180/Lecture 4, Subqueries.md",
-    "Fun/186.md"
+    "CSE180/Lecture 4, Subqueries.md"
   ]
 }
