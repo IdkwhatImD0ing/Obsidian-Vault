@@ -60,6 +60,7 @@ summarized as a utility function
 	 - Likely s' will contribute to updates more often
  - Policy is still fixed
  - Move values towards value of whatever successor occurs: running average
+ - Discount Factor is to lower the effect of previous states on the current
  - ![[Pasted image 20230213182111.png]]
 
 ### Exponential Moving Average
