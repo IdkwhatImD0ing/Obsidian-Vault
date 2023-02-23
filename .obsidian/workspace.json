@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a2fb106ecff94fea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE140/Knowledge Representation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Knowledge Representation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Knowledge Representation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
+                "file": "CSE140/Knowledge Representation.md"
               }
             }
           }
@@ -171,11 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af9aa3c325ee949e",
+  "active": "a2fb106ecff94fea",
   "lastOpenFiles": [
+    "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Knowledge-Based Agent.md",
     "CSE140/Minimax.md",
-    "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Adversarial Learning.md",
     "CSE140/Heuristics.md",
     "Images/Pasted image 20230213180052.png",
