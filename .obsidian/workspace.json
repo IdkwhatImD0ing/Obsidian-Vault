@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "370dcf611943975b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE180/Relational Algebra.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CSE180/Relational Algebra.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CSE180/Relational Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CSE180/Relational Algebra.md"
+              }
             }
           }
         ]
@@ -167,8 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "370dcf611943975b",
   "lastOpenFiles": [
+    "Pasted image 20230227123941.png",
+    "Pasted image 20230227123929.png",
+    "Pasted image 20230227123357.png",
+    "Pasted image 20230227123321.png",
+    "Images/Pasted image 20230227123236.png",
+    "CSE180/Delete.md",
+    "CSE180/Relational Algebra.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Knowledge Representation.md",
     "CSE140/Knowledge-Based Agent.md",
