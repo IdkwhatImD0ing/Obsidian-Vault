@@ -54,9 +54,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3ef487df814d3f1e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.15"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -183,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2fb106ecff94fea",
+  "active": "3ef487df814d3f1e",
   "lastOpenFiles": [
     "CSE140/Knowledge Representation.md",
     "CSE140/MDP and Reinforcement Learning.md",
