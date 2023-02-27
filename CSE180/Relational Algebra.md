@@ -9,6 +9,9 @@
  - Renaming ( ρ ) and Assignment (¬) 
  - Natural Join (|><|), Theta-Join (|><|theta )
  - Division ( / or ÷ ) ⧖
+ - There are two “Housekeeping” operations that make Relational Algebra queries easier to write.
+	 - Assignment: ¬
+	 - Rename: r
 
 ### 
 ![[Pasted image 20230227123941.png]]
@@ -54,5 +57,68 @@
 ### Product RxS
 
  - Binary operator 
-	 - Input: Two relations R and S, where R has relation schema R(A1, …, Am) and S has relation schema S(B1, …, Bn). – Output: Relation of arity m+n – Meaning: R x S = { (a1, …, am, b1, …, bn) | (a1, …, am) ∈ R and (b1, …, bn) ∈ S) }. • Read “|” as “such that” • Read “∈” as “belongs to”
+	 - Input: Two relations R and S, where R has relation schema R(A1, …, Am) and S has relation schema S(B1, …, Bn).
+	 - Output: Relation of arity m+n
+	 - Meaning: 
+		 - R x S = { (a1, …, am, b1, …, bn) | (a1, …, am) ∈ R and (b1, …, bn) ∈ S) }.
+		 - Read “|” as “such that” 
+		 - Read “∈” as “belongs to”
 
+### Theta Join
+![[Pasted image 20230227124112.png]]
+
+ - Binary operator
+	 - Input: R(A1, …, Am), S(B1, …, Bn)
+	 - Output: Relation consisting of all attributes A1, …, Am and all attributes B1, …, Bn. Identical attributes in R and S are disambiguated with the relation names.
+	 - Meaning of R ⋈ S: The θ-Join outputs those tuples from R x S that satisfy the condition θ.
+		 - Compute R x S, then keep only those tuples in R x S that satisfy θ.
+		 - Equivalent to writing sθ(R x S) 
+ - If θ always evaluates to TRUE, then R S = sθ(R x S) = R x S.
+
+### Natural Join 
+
+![[Pasted image 20230227124212.png]]
+
+ - Often a query over two relations can be formulated using Natural Join. 
+ - Binary operator: 
+	 - Input: Two relations R and S where { A1, …, Ak } is the set of common attributes (column names) between R and S.
+	 - Output: A relation where its attributes are attr(R) U attr(S). In other words, the attributes consists of the attributes in R x S without repeats of the common attributes { A1, …, Ak } 
+ - Meaning: 
+	 - ![[Pasted image 20230227124317.png]]
+ 1. Compute R x S 
+ 2. Keep only those tuples in R x S satisfying: R.A1=S.A1 AND R.A2 = S.A2 AND … AND R.Ak=S.Ak 
+ 3. Output is projection on the set of attributes in R U S (without repeats of the attributes that appear in both
+
+### Semi Join
+
+ - Meaning: 
+ - ![[Pasted image 20230227125451.png]]
+ 1. Compute Natural Join of R and S
+ 2. Output the projection of that on just the attributes of R
+ - Find all courses that have some enrollment: Course ⧔ Enrollment
+ - Find all faculty who are advising at least one student: Faculty ⧔ Student
+ - How does Semi-Join relate to EXISTS in SQL
+
+### Set Intersection
+
+ - How would you write Dell_desktops ∩ HP_desktops in SQL? 
+	 - SELECT * FROM Dell_desktops INTERSECT SELECT * FROM HP_desktops;
+ - Intersection is a Derived Operator in Relational Algebra: 
+	 - R ∩ S = R – (R – S) = S – (S – R)
+
+### Division
+
+ - Input: Two relations R and S, where both: 
+	 - attr(S) ⊂ attr(R) and
+	 - attr(S) is non-empty 
+ - Output: Relation whose attributes are in attr(R) – attr(S).
+ - Example: R(A,B,C,D), S(B,D).
+	 - Meaning: R ÷ S = { (a, c) | for all (b,d) ∈S, we have (a,b,c,d) ∈R }
+ - Example: Find the names of drinkers who like all beers 
+	 - Likes(drinker, beer) ÷ πbeer ( BeersInfo(beer, maker) )
+ - The Quotient (or Division) R ÷ S is the relation consisting of all tuples (a1,…,ar-s) such that: 
+	 - For every tuple (b1,…,bs) in S, the tuple (a1,…,ar-s, b1,…,bs) is in R
+
+## Independence
+
+The five basic operators are independent of each other. In other words, for each relational operator o, there is no relational algebra expression that is built from the rest that defines o
