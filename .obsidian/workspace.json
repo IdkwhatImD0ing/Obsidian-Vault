@@ -42,31 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a2fb106ecff94fea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3ef487df814d3f1e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.15"
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -132,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,9 +147,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -193,10 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ef487df814d3f1e",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "CSE140/Knowledge Representation.md",
     "CSE140/MDP and Reinforcement Learning.md",
+    "CSE140/Knowledge Representation.md",
     "CSE140/Knowledge-Based Agent.md",
     "CSE140/Minimax.md",
     "CSE140/Adversarial Learning.md",
