@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Relational Algebra.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Relational Algebra.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Relational Algebra.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Relational Algebra.md"
+                "file": "CSE140/MDP and Reinforcement Learning.md"
               }
             }
           }
@@ -185,6 +185,7 @@
   },
   "active": "370dcf611943975b",
   "lastOpenFiles": [
+    "CSE180/Relational Algebra.md",
     "Pasted image 20230227125451.png",
     "Pasted image 20230227124317.png",
     "Pasted image 20230227124212.png",
@@ -195,7 +196,6 @@
     "Pasted image 20230227123321.png",
     "Images/Pasted image 20230227123236.png",
     "CSE180/Delete.md",
-    "CSE180/Relational Algebra.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Knowledge Representation.md",
     "CSE140/Knowledge-Based Agent.md",
@@ -203,7 +203,6 @@
     "CSE140/Adversarial Learning.md",
     "CSE140/Heuristics.md",
     "Images/Pasted image 20230213180052.png",
-    "Image.md",
-    "Images/Pasted image 20230213182111.png"
+    "Image.md"
   ]
 }
