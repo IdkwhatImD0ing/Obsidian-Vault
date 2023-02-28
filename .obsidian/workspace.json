@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Rare Commands.md",
+                "file": "Fun/Bus ETA System.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Rare Commands.md",
+                "file": "Fun/Bus ETA System.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Rare Commands.md",
+                "file": "Fun/Bus ETA System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Rare Commands.md"
+                "file": "Fun/Bus ETA System.md"
               }
             }
           }
@@ -197,19 +197,23 @@
   },
   "active": "ce8b72fb0c21b015",
   "lastOpenFiles": [
+    "Images/Pasted image 20230227123321.png",
+    "Fun/Bus ETA System.md",
+    "CSE180/Lecture 4, Subqueries.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Relational Databases.md",
+    "CSE180/Relational Algebra.md",
+    "CSE180/Rare Commands.md",
     "CSE180/Pattern Matching.md",
     "CSE140/Minimax.md",
-    "Bus ETA System.md",
     "CSE140/MDP and Reinforcement Learning.md",
-    "CSE180/Relational Algebra.md",
-    "Pasted image 20230227125451.png",
-    "Pasted image 20230227124317.png",
-    "Pasted image 20230227124212.png",
-    "Pasted image 20230227124112.png",
-    "Pasted image 20230227123941.png",
-    "Pasted image 20230227123929.png",
-    "Pasted image 20230227123357.png",
-    "Pasted image 20230227123321.png",
+    "Images/Pasted image 20230227125451.png",
+    "Images/Pasted image 20230227124317.png",
+    "Images/Pasted image 20230227124212.png",
+    "Images/Pasted image 20230227124112.png",
+    "Images/Pasted image 20230227123941.png",
+    "Images/Pasted image 20230227123929.png",
+    "Images/Pasted image 20230227123357.png",
     "Images/Pasted image 20230227123236.png",
     "CSE180/Delete.md",
     "CSE140/Knowledge Representation.md",
