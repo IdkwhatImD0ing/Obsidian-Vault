@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design.md",
+                "file": "CSE180/Design Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design.md",
+                "file": "CSE180/Design Theory.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design.md",
+                "file": "CSE180/Design Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design.md"
+                "file": "CSE180/Design Theory.md"
               }
             }
           }
@@ -207,10 +207,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "18c98681bde8e31a",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
     "CSE180/Insert.md",
-    "Design.md",
+    "CSE180/Design Theory.md",
     "CSE180/Examples.md",
     "CSE180/Important Details.md",
     "CSE180/Pattern Matching.md",
