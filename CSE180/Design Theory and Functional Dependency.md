@@ -60,9 +60,6 @@ Definition:
 
 Desirable for avoiding redundancy
 
-Write me one sentence summarizing BCNF:
-
-BCNF (Boyce-Codd Normal Form) is a database normalization process that ensures that every determinant in a relation is a candidate key. 
 ## Third Normal Form
 
 Additional condition for BCNF
