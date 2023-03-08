@@ -78,9 +78,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fdc98a36b57ea24c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -207,7 +217,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "fdc98a36b57ea24c",
   "lastOpenFiles": [
     "CSE180/Insert.md",
     "CSE180/Design Theory.md",
