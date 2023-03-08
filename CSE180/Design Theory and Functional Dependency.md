@@ -60,6 +60,7 @@ Definition:
 
 Desirable for avoiding redundancy
 
+
 ## Third Normal Form
 
 Additional condition for BCNF

@@ -165,9 +165,17 @@
                 "file": "CSE180/Design Theory and Functional Dependency.md"
               }
             }
+          },
+          {
+            "id": "87920da30779e285",
+            "type": "leaf",
+            "state": {
+              "type": "ava.write.sidebar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -182,14 +190,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
       "ava:Ava": false,
       "ava:Ava - Show Links": false,
-      "ava:Ava - Open Rewrite Playground": false
+      "ava:Ava - Open Rewrite Playground": false,
+      "khoj:Khoj": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "d38e85519f2ad474",
+  "active": "87920da30779e285",
   "lastOpenFiles": [
     "CSE180/Lecture 5, Aggregates and Group By.md",
     "CSE180/Lecture 4, Subqueries.md",
