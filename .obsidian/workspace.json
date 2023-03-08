@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Design Theory and Functional Dependency.md",
+                "file": "CSE180/Relational Algebra.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Design Theory and Functional Dependency.md",
+                "file": "CSE180/Relational Algebra.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Design Theory and Functional Dependency.md",
+                "file": "CSE180/Relational Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Design Theory and Functional Dependency.md"
+                "file": "CSE180/Relational Algebra.md"
               }
             }
           },
@@ -193,19 +193,19 @@
       "ava:Ava": false,
       "ava:Ava - Show Links": false,
       "ava:Ava - Open Rewrite Playground": false,
-      "khoj:Khoj": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "khoj:Khoj": false
     }
   },
-  "active": "87920da30779e285",
+  "active": "d38e85519f2ad474",
   "lastOpenFiles": [
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Lecture 4, Subqueries.md",
-    "CSE180/Important Details.md",
     "CSE180/ACID.md",
     "CSE180/Design Theory and Functional Dependency.md",
     "CSE140/MDP and Reinforcement Learning.md",
+    "CSE180/Lecture 5, Aggregates and Group By.md",
+    "CSE180/Lecture 4, Subqueries.md",
+    "CSE180/Important Details.md",
     "textgenerator/prompts/default/getEmailNeg.md",
     "textgenerator/prompts/default/getTags.md",
     "textgenerator/prompts/default/simplify.md",
