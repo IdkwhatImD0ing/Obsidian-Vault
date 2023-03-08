@@ -21,7 +21,8 @@ summarized as a utility function
 	 - Sometimes just R(s) or R(s’)
 	 - A start state (or distribution)
 	 - Maybe a terminal state
- - MDP Solution is a policy rather than a plan
+ - MDP Solution is a policy rather than a 
+
 
 ### Bellman Equations
 ![[Pasted image 20230213180052.png]]

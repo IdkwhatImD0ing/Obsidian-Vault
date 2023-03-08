@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "d38e85519f2ad474",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Relational Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "af9aa3c325ee949e",
             "type": "leaf",
             "state": {
@@ -55,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Relational Algebra.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Relational Algebra.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Relational Algebra.md"
+                "file": "CSE140/MDP and Reinforcement Learning.md"
               }
             }
           },
@@ -198,14 +185,15 @@
       "khoj:Khoj": false
     }
   },
-  "active": "d38e85519f2ad474",
+  "active": "98212da2624b6ba6",
   "lastOpenFiles": [
     "CSE180/ACID.md",
+    "CSE180/Important Details.md",
+    "CSE180/Relational Algebra.md",
     "CSE180/Design Theory and Functional Dependency.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE180/Lecture 5, Aggregates and Group By.md",
     "CSE180/Lecture 4, Subqueries.md",
-    "CSE180/Important Details.md",
     "textgenerator/prompts/default/getEmailNeg.md",
     "textgenerator/prompts/default/getTags.md",
     "textgenerator/prompts/default/simplify.md",
@@ -227,7 +215,6 @@
     "Fun/Bus ETA System.md",
     "Images/Pasted image 20230227123321.png",
     "CSE180/Relational Databases.md",
-    "CSE180/Relational Algebra.md",
     "CSE180/Rare Commands.md",
     "Images/Pasted image 20230227125451.png",
     "Images/Pasted image 20230227124317.png",
