@@ -70,26 +70,34 @@ We can relate sentences involving ∀ and ∃ using De Morgan’s laws:
 	1. Replace "if" (P => Q) with "not P or Q" (~P ∨ Q).
 	2. (P => Q) ==> (~P v Q)
 5. Reduce the scope of each negation symbol to a single predicate
-	1. \~~P ==> P
-	2. ~(P v Q) ==> ~P ^ ~Q
-	3. ~(P ^ Q) ==> ~P v ~Q
-	4. ~(∀x)P ==> (∃x)~P
-	5. ~(∃x)P ==> (∀x)~P
-6. Standardize variables: rename all variables so that each quantifier has its own unique variable name
-7. Eliminate existential quantification by introducing Skolem constants/functions
+	1. Simplify double negations and push negations inwards, so they only apply to single predicates:
+	2. \~~P ==> P
+	3. ~(P v Q) ==> ~P ^ ~Q
+	4. ~(P ^ Q) ==> ~P v ~Q
+	5. ~(∀x)P ==> (∃x)~P
+	6. ~(∃x)P ==> (∀x)~P
+7. Standardize variables: rename all variables so that each quantifier has its own unique variable name
+	1. (∀x) P(x) ∧ (∀x) Q(x) becomes (∀x) P(x) ∧ (∀y) Q(y)
+8. Eliminate existential quantification by introducing Skolem constants/functions
 	1. (∃x)P(x) ==> P(c)
 		1. c is a Skolem constant (a brand-new constant symbol that is not used in any other sentence)
 	2. (∀x)(∃y)P(x,y) ==> (∀x)P(x, f(x))
-	3. since ∃ is within the scope of a universally quantified variable, use a Skolem function f to construct a new value that depends on the universally quantified variable
-	4. f must be a brand-new function name not occurring in any other sentence in the KB.
-		1. E.g., (∀x)(∃y)loves(x,y) ==> (∀x)loves(x,f(x))
-8. Remove universal quantifiers by (1) moving them all to the left end; (2) making the scope of each the entire sentence; and (3) dropping the “prefix” part
-	1. Ex: (∀x)P(x) ==> P(x)
-9. Distribute v over ^
-	1. (P ^ Q) ∨ R ==> (P ∨ R) ^ (Q ∨ R)
-	2. (P ∨ Q) ∨ R ==> (P ∨ Q ∨ R)
-10. Split conjuncts into a separate clauses
-11. Standardize variables so each clause contains only variable names that do not occur in any other clause
+		1. since ∃ is within the scope of a universally quantified variable, use a Skolem function f to construct a new value that depends on the universally quantified variable
+		2. f must be a brand-new function name not occurring in any other sentence in the KB.
+			1. E.g., (∀x)(∃y)loves(x,y) ==> (∀x)loves(x,f(x))
+9. Remove universal quantifiers by (1) moving them all to the left end; (2) making the scope of each the entire sentence; and (3) dropping the “prefix” part
+	1. Get rid of "for all" (∀x) symbols by assuming that they apply to the entire sentence.
+	2. Ex: (∀x)P(x) ==> P(x)
+11. Distribute v over ^
+	1. Rearrange statements to distribute "or" (∨) over "and" (∧) symbols.
+	2. (P ^ Q) ∨ R ==> (P ∨ R) ^ (Q ∨ R)
+	3. (P ∨ Q) ∨ R ==> (P ∨ Q ∨ R)
+13. Split conjuncts into a separate clauses
+	1. Separate each part of an "and" (∧) statement into its own clause.
+	2. (A ∨ B) ∧ (C ∨ D) becomes two separate clauses: (A ∨ B) and (C ∨ D)
+14. Standardize variables so each clause contains only variable names that do not occur in any other clause
+	1. Make sure that each clause has unique variable names, not used in other clauses.
+	2. If we have two clauses (A(x) ∨ B(x)) and (C(x) ∨ D(x)), we can rename the variables to have (A(x) ∨ B(x)) and (C(y) ∨ D(y))
 
 In this case, f(x) specifies the person that x loves
 
