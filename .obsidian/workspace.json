@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "680890df3fbf6f2b",
+        "id": "67ddecea5bd18d15",
         "type": "tabs",
         "children": [
           {
-            "id": "98212da2624b6ba6",
+            "id": "7c1f9e324ff39af1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af9aa3c325ee949e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "370dcf611943975b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md",
+                "file": "CSE140/Heuristics.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "!= all",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Heuristics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Heuristics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,20 +125,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
+                "file": "CSE140/Heuristics.md"
               }
             }
-          },
-          {
-            "id": "87920da30779e285",
-            "type": "leaf",
-            "state": {
-              "type": "ava.write.sidebar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,54 +143,20 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "ava:Ava": false,
-      "ava:Ava - Show Links": false,
-      "ava:Ava - Open Rewrite Playground": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "98212da2624b6ba6",
+  "active": "7c1f9e324ff39af1",
   "lastOpenFiles": [
-    "CSE180/ACID.md",
-    "CSE180/Important Details.md",
-    "CSE180/Relational Algebra.md",
-    "CSE180/Design Theory and Functional Dependency.md",
-    "CSE140/MDP and Reinforcement Learning.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Lecture 4, Subqueries.md",
-    "textgenerator/prompts/default/getEmailNeg.md",
-    "textgenerator/prompts/default/getTags.md",
-    "textgenerator/prompts/default/simplify.md",
-    "textgenerator/prompts/default/getOutline.md",
-    "textgenerator/prompts/default/getTitles.md",
-    "textgenerator/prompts/default/getEmailPos.md",
-    "textgenerator/prompts/default/rewrite.md",
-    "textgenerator/prompts/default/getParagraph.md",
-    "textgenerator/prompts/default/summarize.md",
-    "textgenerator/prompts/default/getIdeas.md",
-    "textgenerator/prompts/default",
-    "textgenerator/prompts",
-    "textgenerator",
-    "CSE180/Insert.md",
+    "CSE140/Adversarial Learning.md",
     "Ava - Getting Started.md",
-    "CSE180/Examples.md",
+    "Fun/186.md",
+    "Fun/Convolutional Neural Networks.md",
+    "CSE140/MDP and Reinforcement Learning.md",
     "CSE180/Pattern Matching.md",
-    "CSE140/Minimax.md",
-    "Fun/Bus ETA System.md",
-    "Images/Pasted image 20230227123321.png",
-    "CSE180/Relational Databases.md",
     "CSE180/Rare Commands.md",
-    "Images/Pasted image 20230227125451.png",
-    "Images/Pasted image 20230227124317.png",
-    "Images/Pasted image 20230227124212.png",
-    "Images/Pasted image 20230227124112.png",
-    "Images/Pasted image 20230227123941.png",
-    "Images/Pasted image 20230227123929.png",
-    "Images/Pasted image 20230227123357.png",
-    "Images/Pasted image 20230227123236.png",
-    "CSE180/Delete.md",
-    "Images/Pasted image 20230213180052.png"
+    "CSE180/Relational Databases.md",
+    "CSE180/Set and Bag Operations.md",
+    "CSE180/Examples.md"
   ]
 }
