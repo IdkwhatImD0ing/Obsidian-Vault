@@ -87,18 +87,21 @@ In summary, Markov Decision Processes are a way to model decision-making situati
 
 Value Iteration is an algorithm used to solve Markov Decision Processes (MDPs) by iteratively updating the estimated values of each state. The goal is to find an optimal policy that maximizes the expected cumulative reward over time.
 
-Imagine you're trying to find the best way to play a game to earn the most points. Value Iteration is like a strategy to figure out the best moves in the game.
-
+Basically, imagine you're trying to find the best way to play a game to earn the most points. Value Iteration is like a strategy to figure out the best moves in the game.
 
  - Initialization: Start with V0(s) = 0 for all states s. We initialize V0(s) to 0 because we haven't considered any actions or rewards yet, so our initial estimate for the value of each state is zero.
 	 - Imagine you're trying to find the best way to play a game to earn the most points. Value Iteration is like a strategy to figure out the best moves in the game.
-
+	 
  - Iterative Updates: Given the current value function Vi, calculate the values for all states for the next depth (i+1) using the Bellman update equation:
 	 - Vi+1(s) = max_a [sum_s' (T(s, a, s') * (R(s, a, s') + γ * Vi(s')))]
 	 - This equation calculates the value of a state (s) by considering all possible actions (a) and their consequences. It computes the expected reward (R) for taking each action, plus the discounted (γ) value of the next state (Vi(s')). The value for the next iteration (Vi+1(s)) is the maximum expected value over all actions.
 	 - Update the guess: For each place in the game, we consider all the possible moves and their outcomes. We calculate the points we'd get for each move and the points we could get in the future (discounted a bit). We choose the move that gives us the most points and update our guess for that place in the game.
+	 
  - Discarding Old Values: After each iteration, discard the old Vi values and keep the updated Vi+1 values.
+	 - Keep the new guesses: After updating all the guesses, we throw away the old ones and keep the new ones.
+	 
  - Convergence: Repeat the iterative updates until the value function converges (the values don't change significantly between iterations).
+	 - Keep the new guesses: After updating all the guesses, we throw away the old ones and keep the new ones.
 
 Value Iteration is guaranteed to converge to the unique optimal values, as the approximations get refined towards the optimal values over time. The optimal policy (the best sequence of actions) may converge long before the value function does.
 
