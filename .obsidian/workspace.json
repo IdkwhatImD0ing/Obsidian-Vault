@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Arc Consistency",
+                "query": "Rational",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -159,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ab7b52303f1c18f",
+  "active": "f2de1032358ad6f7",
   "lastOpenFiles": [
     "CSE180/Relational Databases.md",
     "CSE140/MDP and Reinforcement Learning.md",

@@ -7,6 +7,9 @@
 
 ## Rational Preferences
 
+A > B = A is preferred over B
+A >=  = A is not pre
+
 ![[Pasted image 20230318212608.png]]
 
 This passage presents the famous Allais Paradox, proposed by Maurice Allais in 1953. The paradox demonstrates that people's choices can sometimes violate the axioms of rationality, particularly the Independence of Irrelevant Alternatives (IIA) axiom.
@@ -105,15 +108,40 @@ Basically, imagine you're trying to find the best way to play a game to earn the
 
 Value Iteration is guaranteed to converge to the unique optimal values, as the approximations get refined towards the optimal values over time. The optimal policy (the best sequence of actions) may converge long before the value function does.
 
-## Reinforcement Learning
+## Policy Iteration
 
-### Passive Learning
+Value iteration is a dynamic programming algorithm used to solve Markov Decision Processes (MDPs). It iteratively computes the optimal value function for each state and improves the estimated value function until convergence. The main problem with value iteration is that it can be slow, as it considers all actions at each iteration, which takes |A| times longer than policy evaluation.
+
+Policy iteration is an alternative to value iteration, which can be more efficient in some cases. It works by iteratively updating the policy based on a fixed policy and improving it with one-step lookahead. Policy iteration consists of two main steps: policy evaluation and policy improvement.
+
+1. Policy Evaluation:
+	1. In this step, the algorithm calculates the utilities for a fixed policy. It's important to note that these utilities are not optimal but are an approximation based on the current policy. The policy evaluation step converges quickly since the policy remains unchanged during this process.
+2. Policy Improvement:
+	1. Once the policy evaluation step converges, the algorithm moves to the policy improvement step. In this step, the policy is updated using a one-step lookahead with the converged utilities (which are not optimal). This step can be slow, but it happens infrequently, making it more efficient than the value iteration algorithm in some cases.
+
+The policy iteration algorithm repeats these two steps until the policy converges. Despite being an alternative to value iteration, policy iteration is still an optimal algorithm for solving MDPs.
+
+## Difference Between Value and Policy Iteration?
+
+Alright, imagine you're playing a video game, and you want to find the best way to reach the highest score. The game has multiple levels, and in each level, you have different actions you can take. You want to find the best action to take at each level to maximize your score.
+
+Policy iteration and value iteration are two methods to figure out the best actions to take in the game.
+
+ - Value Iteration:
+	 - In value iteration, you start by guessing how good each level is (like assigning points to each level). Then, you go through each level, look at all the possible actions you can take, and calculate how good each action is based on the points you assigned to the levels. You keep updating your guesses about the points for each level and repeat this process until your guesses don't change much.
+	 
+ - Policy Iteration:
+	 - In policy iteration, you start by coming up with a strategy (like choosing to always go left). Then, you calculate how good this strategy is by figuring out how many points you'd get if you followed it. After that, you try to improve your strategy by looking at each level and checking if taking a different action would give you more points, based on your current strategy's points. You keep repeating these steps (evaluating your strategy and improving it) until your strategy doesn't change much.
+
+# Reinforcement Learning
+
+## Passive Learning
  - Don't know the transitions T(s,a,s')
  - Don't know rewards R(s,a,s')
  - Given Policy 
  - Goal: Learn state values
  
-### Model Based Learning
+## Model Based Learning
  - Learn the model empirically through experience
  - Solve for values as if mode is correct
  - Simple model learning:
@@ -121,7 +149,7 @@ Value Iteration is guaranteed to converge to the unique optimal values, as the a
 	 - Normalize to give estimate of T(s,a,s')
 	 - Discover R(s,a,s') when we experience (s,a,s')
 
-### Temporal Difference Learning
+## Temporal Difference Learning
  - Learn from every experience
 	 - Update V(s) each time we experience (s,a,s',r)
 	 - Likely s' will contribute to updates more often
@@ -130,7 +158,7 @@ Value Iteration is guaranteed to converge to the unique optimal values, as the a
  - Discount Factor is to lower the effect of previous states on the current
  - ![[Pasted image 20230213182111.png]]
 
-### Exponential Moving Average
+## Exponential Moving Average
  - Average, but most recent samples more important
  - ![[Pasted image 20230213182226.png]]
  - Forgets about the past since those values are wrong anyways
