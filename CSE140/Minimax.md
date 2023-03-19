@@ -1,5 +1,9 @@
 Composed of Min and Max layers
 
+### Max Layers
+
+Simply maximizes the value of 
+
 # Alpha Beta Pruning
 
 ## Alpha and Beta Values

@@ -48,6 +48,12 @@ Relaxed problems are where some constraints are removed. For example, removing w
 
 A heuristic function h(n) is said to be consistent, or sometimes called monotonic, if for every node n and its successor node n', the estimated cost of reaching the goal from n is no greater than the step cost of getting to n' plus the estimated cost of reaching the goal from n'. This property is also known as the triangle inequality. In other words, a heuristic function is consistent if the estimated cost of reaching the goal from a node is always less than or equal to the sum of the actual cost of getting to its successor node and the estimated cost of reaching the goal from that successor node.
 
+To explain why, let's consider the consistency property:
+
+h(n) <= c(n, n') + h(n')
+
+This inequality states that the estimated cost of reaching a node n from the start node (according to the heuristic function h) should be less than or equal to the actual cost of moving from node n to a neighboring node n' plus the estimated cost of reaching the goal from node n'.
+
 ## Admissible VS Consistency?
 Consistency implies admissibility, but the reverse is not necessarily true. In other words, all consistent heuristic functions are admissible, but not all admissible heuristic functions are consistent. A* search with a consistent heuristic function is guaranteed to find the optimal solution, but this does not necessarily hold for admissible, non-consistent heuristic functions.
 

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE180/Relational Databases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ab7b52303f1c18f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSE140/Minimax.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Arc Consistency",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE140/Minimax.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/Heuristics.md",
+                "file": "CSE140/Minimax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/Heuristics.md"
+                "file": "CSE140/Minimax.md"
               }
             }
           }
@@ -146,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c1f9e324ff39af1",
+  "active": "2ab7b52303f1c18f",
   "lastOpenFiles": [
+    "CSE140/Constraint Satisfication Problems.md",
+    "CSE180/Relational Databases.md",
+    "CSE140/Heuristics.md",
+    "CSE140/Knowledge Representation.md",
     "CSE140/Adversarial Learning.md",
     "Ava - Getting Started.md",
     "Fun/186.md",
     "Fun/Convolutional Neural Networks.md",
     "CSE140/MDP and Reinforcement Learning.md",
-    "CSE180/Pattern Matching.md",
-    "CSE180/Rare Commands.md",
-    "CSE180/Relational Databases.md",
-    "CSE180/Set and Bag Operations.md",
-    "CSE180/Examples.md"
+    "CSE180/Pattern Matching.md"
   ]
 }
