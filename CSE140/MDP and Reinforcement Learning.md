@@ -8,7 +8,9 @@
 ## Rational Preferences
 
 A > B = A is preferred over B
-A >=  = A is not pre
+A >=  = A is not preferred over B
+A~B = In difference between A and B
+\[p, A; (1-p), B] = Lottery
 
 ![[Pasted image 20230318212608.png]]
 
@@ -148,6 +150,7 @@ Policy iteration and value iteration are two methods to figure out the best acti
 	 - Count outcomes for each s,a
 	 - Normalize to give estimate of T(s,a,s')
 	 - Discover R(s,a,s') when we experience (s,a,s')
+ - In Model Based Learning, you try to understand how the game works, like what happens when you take certain actions and what rewards you get. You create a "model" of the game in your head, which helps you plan your actions and make better decisions. It's like learning the rules and mechanics of the game so you can strategize better.
 
 ## Temporal Difference Learning
  - Learn from every experience
@@ -157,6 +160,7 @@ Policy iteration and value iteration are two methods to figure out the best acti
  - Move values towards value of whatever successor occurs: running average
  - Discount Factor is to lower the effect of previous states on the current
  - ![[Pasted image 20230213182111.png]]
+ - In Temporal Difference Learning, you learn by looking at the difference between what you thought would happen and what actually happened. For example, if you thought you'd get a high score by going left but actually got a low score, you'd learn from that difference and adjust your expectations. This method helps you learn from your mistakes and improve your gameplay over time.
 
 ## Exponential Moving Average
  - Average, but most recent samples more important
@@ -165,6 +169,7 @@ Policy iteration and value iteration are two methods to figure out the best acti
  - Easy to compute from running average
  - ![[Pasted image 20230213182307.png]]
  - Decreasing learning rate makes averages converge
+ - Exponential Moving Average is a way to keep track of your performance and make predictions about how well you'll do in the future. It's like taking a weighted average of your past scores, where recent scores have more weight (or importance) than older scores. This helps you see trends and figure out if you're improving or if you need to change your strategy.
 
 ## Q-Learning
 
@@ -186,6 +191,7 @@ Policy iteration and value iteration are two methods to figure out the best acti
 	- Too many states to hold q values in memory
 - Must generalize states
 	- Transfer learning???
+- Q learning is a technique where you learn the value of taking certain actions in different situations. Instead of trying to understand the game's rules like in Model Based Learning, you focus on finding the best actions to take that will lead to the highest score. You learn by trying out different actions and updating your knowledge about how good each action is in different situations.
 ### Linear Features
  - Using features to generalize states
  - Write a q funciton for any state using a few weights
@@ -193,3 +199,19 @@ Policy iteration and value iteration are two methods to figure out the best acti
 	 - Experienced summed up in few but powerful numbers
  - Disadvantage
 	 - States share features but value very different
+
+# Summary
+
+MDPs (Markov Decision Processes) are a widely-used formulation for planning under uncertainty, which is common in real-world problems. An MDP solution is a policy rather than a plan, as it provides a general strategy for making decisions in different situations instead of a specific sequence of actions.
+
+Key concepts in MDPs include the value function, Q-value, optimal value, and optimal policy. These concepts form the basis of dynamic programming algorithms that can be used to solve MDPs. The value function estimates the expected long-term reward for each state, while the Q-value estimates the value of taking a specific action in a state. The optimal value is the highest possible value that can be obtained from a state, and the optimal policy is the strategy that leads to achieving the optimal value.
+
+There are several algorithms for solving MDPs, such as Value Iteration and Policy Iteration. Value Iteration works by iteratively updating the estimated value function until it converges to the optimal value function. Policy Iteration, on the other hand, alternates between evaluating a fixed policy and improving it using one-step lookahead. Both algorithms ultimately converge to the optimal policy.
+
+Reinforcement Learning (RL) is a class of algorithms for learning MDPs. There are two main types of RL algorithms: Passive Learning and Active Learning. Passive Learning involves learning from a fixed policy, while Active Learning involves learning while making decisions and interacting with the environment.
+
+In Passive Learning, there are several algorithms, such as Direct Evaluation, Model-based Learning, Temporal Difference (TD) Learning, and Q-learning. Direct Evaluation involves estimating the value function directly from experience. Model-based Learning creates a model of the environment to make predictions and learn the value function. TD Learning learns by comparing predictions with actual outcomes and adjusting the value function accordingly. Q-learning is a popular off-policy algorithm that learns the optimal Q-values for each state-action pair.
+
+Active Learning involves learning while making decisions and interacting with the environment. This requires exploration strategies to balance the need for gathering information and maximizing rewards. Feature-based representation is another important aspect of Active Learning, as it allows for generalization and learning in high-dimensional or continuous state spaces.
+
+In conclusion, MDPs provide a powerful framework for planning under uncertainty. Algorithms like Value Iteration and Policy Iteration can be used to find the optimal policy for a given MDP, while Reinforcement Learning algorithms, such as Passive and Active Learning, offer ways to learn MDPs in various scenarios. The combination of these concepts and algorithms enables intelligent agents to make effective decisions in uncertain environments.

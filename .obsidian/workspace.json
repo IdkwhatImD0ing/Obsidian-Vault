@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2de1032358ad6f7",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
     "CSE180/Relational Databases.md",
     "CSE140/MDP and Reinforcement Learning.md",
