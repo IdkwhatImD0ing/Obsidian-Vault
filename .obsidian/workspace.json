@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/Adversarial Search.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/Adversarial Search.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/Adversarial Search.md",
+                "file": "CSE140/MDP and Reinforcement Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/Adversarial Search.md"
+                "file": "CSE140/MDP and Reinforcement Learning.md"
               }
             }
           }
@@ -161,15 +161,15 @@
   },
   "active": "2ab7b52303f1c18f",
   "lastOpenFiles": [
-    "CSE140/Adversarial Learning.md",
-    "CSE140/Adversarial Search.md",
-    "CSE140/Constraint Satisfication Problems.md",
     "CSE180/Relational Databases.md",
-    "CSE140/Heuristics.md",
+    "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/Knowledge Representation.md",
+    "CSE140/Knowledge-Based Agent.md",
+    "CSE140/Constraint Satisfication Problems.md",
+    "CSE140/Adversarial Search.md",
+    "CSE140/Adversarial Learning.md",
+    "CSE140/Heuristics.md",
     "Ava - Getting Started.md",
-    "Fun/186.md",
-    "Fun/Convolutional Neural Networks.md",
-    "CSE140/MDP and Reinforcement Learning.md"
+    "Fun/186.md"
   ]
 }
