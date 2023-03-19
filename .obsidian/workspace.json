@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Knowledge Representation.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Knowledge Representation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE140/Knowledge Representation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md"
+                "file": "CSE140/Knowledge Representation.md"
               }
             }
           },
@@ -181,11 +181,14 @@
       "ava:Ava - Show Links": false,
       "ava:Ava - Open Rewrite Playground": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "khoj:Khoj": false
     }
   },
   "active": "98212da2624b6ba6",
   "lastOpenFiles": [
+    "CSE140/Knowledge-Based Agent.md",
+    "CSE140/MDP and Reinforcement Learning.md",
     "Pasted image 20230318212608.png",
     "CSE140/Constraint Satisfication Problems.md",
     "CSE140/Adversarial Search.md",
@@ -193,7 +196,6 @@
     "CSE180/Important Details.md",
     "CSE180/Relational Algebra.md",
     "CSE180/Design Theory and Functional Dependency.md",
-    "CSE140/MDP and Reinforcement Learning.md",
     "CSE180/Lecture 5, Aggregates and Group By.md",
     "CSE180/Lecture 4, Subqueries.md",
     "textgenerator/prompts/default/getEmailNeg.md",
@@ -223,7 +225,6 @@
     "Images/Pasted image 20230227123941.png",
     "Images/Pasted image 20230227123929.png",
     "Images/Pasted image 20230227123357.png",
-    "Images/Pasted image 20230227123236.png",
-    "Images/Pasted image 20230213180052.png"
+    "Images/Pasted image 20230227123236.png"
   ]
 }
