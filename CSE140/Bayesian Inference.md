@@ -8,7 +8,7 @@
 	 - combine these individual distributions and assign a real number to each possible outcome of the combined variables. 
 	 - The size of a joint distribution depends on the number of variables (n) and their domain sizes (d). 
 	 - However, for large distributions, it's difficult to write out every possible outcome.
- - **Probabilistic Model**:**
+ - **Probabilistic Model:**
 	 - A joint distribution over a set of random variables. It tells us the likelihood of different outcomes (assignments) happening together. 
 	 - Example: Weather temperature (T) and weather type (W) combined.
  - **Constraint Satisfaction Problem:** 
