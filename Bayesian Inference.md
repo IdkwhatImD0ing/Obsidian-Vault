@@ -78,27 +78,63 @@ Think of it like a flowchart, where each factor (like weather or traffic) is a c
 
 The cool thing about Bayes nets is that when you combine these local interactions, you can figure out more complex relationships that aren't obvious at first. For example, you might see that bad weather can cause traffic jams, and traffic jams can make you late for school. By following the arrows, you can see how weather indirectly affects whether you're late for school, even though the two factors aren't directly connected.
 
-### Encoding in Bayesian Networks:
+**Example:**
+```
+Imagine a situation where you want to know if there's a burglary at your friend's house. There's an alarm system, and two neighbors, John and Mary, who can call you if they hear the alarm.
+```
 
-Encoding refers to the representation of the relationships between variables within a Bayesian Network (BN). A BN encodes dependencies between variables using nodes (representing the variables) and directed edges (representing dependencies). The edges point from parent nodes to child nodes, indicating the direction of influence.
+### Encoding in BNs:
+ - Represents relationships between variables using nodes and directed edges
+ - Efficiently represents joint probability distributions by exploiting conditional independence
+ - Variables are conditionally independent of non-descendants given parents
+ - Example: 
+	 - The variables here are:
+		 - Burglary
+		 - Earthquake
+		 - Alarm
+		 - JohnCalls
+		 - MaryCalls.
+	 - The BN would look like this:
+		 - Burglary → Alarm 
+		 - Earthquake → Alarm
+		 - Alarm → JohnCalls 
+		 - Alarm → MaryCalls
 
-The primary advantage of encoding in a BN is the efficient representation of joint probability distributions. This efficiency is achieved by exploiting the conditional independence properties between variables. A variable in a BN is conditionally independent of its non-descendants given its parents. This allows the representation of a joint probability distribution with a smaller number of parameters, making it easier to learn, understand, and update the BN as new information becomes available.
+### Structure of BNs:
+ - Directed acyclic graph (DAG) representing relationships among variables
+ - Captures conditional independence relationships
+ - Parents of a variable are variables that directly influence it
+ - Enables efficient inference algorithms like belief propagation
+ - Example:
+	 - This BN tells you that JohnCalls and MaryCalls depend on the Alarm. They're independent of each other and the Burglary and Earthquake given the Alarm. The Alarm is affected by both Burglary and Earthquake.
 
-### Structure of Bayesian Networks:
+### Construction of BNs:
+ - Variable selection: Choose relevant random variables
+ - Ordering: Arrange variables so direct influencers come before influenced variables
+ - Add nodes and edges: Create nodes for variables, connect them to parents
+ - Define CPTs: Specify probability distribution for each node's variable given its parents
+ - Use constructed BN for inference, learning, and decision-making; requires domain expertise
+ - Creating the example:
+	1.  Choose variables: Burglary, Earthquake, Alarm, JohnCalls, MaryCalls
+	2.  Order them: Burglary, Earthquake, Alarm, JohnCalls, MaryCalls
+	3.  Add nodes and connections as shown above
+	4.  Define the CPT for each node, showing the probability of each outcome given different scenarios
 
-The structure of a BN is a directed acyclic graph (DAG) that visually represents the relationships among variables. The nodes in the DAG represent random variables, while the directed edges represent direct causal relationships between variables.
 
-The structure of a BN captures the conditional independence relationships among variables. In a BN, the parents of a variable X are all variables that directly influence X. The graph structure of a BN allows you to read off conditional independence relationships directly. The structure ensures that each variable is independent of its non-descendants given its parents, which in turn simplifies the representation of the joint probability distribution.
+## Independence of Bayesian Networks
 
-The structure of a BN is crucial for efficient inference, as it allows for the application of various algorithms that exploit the graph's properties. For example, message-passing algorithms like belief propagation can leverage the BN's structure to compute probabilities of interest in a distributed and efficient manner.
-
-### Construction of Bayesian Networks:
-
-Constructing a BN involves the following steps:
-
-1. Variable selection: Choose the relevant random variables that describe the domain. These variables should capture the essential aspects of the problem you're trying to model.
-2. Ordering: Select an ordering X1, ..., Xn of the variables such that all the variables that directly influence Xi come before Xi in the ordering. This step is essential to ensure that the BN respects the conditional independence properties among variables.
-3. Adding nodes and edges: For each variable in the ordering, add a node to the network labeled by the variable. Connect the node to its parents (i.e., the variables that directly influence it) using directed edges.
-4. Defining Conditional Probability Tables (CPTs): For each node in the network, define a CPT that specifies the probability distribution of the node's variable given its parents. The CPTs capture the local relationships between variables and enable the BN to represent the joint probability distribution over all variables.
-
-Once the BN is constructed, it can be used for various tasks such as probabilistic inference, learning, and decision-making. The construction process often involves domain expertise to select the relevant variables and determine the appropriate structure that accurately represents the problem at hand.
+Given a set E of evidence nodes, two beliefs
+connected by an undirected path are
+independent if one of the following three
+conditions holds:
+1. A node on the path is linear and in E
+	1. Picture a straight line of nodes. The first node affects the second, the second affects the third, and so on. 
+	2. If you have evidence for a node in the middle of this line, then the beliefs before and after it don't affect each other.
+		1. In a linear chain like A → B → C, if we have evidence for B (we know its value), then A and C become conditionally independent. It means that knowing A doesn't give us any extra information about C when we already know B, and vice versa.
+		2. However, if we don't know B, then A does have an effect on C. In this case, A and C are not conditionally independent, and the relationship between A and C is indirect (through B).
+2. A node on the path is diverging and in E
+	1. Imagine a upside-down "V" shape, where one node affects two other nodes. If you have evidence for the top node of the "V", the two bottom nodes don't affect each other. 
+	2. For example, if you know it rained (top node), the wet sidewalk (left bottom node) and wet car (right bottom node) are independent, because you already know the cause.
+3. A node on the path is converging and neither this node, nor any descendant is in E
+	1. Think of an "V" where two nodes affect a third one. If you have no evidence for the bottom node of the "V" or any of its descendants (nodes it affects), the two top nodes don't affect each other. 
+	2. For example, a fire alarm (bottom node) can be triggered by a fire (left top node) or burnt toast (right top node). If you don't know anything about the alarm or related events, the fire and burnt toast are independent.
