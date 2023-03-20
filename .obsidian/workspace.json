@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/Knowledge Representation.md",
+                "file": "CSE140/First Order Logic.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Propositional Logic",
+                "query": "rest of",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE140/Knowledge Representation.md",
+                "file": "CSE140/First Order Logic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE140/Knowledge Representation.md",
+                "file": "CSE140/First Order Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE140/Knowledge Representation.md"
+                "file": "CSE140/First Order Logic.md"
               }
             }
           },
@@ -198,12 +199,12 @@
       "khoj:Khoj": false
     }
   },
-  "active": "eebe3192999f784b",
+  "active": "f2de1032358ad6f7",
   "lastOpenFiles": [
+    "CSE140/Knowledge Representation.md",
     "CSE140/MDP and Reinforcement Learning.md",
     "CSE140/First Order Logic.md",
     "CSE140/Bayesian Inference.md",
-    "CSE140/Knowledge Representation.md",
     "CSE140/Heuristics.md",
     "CSE140/Adversarial Search.md",
     "CSE140/Constraint Satisfication Problems.md",

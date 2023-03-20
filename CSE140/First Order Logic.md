@@ -1,4 +1,4 @@
-First-Order Logic (FOL) is needed because Propositional Logic, while useful in some situations, has limitations that make it difficult to represent more complex information and relationships.
+	First-Order Logic (FOL) is needed because Propositional Logic, while useful in some situations, has limitations that make it difficult to represent more complex information and relationships.
 
  1. **Individuals**: Propositional Logic cannot easily identify specific individuals, like a person (Mary) or a number (3). In FOL, we can use constants to represent individuals, making it easier to talk about specific entities.
 	 1. Instead of just saying "someone" or "something," you can talk about a specific person, like Mary, or a specific number, like 3.
