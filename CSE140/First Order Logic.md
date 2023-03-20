@@ -91,7 +91,7 @@ We can relate sentences involving ∀ and ∃ using De Morgan’s laws:
 7. Distribute v over ^
 	1. Rearrange statements to distribute "or" (∨) over "and" (∧) symbols.
 	2. (P ^ Q) ∨ R ==> (P ∨ R) ^ (Q ∨ R)
-	3. (P ∨ Q) ∨ R ==> (P ∨ Q ∨ R)
+		1. (P ∨ Q) ∨ R ==>  (P ∨ Q ∨ R)
 8. Split conjuncts into a separate clauses
 	1. Separate each part of an "and" (∧) statement into its own clause.
 	2. (A ∨ B) ∧ (C ∨ D) becomes two separate clauses: (A ∨ B) and (C ∨ D)
