@@ -1,4 +1,4 @@
-## Utilities
+	## Utilities
  - Function that take in an outcome and return a number that describes the performance in that outcome
  - Where do utilities come from?
  - In a game, may be simple (+1/-1)
