@@ -1,4 +1,4 @@
-	## Utilities
+## Utilities
  - Function that take in an outcome and return a number that describes the performance in that outcome
  - Where do utilities come from?
  - In a game, may be simple (+1/-1)
@@ -9,7 +9,7 @@
 
 A > B = A is preferred over B
 A >=  = A is not preferred over B
-A~B = In difference between A and B
+A~B = Indifference between A and B
 \[p, A; (1-p), B] = Lottery
 
 ![[Pasted image 20230318212608.png]]

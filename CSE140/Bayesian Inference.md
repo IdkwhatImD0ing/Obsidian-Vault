@@ -1,20 +1,20 @@
 ## Probability Review
 
- - **Probability distributions**
+ - **Probability distributions**:
 	 - are tables that show the likelihood of different outcomes for unobserved random variables. 
 	 - For example, a distribution for weather temperature (T) might have "warm" with a probability (P) of 0.5 and "cold" with a probability of 0.5. 
 	 - Another distribution for weather type (W) might have "sun" with a probability of 0.6, "rain" with a probability of 0.1, and "fog" with a probability of 0.3.
- - **Joint distributions
+ - **Joint distributions:**
 	 - combine these individual distributions and assign a real number to each possible outcome of the combined variables. 
 	 - The size of a joint distribution depends on the number of variables (n) and their domain sizes (d). 
 	 - However, for large distributions, it's difficult to write out every possible outcome.
- - **Probabilistic Model: 
+ - **Probabilistic Model**:**
 	 - A joint distribution over a set of random variables. It tells us the likelihood of different outcomes (assignments) happening together. 
 	 - Example: Weather temperature (T) and weather type (W) combined.
- - **Constraint Satisfaction Problem: 
+ - **Constraint Satisfaction Problem:** 
 	 - A problem with variables, domains, and constraints specifying if assignments are possible.
 	 - Example: T=W only if it's hot and sunny, or cold and rainy.
- - **Events: A set of outcomes.
+ - **Events: A set of outcomes.**
 	 - Example: Hot AND Sunny, Hot OR Sunny.
  - **Marginal Distributions:** 
 	 - Sub-tables that eliminate variables by summing probabilities. 
