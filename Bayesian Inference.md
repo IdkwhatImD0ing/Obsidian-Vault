@@ -138,3 +138,34 @@ conditions holds:
 3. A node on the path is converging and neither this node, nor any descendant is in E
 	1. Think of an "V" where two nodes affect a third one. If you have no evidence for the bottom node of the "V" or any of its descendants (nodes it affects), the two top nodes don't affect each other. 
 	2. For example, a fire alarm (bottom node) can be triggered by a fire (left top node) or burnt toast (right top node). If you don't know anything about the alarm or related events, the fire and burnt toast are independent.
+
+# Inference
+
+
+## Inference in Chains
+
+Inference in chains refers to computing the probability of a variable in a simple chain-like Bayesian Network. 
+
+A chain is a linear sequence of variables, where each variable is connected to the next one by a single directed edge, like this: X1 → X2 → X3 → ... → Xn.
+
+To compute the probability of the last variable in the chain, Xn, we can use a step-by-step approach. Instead of trying to compute P(Xn) directly, which could be computationally expensive, we compute the probability of each variable in the chain using the probability of the previous variable.
+
+Here's how we do it:
+
+1.  Compute P(X1), the probability of the first variable.
+2.  Compute P(X2) using P(X1) and the conditional probability P(X2 | X1).
+3.  Compute P(X3) using P(X2) and the conditional probability P(X3 | X2).
+4.  Continue this process until we reach Xn.
+
+## General Inference with Variable Elimination
+
+General Inference with Variable Elimination is a technique used to compute probabilities in more complex Bayesian Networks, not just chains. The main idea is to rewrite the query as a summation of products and then iteratively eliminate variables by marginalizing them in a specific order.
+
+Here's the process in an easy-to-understand way:
+
+1.  Write the query in the form of a Summation of Products. This will suggest an "elimination order" of variables to be marginalized.
+2.  Iteratively perform the following steps: 
+	1. Move all terms that do not depend on the variable being eliminated outside of the innermost sum. 
+	2. Perform the innermost sum, which means computing the sum over the variable being eliminated, and get a new term.
+	3. Insert the new term into the product.
+3.  Continue this process until all variables in the elimination order have been marginalized.
