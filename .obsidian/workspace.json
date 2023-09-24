@@ -4,52 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "680890df3fbf6f2b",
+        "id": "67ddecea5bd18d15",
         "type": "tabs",
         "children": [
           {
-            "id": "af9aa3c325ee949e",
+            "id": "7c1f9e324ff39af1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/MDP and Reinforcement Learning.md",
+                "file": "CSE180/Relational Databases.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "370dcf611943975b",
+            "id": "ad95708424713454",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Lecture 4, Subqueries.md",
+                "file": "Artificial Intelligence/MDP and Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e173eb2b07b31367",
+            "id": "53a222148d542315",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE140/First Order Logic.md",
+                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eebe3192999f784b",
+            "id": "ad908e5f4ec85d53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rest of",
+                "query": "Rational",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,6 +99,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "10792092a00d9f09",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -122,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE180/Modification.md",
+                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,20 +170,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE180/Modification.md"
+                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md"
               }
             }
-          },
-          {
-            "id": "87920da30779e285",
-            "type": "leaf",
-            "state": {
-              "type": "ava.write.sidebar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,55 +188,32 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "ava:Ava": false,
-      "ava:Ava - Show Links": false,
-      "ava:Ava - Open Rewrite Playground": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
-      "khoj:Khoj": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "eebe3192999f784b",
+  "active": "ad908e5f4ec85d53",
   "lastOpenFiles": [
-    "CSE180/Rare Commands.md",
-    "CSE180/ACID.md",
-    "CSE180/Design Theory and Functional Dependency.md",
-    "CSE140/Adversarial Search.md",
-    "CSE140/Constraint Satisfication Problems.md",
-    "CSE140/First Order Logic Topics.md",
-    "CSE140/Heuristics.md",
-    "CSE140/Knowledge Representation.md",
-    "CSE140/Bayesian Inference.md",
-    "CSE140/MDP and Reinforcement Learning.md",
-    "CSE140/First Order Logic.md",
-    "CSE140/Ava - Getting Started.md",
+    "Artificial Intelligence/Agents.md",
+    "Artificial Intelligence/Adversarial Search and Game Playing.md",
+    "Artificial Intelligence/Problem, Search, and Heuristics.md",
+    "Artificial Intelligence/Bayesian Inference.md",
+    "Artificial Intelligence/Constraint Satisfication Problems.md",
+    "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/Knowledge Representation.md",
+    "Artificial Intelligence/First Order Logic Topics.md",
+    "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Images/Pasted image 20230319170422.png",
-    "textgenerator/prompts/default/simplify.md",
-    "textgenerator/prompts/default/rewrite.md",
-    "textgenerator/prompts/default/getTitles.md",
-    "textgenerator/prompts/default/getTags.md",
-    "textgenerator/prompts/default/getOutline.md",
-    "textgenerator/prompts/default/getEmailPos.md",
-    "textgenerator/prompts/default/getEmailNeg.md",
-    "CSE140/Knowledge-Based Agent.md",
     "Images/Pasted image 20230318212608.png",
-    "CSE180/Important Details.md",
-    "CSE180/Relational Algebra.md",
-    "CSE180/Lecture 5, Aggregates and Group By.md",
-    "CSE180/Lecture 4, Subqueries.md",
-    "textgenerator/prompts/default/getParagraph.md",
-    "textgenerator/prompts/default/summarize.md",
-    "textgenerator/prompts/default",
-    "textgenerator/prompts",
-    "textgenerator",
-    "Images/Pasted image 20230227123321.png",
-    "Images/Pasted image 20230227125451.png",
-    "Images/Pasted image 20230227124317.png",
-    "Images/Pasted image 20230227124212.png",
-    "Images/Pasted image 20230227124112.png",
-    "Images/Pasted image 20230227123941.png",
-    "Images/Pasted image 20230227123929.png",
-    "Images/Pasted image 20230227123357.png"
+    "Artificial Intelligence",
+    "CSE180/Relational Databases.md",
+    "CSE140/MDP and Reinforcement Learning.md",
+    "CSE140/Knowledge Representation.md",
+    "CSE140/Knowledge-Based Agent.md",
+    "CSE140/Constraint Satisfication Problems.md",
+    "CSE140/Adversarial Search.md",
+    "CSE140/Adversarial Learning.md",
+    "CSE140/Heuristics.md",
+    "Ava - Getting Started.md",
+    "Fun/186.md"
   ]
 }

@@ -18,6 +18,7 @@ Number of games states is exponential to the number of moves.
 • Alpha-beta pruning
 • Remove branches that do not influence final decision
 
+---
 # Alpha Beta Tree and Pruning
 
 Basic idea: “If you have an idea that is surely bad, don't take the time to see how truly awful it is.” -- Patrick Winston
