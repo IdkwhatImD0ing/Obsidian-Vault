@@ -97,4 +97,25 @@ Path is irrelevant, goal state is the solution.
 
 ### Iterative Improvement:
 
-Keep one single current state, then try to improve it. 
+Keep one single current state, then try to improve it.
+If path is not revelant, dont need to keep track of it.
+
+### Hill Climbing
+
+Iteratively maximize "value" of current state, by replacing with successor with highert value, as long as its possible.
+
+Problem: May get stuck in local extrema
+
+Solution: Simulated Annealing
+From current, pick random successor. If better, choose that.
+
+If not, do not give up, flip a coin and accept the successor with a given probability.
+But gradually decrise size and frequency.
+
+### Genetic Algorithm
+
+Large complex space
+Hard to find solution
+
+What if you made a huge population and chose the best ones.
+Then use natural selection to find the best ones.
