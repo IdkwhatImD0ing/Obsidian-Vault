@@ -93,29 +93,26 @@ These problems involve an unknown state space. The agent must explore and learn 
 ---
 ## Function Optimization (Form of Informed Search)
 
-Path is irrelevant, goal state is the solution.
+The path to the goal state is irrelevant; the focus is on finding the optimal state itself.
 
-### Iterative Improvement:
+### Iterative Improvement
 
-Keep one single current state, then try to improve it.
-If path is not revelant, dont need to keep track of it.
+- **Description**: Maintains a single current state and iteratively improves it.
+- **Example**: Maximizing the value of a function \( f(x) \) by adjusting \( x \) in small steps.
 
 ### Hill Climbing
 
-Iteratively maximize "value" of current state, by replacing with successor with highert value, as long as its possible.
+- **Description**: Continually improves the "value" of the current state by replacing it with a better successor state.
+- **Drawback**: Can get stuck in local maxima.
+- **Example**: Climbing a hill where each step taken is in the direction that ascends most steeply.
 
-Problem: May get stuck in local extrema
+### Simulated Annealing
 
-Solution: Simulated Annealing
-From current, pick random successor. If better, choose that.
-
-If not, do not give up, flip a coin and accept the successor with a given probability.
-But gradually decrise size and frequency.
+- **Description**: An extension of hill climbing. Allows "bad moves" with a certain probability to escape local maxima.
+- **Example**: For the traveling salesman problem, you might randomly swap two cities in the current route and accept the new route based on a probability function.
 
 ### Genetic Algorithm
 
-Large complex space
-Hard to find solution
-
-What if you made a huge population and chose the best ones.
-Then use natural selection to find the best ones.
+- **Description**: Models a population of individual solutions and evolves them over time using operations like mutation and crossover.
+- **Use-Case**: Effective when the problem has many local maxima and the problem space is poorly understood.
+- **Example**: Evolving a set of parameters to optimize a machine learning model. 
