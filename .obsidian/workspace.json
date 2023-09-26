@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5dd91eb5f52ddc0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Linear Regression.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/MDP and Reinforcement Learning.md",
+                "file": "Machine Learning/Linear Regression.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/MDP and Reinforcement Learning.md",
+                "file": "Machine Learning/Linear Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/MDP and Reinforcement Learning.md"
+                "file": "Machine Learning/Linear Regression.md"
               }
             }
           }
@@ -191,8 +203,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad908e5f4ec85d53",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
+    "Artificial Intelligence/MDP and Reinforcement Learning.md",
+    "Machine Learning/Linear Regression.md",
+    "Machine Learning",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Artificial Intelligence/Problem, Search, and Heuristics.md",
@@ -201,7 +216,6 @@
     "Artificial Intelligence/First Order Logic.md",
     "Artificial Intelligence/Knowledge Representation.md",
     "Artificial Intelligence/First Order Logic Topics.md",
-    "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence",
