@@ -90,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "442e3210652dc991",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Optimization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -166,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Binary Classification.md",
+                "file": "Machine Learning/Optimization.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Binary Classification.md",
+                "file": "Machine Learning/Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Binary Classification.md"
+                "file": "Machine Learning/Optimization.md"
               }
             }
           }
@@ -227,10 +239,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06772c190163bb24",
+  "active": "442e3210652dc991",
   "lastOpenFiles": [
-    "Machine Learning/Overfitting.md",
     "Machine Learning/Binary Classification.md",
+    "Machine Learning/Optimization.md",
+    "Machine Learning/Overfitting.md",
     "Machine Learning/Linear Regression.md",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Machine Learning",
