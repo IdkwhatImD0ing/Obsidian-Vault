@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
+                "file": "Artificial Intelligence/Constraint Satisfication Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
+                "file": "Artificial Intelligence/Constraint Satisfication Problems.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md",
+                "file": "Artificial Intelligence/Constraint Satisfication Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Problem, Search, and Heuristics.md"
+                "file": "Artificial Intelligence/Constraint Satisfication Problems.md"
               }
             }
           }
@@ -193,9 +193,9 @@
   },
   "active": "ad908e5f4ec85d53",
   "lastOpenFiles": [
+    "Artificial Intelligence/Problem, Search, and Heuristics.md",
     "Artificial Intelligence/Agents.md",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",
-    "Artificial Intelligence/Problem, Search, and Heuristics.md",
     "Artificial Intelligence/Bayesian Inference.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Artificial Intelligence/First Order Logic.md",
