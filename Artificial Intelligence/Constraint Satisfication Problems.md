@@ -7,6 +7,15 @@
  - Goal Test
 	 - Assignment is complete and consistent
 
+## Types of CSPs:
+
+### Discrete Variables
+ - Finite Domains
+	 - n variables
+	 - Boolean CSPs, incluiding Boolean Satisfiability
+ - Infinite Domains
+	 - integers, stri
+
 ## Constraints
 
 Used to express the relationships between variables and restrict the possible values that these variables can take.
