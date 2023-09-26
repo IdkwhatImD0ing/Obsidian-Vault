@@ -11,3 +11,5 @@ Least squares solution, generally called empirical risk minimizer
 Reduce machine learning to optmization
 
 Can apply to any optimization algorithm but linear regression is closed form solution
+
+Goal is to find stationary points, where gradient (derivative) is 0
