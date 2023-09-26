@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Binary Classification.md",
+                "file": "Machine Learning/Classification.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Classification.md",
                 "mode": "source",
                 "source": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Classification.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Classification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Optimization.md"
+                "file": "Machine Learning/Classification.md"
               }
             }
           }
@@ -241,8 +241,8 @@
   },
   "active": "442e3210652dc991",
   "lastOpenFiles": [
-    "Machine Learning/Binary Classification.md",
     "Machine Learning/Optimization.md",
+    "Machine Learning/Classification.md",
     "Machine Learning/Overfitting.md",
     "Machine Learning/Linear Regression.md",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",

@@ -7,3 +7,4 @@ Faster, effective for large scale problems
 
 Computes gradient for subset of training set instead of full training set
 Moving in a noisy negative gradient direction
+

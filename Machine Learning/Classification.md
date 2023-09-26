@@ -13,3 +13,8 @@ One we can use is hinge, or perceptron loss
 Hinge has some buffer, loss goes to 0 slightly above x = 0
 Logistic loss as well.
 Basic idea, if incorrect, loss is high, if correct, loss is 0
+
+### Logistic Regression
+
+Use logistic regression for both Binary Regression and MultiClass regression
+Use sigmoid loss
