@@ -13,3 +13,6 @@ Reduce machine learning to optmization
 Can apply to any optimization algorithm but linear regression is closed form solution
 
 Goal is to find stationary points, where gradient (derivative) is 0
+
+GEneral Idea: To minimize, take the derivative and set to 0
+Solve for parameter that you want to have.

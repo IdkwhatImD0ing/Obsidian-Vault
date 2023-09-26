@@ -1,4 +1,4 @@
-When test and training accuracies diverges hard
+When test and training accuracies or errors diverges hard
 
 ### Regularization
 Measures how complex the model is, then penalize complex models
@@ -17,3 +17,7 @@ With lasso:
 	zero for subset of variables, can throw away
 With ridge:
 	Something very small, but not 0
+
+### Adding more data
+
+Adding more data also prevents overfitting
