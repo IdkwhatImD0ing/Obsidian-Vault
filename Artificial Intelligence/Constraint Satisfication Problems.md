@@ -6,6 +6,12 @@
 	 - Value assigned to unassigned function
  - Goal Test
 	 - Assignment is complete and consistent
+- Variable
+	- Things that can be assigned a value
+- Domains
+	- Values that can be assigned
+- Constraints
+	- Limits values domains that can be assigned to variable
 
 ## Types of CSPs:
 
@@ -14,7 +20,13 @@
 	 - n variables
 	 - Boolean CSPs, incluiding Boolean Satisfiability
  - Infinite Domains
-	 - integers, stri
+	 - integers, strings
+	 - Job Scheduling etc
+	 - Need a constraint language
+
+### Continuous Variables
+ - Time series data
+ - Linear constraints solvable in polynomial time
 
 ## Constraints
 
@@ -26,8 +38,16 @@ Unary constraints involve a single variable and restrict the values that this va
 ### Binary constraints:
 Binary constraints involve two variables and restrict the possible value combinations that these two variables can take simultaneously. Binary constraints can be represented as a function or a condition that a pair of variables must satisfy. For example, in a map-coloring CSP, a binary constraint could be that two neighboring countries must have different colors.
 
-### N-ary constraints:
+### N-ary constraints (Higher Order):
 N-ary constraints involve more than two variables (n variables, where n > 2) and restrict the possible value combinations that these variables can take simultaneously. N-ary constraints can be represented as a function or a condition that a group of variables must satisfy. For example, in a scheduling CSP, an n-ary constraint could be that a certain number of tasks must be completed within a specific time frame, and no two tasks can be executed at the same time.
+
+## Solving CSPS:
+
+### Most Constrained Variable (MCV)
+Choose the variable with the fewest legal values
+
+### Least Constraining Value
+Choose the least constraining value for the variable
 
 ## Arc Consistency
 
