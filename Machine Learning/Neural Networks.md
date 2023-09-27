@@ -21,3 +21,16 @@ each node is a neuron
 \# of layers represents \# of hidden layers
 
 deep neural networks have many layers and millions of parameters (w's)
+
+## Backpropagation algorithm
+
+Inittialize Weights Randomly
+
+REpeat
+Ranomly pick one data point
+forward prop
+compute a and o
+
+backward prop
+compute gradient
+update wie
