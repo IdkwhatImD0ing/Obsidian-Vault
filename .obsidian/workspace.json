@@ -102,9 +102,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "11b218160932d4f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Neural Networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -178,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Classification.md",
+                "file": "Machine Learning/Neural Networks.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Classification.md",
+                "file": "Machine Learning/Neural Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Classification.md"
+                "file": "Machine Learning/Neural Networks.md"
               }
             }
           }
@@ -239,10 +251,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "442e3210652dc991",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "Machine Learning/Optimization.md",
     "Machine Learning/Classification.md",
+    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Optimization.md",
     "Machine Learning/Overfitting.md",
     "Machine Learning/Linear Regression.md",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
