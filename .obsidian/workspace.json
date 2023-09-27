@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "551abe732962d7e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Optimization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -190,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Neural Networks.md",
+                "file": "Machine Learning/Optimization.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Neural Networks.md",
+                "file": "Machine Learning/Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Neural Networks.md"
+                "file": "Machine Learning/Optimization.md"
               }
             }
           }
@@ -251,13 +263,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "11b218160932d4f8",
+  "active": "551abe732962d7e8",
   "lastOpenFiles": [
+    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Linear Regression.md",
+    "Machine Learning/Classification.md",
     "Machine Learning/Overfitting.md",
     "Machine Learning/Optimization.md",
-    "Machine Learning/Neural Networks.md",
-    "Machine Learning/Classification.md",
-    "Machine Learning/Linear Regression.md",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Machine Learning",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",

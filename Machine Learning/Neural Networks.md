@@ -1,54 +1,36 @@
-Linaer models are not always adequadate.
-We could use non linear mapping\
-But is it useful and can we learn it?
+## Overview
+- Linear models can fall short for complex data.
+- Non-linear mappings can be more expressive but may require more complex learning techniques.
 
-Linear Model can be treated as a one layer neural net
-o = h(wTx)
-h(a) = a
+## Relation to Neural Networks
+- A linear model is akin to a one-layer neural net.
+- Activation functions introduce non-linearity.
 
-To create non-linearity, we can use activation layers
+### Activation Functions
+- **ReLU**: \(h(a) = \max(0, a)\)
+- **Sigmoid**: \(h(a) = \frac{1}{1 + e^{-a}}\)
+- **TanH**: \(h(a) = \frac{e^a - e^{-a}}{e^a + e^{-a}}\)
 
-For example
-Rectified Linesr Unit (ReLU) h(a) = max{0,a}
-Sigmoid function: h(a) = 1/1+e^-a
-TanH h(a) = e^a-e^-a/e^a+e^-a
+## Deep Neural Networks
+- Have multiple layers and a high number of parameters (\(w\)'s).
 
-Powerful because Neural Networks lest us have more than one output
-h is an activation function
+## Backpropagation Algorithm
+1. **Initialize Weights**: Start with random values.
+2. **Loop**:
+  - Randomly pick a data point.
+  - Forward propagate to compute \(a\) and \(o\).
+  - Backward propagate to compute gradients.
+  - Update weights using gradients.
 
-each node is a neuron
+### Optimization Tricks
+- **Mini Batch**: Sample small batches for stochastic gradients. Common sizes: 32, 64, 128.
+- **Batch Normalization**: Normalize neuron inputs over a mini-batch to zero mean and unit variance.
+- **Momentum**: Use past gradients to avoid local minimums.
 
-\# of layers represents \# of hidden layers
+## Handling Overfitting
+- **Data Augmentation**: Modify data to increase diversity.
+- **Regularization**: Penalize model complexity.
+- **Dropout**: Randomly ignore some neurons during training.
+- **Early Stopping**: Cease training when performance plateaus.
 
-deep neural networks have many layers and millions of parameters (w's)
-
-## Backpropagation algorithm
-
-Inittialize Weights Randomly
-
-REpeat
-Ranomly pick one data point
-forward prop
-compute a and o
-
-backward prop
-compute gradient
-update wiehgts using gradients
-
-### More Optimization Tricks
-
-Mini Barch
-Sample a batch of examples to form a stochastic gradient
-32-64-128 etc
-
-Batch Normalization
-Normalize the inputs of each nreuron over the mini batch 
-To zero mean and one variance
-
-Momentum, use previous ggradients to prevent going into local minimums. Inspired from physics
-
-## Dealing wit overfitting
-Data Augmentation
-Regularization
-Dropout
-Early Stopping
+Neural networks allow for more expressive and flexible models compared to their linear counterparts. Techniques like backpropagation and various optimization methods enable effective learning for these complex architectures.

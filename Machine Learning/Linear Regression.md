@@ -1,18 +1,20 @@
-Used to predict continuous values
+## Overview
+- Predicts continuous values.
+- Employs optimization to minimize error.
 
-Goal:
-Minimize the total squared error
+## Objective
+- Minimize Total Squared Error.
+- Employ Residual Sum of Squares as a function of weights \(w\).
 
-Can use Residual Sum of Squares, a function of w
-W is weights, which affect how much the features affect the predicted value
+## Key Concepts
+- **Empirical Risk Minimizer**: Also known as the least squares solution.
+- **Weights \(w\)**: Determine feature impact on prediction.
 
-Least squares solution, generally called empirical risk minimizer
+## Optimization
+- Can be applied to various algorithms, but has a closed-form solution in the case of linear regression.
+  
+### Method
+1. **Stationary Points**: The goal is to find points where the gradient (derivative) is zero.
+2. **General Idea**: Take the derivative, set it to zero, and solve for the desired parameter \(w\).
 
-Reduce machine learning to optmization
-
-Can apply to any optimization algorithm but linear regression is closed form solution
-
-Goal is to find stationary points, where gradient (derivative) is 0
-
-GEneral Idea: To minimize, take the derivative and set to 0
-Solve for parameter that you want to have.
+Linear Regression serves as a foundational algorithm for supervised learning, offering closed-form solutions for optimization, which can be computationally efficient.
