@@ -33,4 +33,10 @@ compute a and o
 
 backward prop
 compute gradient
-update wie
+update wiehgts using gradients
+
+### More Optimization Tricks
+
+Mini Barch
+Sample a batch of examples to form a stochastic gradient
+32-64-128 etc
