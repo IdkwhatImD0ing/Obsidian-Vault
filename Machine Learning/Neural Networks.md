@@ -14,3 +14,10 @@ Sigmoid function: h(a) = 1/1+e^-a
 TanH h(a) = e^a-e^-a/e^a+e^-a
 
 Powerful because Neural Networks lest us have more than one output
+h is an activation function
+
+each node is a neuron
+
+\# of layers represents \# of hidden layers
+
+deep neural networks have many layers and millions of parameters (w's)
