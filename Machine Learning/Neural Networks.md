@@ -12,3 +12,5 @@ For example
 Rectified Linesr Unit (ReLU) h(a) = max{0,a}
 Sigmoid function: h(a) = 1/1+e^-a
 TanH h(a) = e^a-e^-a/e^a+e^-a
+
+Powerful because Neural Networks lest us have more than one output
