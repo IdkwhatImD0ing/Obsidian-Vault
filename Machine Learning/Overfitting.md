@@ -21,3 +21,4 @@ With ridge:
 ### Adding more data
 
 Adding more data also prevents overfitting
+

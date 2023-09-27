@@ -251,12 +251,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "11b218160932d4f8",
   "lastOpenFiles": [
-    "Machine Learning/Classification.md",
-    "Machine Learning/Neural Networks.md",
-    "Machine Learning/Optimization.md",
     "Machine Learning/Overfitting.md",
+    "Machine Learning/Optimization.md",
+    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Classification.md",
     "Machine Learning/Linear Regression.md",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Machine Learning",
