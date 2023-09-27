@@ -40,3 +40,9 @@ update wiehgts using gradients
 Mini Barch
 Sample a batch of examples to form a stochastic gradient
 32-64-128 etc
+
+Batch Normalization
+Normalize the inputs of each nreuron over the mini batch 
+To zero mean and one variance
+
+Momentum, use previous ggradients to prevent going into local minimums. Inspired from physics
