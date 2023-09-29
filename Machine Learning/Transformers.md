@@ -1,5 +1,15 @@
-Attention is really important
+Designed for sequence learning
+Natural Language, Images
 
+Benefits Transformers VS RNN
+Architectural Improvement
+Very good at scaling to billions and trillions of parameters
+Do memorization and generalization on trillions of parameters
+
+Good resources
+Illustrated gpt 2
+
+Attention is really important
 Imagine a lot of queries
 we can stack them into a matrix Q
 Similarily for keys K and Values V
