@@ -138,9 +138,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6a50ea021484ff76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transformers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -214,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Recurrent Neural Network.md",
+                "file": "Transformers.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +243,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Recurrent Neural Network.md",
+                "file": "Transformers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -254,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Recurrent Neural Network.md"
+                "file": "Transformers.md"
               }
             }
           }
@@ -275,10 +287,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a12619bc98cb3cab",
+  "active": "6a50ea021484ff76",
   "lastOpenFiles": [
-    "Machine Learning/Computer Vision.md",
     "Machine Learning/Recurrent Neural Network.md",
+    "Transformers.md",
+    "Machine Learning/Computer Vision.md",
     "Machine Learning/Neural Networks.md",
     "Machine Learning/Optimization.md",
     "Machine Learning/Overfitting in Models.md",
@@ -305,7 +318,6 @@
     "CSE140/Adversarial Search.md",
     "CSE140/Adversarial Learning.md",
     "CSE140/Heuristics.md",
-    "Ava - Getting Started.md",
-    "Fun/186.md"
+    "Ava - Getting Started.md"
   ]
 }
