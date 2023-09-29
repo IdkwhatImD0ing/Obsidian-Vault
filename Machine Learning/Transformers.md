@@ -7,7 +7,7 @@ Very good at scaling to billions and trillions of parameters
 Do memorization and generalization on trillions of parameters
 
 Good resources
-Illustrated gpt 2
+Illustrated gpt 2 and anotated transfer
 
 Attention is really important
 Imagine a lot of queries
