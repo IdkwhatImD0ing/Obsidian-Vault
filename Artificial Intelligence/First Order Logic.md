@@ -64,6 +64,26 @@ Inference is a process in which you draw conclusions based on the information or
 	 - Everyone likes someone: (∀x)(∃y) likes(x,y)
 	 - Someone is liked by everyone: (∃y)(∀x) likes(x,y)
 
+## Inference
+
+### [[Knowledge Representation#Forward Chaining|Forwards Chaining]]
+Idea: Trigger rules with satisfied premises in the KB, add conclusions to KB until the query is found.
+
+1. Start with facts and rules in the KB.
+2. Apply rules with satisfied premises.
+3. Add conclusions to KB.
+4. Repeat 2-3 until query is found or no rules apply.
+
+### [[Knowledge Representation#Backwards Chaining|Backwards Chaining]]
+Idea: Begin with query, work backward to prove it.
+
+1. Start with a target query.
+2. Check if query is known in KB.
+3. If not, find rule with query as conclusion.
+4. Prove rule's premises recursively.
+5. Query is proven if all premises are.
+6. Track already-attempted goals to avoid loops and repeats.
+
 ## De Morgan's Laws
 
 We can relate sentences involving ∀ and ∃ using De Morgan’s laws:
