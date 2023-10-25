@@ -133,8 +133,6 @@ Given the following sentences:
 2. Any non-E examinee who gets a C in part P3 or P2 won’t pass the exam.
 3. Some non-E examinees who get a C or B in part P2 and pass the exam.
 4. Alex is an E examinee getting an A in part P1 and Steve is a non-E examinee getting an A in part P3.
-Translate the above sentences into First Order Logic using the following predicates: E(x) which
-means x is an E examinee R(x, y, z) which means examinee x gets a y in part z, and P(x) which
-means x passes the exam
+Translate the above sentences into First Order Logic using the following predicates: E(x) which means x is an E examinee R(x, y, z) which means examinee x gets a y in part z, and P(x) which means x passes the exam
 
 
