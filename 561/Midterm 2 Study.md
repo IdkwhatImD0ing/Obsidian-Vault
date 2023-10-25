@@ -53,6 +53,26 @@
 		1. 2
 	7. Liron is eating if and only if Liron is hungry.
 		1. 4
+2. Are the following statements true or false? Type T for true and F for false.
+	1. TRUE ⊨ FALSE
+		1. False
+		2. True can never entail False
+		3. And False can never entail True
+	2. (P ∧ Q) ⊨ (P ⇔ Q)
+		1. True
+		2. Only way for P and Q to be true is both is true, thus then P iif Q is also true
+	3. (P ⇔ Q) ∧ (¬P ⋁ Q) is satisfiable.
+		1. True
+		2. if both P and Q is true, then its true
+		3. if both p and q is false, then its true
+	4. ((P ⋁ Q) ⇔ P) ⋁ (¬P ∧ Q) is a tautology.
+		1. False
+		2. If P and Q both false then results to false
+		3. Tautology is formula that is universally true
+	5. “P⇒Q” and “P”, we can infer “Q” by applying the Unit Resolution Rule.
+		1. True
+		2. Unit REsolution Rule
+	6. P ∧ Q) ⇒ R is a Horn clause.
 
 
 
