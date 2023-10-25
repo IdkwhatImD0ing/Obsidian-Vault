@@ -71,8 +71,22 @@
 		3. Tautology is formula that is universally true
 	5. “P⇒Q” and “P”, we can infer “Q” by applying the Unit Resolution Rule.
 		1. True
-		2. Unit REsolution Rule
-	6. P ∧ Q) ⇒ R is a Horn clause.
+		2. Unit Resolution Rule
+			1. If we have A and not A or B, then we can infer B
+		3. We have, P, and P implies B, therefore Q is true
+	6. (P ∧ Q) ⇒ R is a Horn clause.
+		1. True
+		2. At most one positive literal
+		3. Need to rewrite the implies
+
+## First Order Logic
+
+ - The first–order language of (directed) graphs is L = {r}, where r is a binary relation symbol.
+ - The only terms are the variables ‘x’, ‘y’, ‘z’ etc.
+ - Atomic formulas look like (rxy).Universal and Existential quantifiers work the same way as they normally do.
+Sometimes, smart people have a hard time understanding the above points, and since, you all are smart people, we want to explain the above points in simple terms:
+ - For nodes/vertices/terms x and y in a (directed) graph G, rxy denotes that there is
+an edge going from node x to node y in G.
 
 
 
