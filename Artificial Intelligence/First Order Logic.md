@@ -28,13 +28,21 @@ Inference is a process in which you draw conclusions based on the information or
 
 ## Syntax
 
+ - Constants
+	 - 1, 5, A, B, USC
+ - Predicates
+	 - >, Friend, Student
+ - Function
+	 - +, sqrt, SchoolOf
  - Variable symbols
-	 - E.g., x, y, foo
+	 - x, y, foo
  - Connectives
 	 - Same as in PL: not (~), and (^), or (v), implies (=>), if and only if (<=>)
  - Quantifiers
 	 - Universal ∀x or (Ax - this notation is used in some literature)
 	 - Existential ∃x or (Ex)
+ - Equality
+	 - =
 
 ## Quantifiers
 
