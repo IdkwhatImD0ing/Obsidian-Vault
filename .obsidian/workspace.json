@@ -102,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "10dd7bb196dfaa68",
@@ -179,7 +180,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4465ca28c0867b2f",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
     "Artificial Intelligence/Knowledge Representation.md",
     "561/Midterm 2 Study.md",
