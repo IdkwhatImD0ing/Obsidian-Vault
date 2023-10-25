@@ -22,14 +22,9 @@ KB *entails* a - written as KB |= a - iff every model of KB is a model of a, in 
 ### Inference
 Inference is a process in which you draw conclusions based on the information or knowledge you have. It's like solving a puzzle or a mystery based on the clues you've been given.
 
- - "KB ⊢i α: sentence α can be derived from KB by procedure i."
-	 - This means that if you have a knowledge base (KB) which contains all the information you know, and a procedure or method (i) for making conclusions, you can use that method to derive or figure out a new piece of information or a conclusion, represented by the sentence (α).
- - "Soundness: i is sound if whenever KB ⊢i α, it is also true that KB ⊨ α."
-	 - Soundness is a property that we want our inference procedure (i) to have. If a procedure is "sound," it means that whenever we use it to derive a conclusion (α) from our knowledge base (KB), that conclusion is always true. Basically, a sound procedure won't lead us to any false conclusions.
-	 - So, if our procedure (i) is sound, and we can derive a sentence (α) from our knowledge base (KB) using that procedure (KB ⊢i α), then it must also be true that the sentence (α) is true based on our knowledge base (KB ⊨ α).
- - "Completeness: i is complete if whenever KB ⊨ α, it is also true that KB ⊢i α."
-	 - Completeness is another property we want our inference procedure (i) to have. If a procedure is "complete," it means that it can always find a conclusion (α) that's true based on our knowledge base (KB), as long as that conclusion actually exists.
-	 - In other words, if a sentence (α) is true based on our knowledge base (KB ⊨ α), and our procedure (i) is complete, then we should be able to derive that sentence (α) from our knowledge base (KB) using our procedure (i) (KB ⊢i α).
+ - "KB ⊢i α": A sentence (α) can be derived from a knowledge base (KB) using an inference procedure (i).
+	 - "Soundness": A procedure (i) is sound if deriving α from KB (KB ⊢i α) guarantees that α is true (KB ⊨ α).
+	 - "Completeness": A procedure (i) is complete if any true sentence α (KB ⊨ α) can be derived from KB (KB ⊢i α).
 
 ## Syntax
 
