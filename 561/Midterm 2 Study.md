@@ -147,5 +147,78 @@ Translate the above sentences into First Order Logic using the following predica
 4. **Alex is an E examinee getting an A in part P1 and Steve is a non-E examinee getting an A in part P3.**
    - $\( E(\text{'Alex'}) \land R(\text{'Alex'}, \text{'A'}, \text{'P1'}) \land \lnot E(\text{'Steve'}) \land R(\text{'Steve'}, \text{'A'}, \text{'P3'}) \)$
 
+## Planning
+Stack is one of the basic data structures in programming. The following line is a stack, with 3 as its top element and 7 as its bottom:
+Stack S: Head→3→7→5→4
 
+For a stack, we have following basic actions:
+	Pop(s): pop the top of stack s.
+	Push(s, e): push element e to the top of stack s.
 
+And the following conditions:
+	IsHead(s, e1): e1 is the head of stack s. For example, in the given stack, we have IsHead(S, 3).
+	IsEmpty(s): stack s is empty.
+	NextTo(e1, e2): element e1 is the element before e2. For example, in the given stack, we have
+	NextTo(3,7).
+
+Note: In your answers, use “e1, e2, e3 ...” for non-constant elements, use variable “s” for
+non-constant stack.
+A. What are the current conditions for the given stack? List all of them.
+Write your answer in the following format:
+Condition1(variable1, variable2, ...)
+Condition2(variable1, variable2, ...)
+...
+B. [6%] What are the preconditions and postconditions for action Pop(s)? For pop(), you remove
+the top element in the sequence. (Assume the stack is not empty for this question.)
+Write your answer in the following format:
+Situation 1:
+Preconditions:
+Condition1(variable1, variable2, ...)
+Condition2(variable1, variable2, ...)
+...
+Postconditions:
+Condition1(variable1, variable2, ...)
+Condition2(variable1, variable2, ...)
+...
+Situation 2: (if there are multiple situations)
+...
+C. [7%]In order to sort the elements in the stack (the top element is the smallest), we add a
+new action:
+Switch(e1, e2): switch element e1 and e2 when NextTo(e1, e2), only when e1 is larger than e2.
+and a new condition:
+Larger(e1, e2): element e1 is larger than e2 when NextTo(e1, e2).
+What are the preconditions and postconditions for Switch(e3, e4) in a subsequence
+e1→e2→e3→e4→e5?
+Write your answer in the same format as question B:
+D. [3%]Provide a possible solution (write down the sequence of actions) to sort the given stack
+S: Head→3→7→5→4.
+(the top element is the smallest):
+## Multiple choice
+1. In the discussions, we showed the definitions of entailment, please select all that are true:  
+	a. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵→α  
+	b. if and only if is valid.𝐾𝐵 ⊨α 𝐾𝐵→α  
+	c. if and only if is unsatisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
+	d. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
+	e. if and only if is valid.𝐾𝐵 ⊨α ¬𝐾𝐵∨α  
+1. In the discussions, we compared several logical inference methods.  
+	Let 𝐾𝐵≡{𝐴→𝐵, ¬𝐴→𝐶, 𝐵→𝐷, 𝐶→𝐷}, please circle all that are true
+	a. It is possible to prove D from KB using Backward chaining  
+	b. It is impossible to prove D from KB using Forward chaining  
+	c. It is possible to prove D from KB using Resolution  
+	d. It is impossible to prove D from KB at all  
+	e. It does not make sense to prove D from KB  
+1. If C is a constant, x is a variable, and F is a function, which of these will not unify?  
+		a. x and F(x)  
+		b. x and C  
+		c. C and F(x)  
+		d. F(C) and F(x)  
+1. Which one of the following is not true of ground literals?  
+	a. They have only universally quantified variables as arguments.  
+	b. They behave just like propositional symbols in automated reasoning.  
+	c. They might unify with literals containing only universally quantified variables.  
+	d. They may contain terms that are functions.  
+1. What is the English equivalent of “¬∃𝑥 (𝐻𝑢𝑚𝑎𝑛(𝑥) ∧ 𝑃𝑒𝑟𝑓𝑒𝑐𝑡(𝑥))”?  
+	a. Not every human is perfect.  
+	b. There is no Perfect human.  
+	c. Being a human, implies not being perfect.  
+	d. Some humans are perfect.
