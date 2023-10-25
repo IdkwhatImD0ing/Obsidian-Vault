@@ -222,31 +222,77 @@ Now the Stack is sorted as Head→3->4->5->7
 
 Hope this answers all parts of your question!
 ## Multiple choice
-1. In the discussions, we showed the definitions of entailment, please select all that are true:  
-	a. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵→α  
-	**b. if and only if is valid.𝐾𝐵 ⊨α 𝐾𝐵→α**  
-	c. if and only if is unsatisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
-	d. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
-	**e. if and only if is valid.𝐾𝐵 ⊨α ¬𝐾𝐵∨α**  
-1. In the discussions, we compared several logical inference methods.  
-	Let 𝐾𝐵≡{𝐴→𝐵, ¬𝐴→𝐶, 𝐵→𝐷, 𝐶→𝐷}, please circle all that are true
-	**a. It is possible to prove D from KB using Backward chaining**  
-	b. It is impossible to prove D from KB using Forward chaining  
-	**c. It is possible to prove D from KB using Resolution**  
-	d. It is impossible to prove D from KB at all  
-	e. It does not make sense to prove D from KB  
-1. If C is a constant, x is a variable, and F is a function, which of these will not unify?  
-		**a. x and F(x)**  
-		b. x and C  
-		c. C and F(x)  
-		d. F(C) and F(x)  
-1. Which one of the following is not true of ground literals?  
-	**a. They have only universally quantified variables as arguments.**  
-	b. They behave just like propositional symbols in automated reasoning.  
-	c. They might unify with literals containing only universally quantified variables.  
-	d. They may contain terms that are functions.  
-1. What is the English equivalent of “¬∃𝑥 (𝐻𝑢𝑚𝑎𝑛(𝑥) ∧ 𝑃𝑒𝑟𝑓𝑒𝑐𝑡(𝑥))”?  
-	a. Not every human is perfect.  
-	**b. There is no Perfect human.**  
-	c. Being a human, implies not being perfect.  
-	d. Some humans are perfect.
+---
+### Question 1: Definitions of Entailment
+
+#### a. if and only if is satisfiable. \( KB \models \alpha \Rightarrow KB \rightarrow \alpha \)
+
+- **F**: This is false. Entailment \(\models\) is about validity, not satisfiability. If \( KB \models \alpha \), then \( \alpha \) is true whenever \( KB \) is true.
+
+#### b. if and only if is valid. \( KB \models \alpha \Rightarrow KB \rightarrow \alpha \)
+
+- **T**: This is true. If \( KB \models \alpha \), then the implication \( KB \rightarrow \alpha \) is a tautology, i.e., always true.
+
+#### c. if and only if is unsatisfiable. \( KB \models \alpha \Rightarrow KB \land \lnot \alpha \)
+
+- **F**: This is false. \( KB \models \alpha \) means \( \alpha \) is true whenever \( KB \) is true, not that \( \alpha \) is false.
+
+#### d. if and only if is satisfiable. \( KB \models \alpha \Rightarrow KB \land \lnot \alpha \)
+
+- **F**: This is false. Similar to (a), entailment is about validity, not satisfiability.
+
+#### e. if and only if is valid. \( KB \models \alpha \Rightarrow \lnot KB \lor \alpha \)
+
+- **T**: This is true. \( \lnot KB \lor \alpha \) is logically equivalent to \( KB \rightarrow \alpha \), which is valid if \( KB \models \alpha \).
+
+---
+
+### Question 2: Logical Inference Methods
+
+#### a. It is possible to prove D from KB using Backward chaining
+
+- **T**: True. You can trace back from \(D\) to \(B\) or \(C\), and from there to \(A\) or \(\lnot A\).
+
+#### b. It is impossible to prove D from KB using Forward chaining
+
+- **F**: False. You can prove \(D\) by starting with \(A\) or \(\lnot A\).
+
+#### c. It is possible to prove D from KB using Resolution
+
+- **T**: True. Resolution is a complete method for propositional logic and could prove \(D\) from \(KB\).
+
+#### d. It is impossible to prove D from KB at all
+
+- **F**: False. \(D\) can be derived using logical inference methods like Backward chaining, Forward chaining, or Resolution.
+
+#### e. It does not make sense to prove D from KB
+
+- **F**: False. It absolutely makes sense to prove \(D\) from \(KB\) using logical inference methods.
+
+---
+
+### Question 3: Unification
+
+#### a. x and F(x)
+
+- **T**: True, these won't unify as one is a function and the other is a variable.
+
+---
+
+### Question 4: Ground Literals
+
+#### a. They have only universally quantified variables as arguments
+
+- **F**: False. Ground literals are fully instantiated and contain no variables.
+
+---
+
+### Question 5: English Equivalent
+
+#### b. There is no Perfect human
+
+- **T**: True. \( \lnot \exists x (Human(x) \land Perfect(x)) \) translates to "There is no \( x \) such that \( x \) is a human and \( x \) is perfect," which in plain English means "There is no perfect human."
+
+---
+
+I hope this clarifies each option for you!
