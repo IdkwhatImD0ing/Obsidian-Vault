@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "skolem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -168,8 +169,9 @@
   },
   "active": "0308c64f006dc303",
   "lastOpenFiles": [
-    "Artificial Intelligence/Knowledge Representation.md",
+    "CSE180/Design Theory and Functional Dependency.md",
     "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/Knowledge Representation.md",
     "Artificial Intelligence/First Order Logic Topics.md",
     "Pasted image 20231024233958.png",
     "Pasted image 20231024233953.png",
