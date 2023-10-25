@@ -31,7 +31,7 @@ Inference is a process in which you draw conclusions based on the information or
  - Constants
 	 - 1, 5, A, B, USC
  - Predicates
-	 - >, Friend, Student
+	 - \>, Friend, Student
  - Function
 	 - +, sqrt, SchoolOf
  - Variable symbols
