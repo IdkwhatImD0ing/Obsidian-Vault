@@ -35,4 +35,24 @@
 	 - False
 	 - Horn Clause contains at most one positive
 
+## Propositional Logic
+
+1. Translate the following English sentences to Propositional Logic. Let:
+	1. E=Liron is eating
+	2. H=Liron is hungry
+	3. Choose from the following options
+		1. E ⇒ ¬H
+		2. ¬(H ⇒ ¬E)
+		3. E ∧ ¬H
+		4. E ⇔ H
+	4. If Liron is eating, then Liron is not hungry.
+		1. 1
+	5. Liron is eating and not hungry.
+		1. 3
+	6. Liron is hungry and eating.
+		1. 2
+	7. Liron is eating if and only if Liron is hungry.
+		1. 4
+
+
 

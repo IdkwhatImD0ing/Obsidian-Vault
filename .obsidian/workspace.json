@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "561/Midterm 2 Study.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "561/Midterm 2 Study.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "561/Midterm 2 Study.md"
+                "file": "Artificial Intelligence/First Order Logic.md"
               }
             }
           }
@@ -180,11 +179,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "0308c64f006dc303",
   "lastOpenFiles": [
-    "Artificial Intelligence/Knowledge Representation.md",
     "561/Midterm 2 Study.md",
     "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/Knowledge Representation.md",
     "561",
     "CSE180/Design Theory and Functional Dependency.md",
     "Artificial Intelligence/First Order Logic Topics.md",
