@@ -88,5 +88,16 @@ Sometimes, smart people have a hard time understanding the above points, and sin
  - For nodes/vertices/terms x and y in a (directed) graph G, rxy denotes that there is
 an edge going from node x to node y in G.
 
-
+1. The graph has at least two vertices. 
+	1. ExEy(x != y)
+2. Every vertex has an edge attached to it. 
+	1. AxEy(rxy OR ryx()
+3. Every vertex has at most two edges directed from it to other vertices. 
+	1. AxAyAzAw((rxy AND rxz AND rxw)) => (y = z or y = W or z = w)
+4. Every vertex has at least two edges directed from other vertices to it. 
+	1. AxEyEz(y != z AND ryx AND rzx) (**Important, r arguments is flipped!!!**)
+5. Write T for True, F for False: 
+	1. “Every vertex has exactly one edge entering it” can be written as:
+		1. ∀x∃y rxy ∧ ∀w∀v∀u (( rvw ∧ ruw ) ⇒ (v = u))
+		2. 
 
