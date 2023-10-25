@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "67ddecea5bd18d15",
+        "id": "7aeeb5863d59d197",
         "type": "tabs",
         "children": [
           {
-            "id": "6a50ea021484ff76",
+            "id": "3d110aa8dddbb296",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Transformers.md",
+                "file": "Artificial Intelligence/Knowledge Representation.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Rational",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Transformers.md",
+                "file": "Artificial Intelligence/Knowledge Representation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Transformers.md",
+                "file": "Artificial Intelligence/Knowledge Representation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Transformers.md"
+                "file": "Artificial Intelligence/Knowledge Representation.md"
               }
             }
           }
@@ -154,10 +154,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "3d110aa8dddbb296",
   "lastOpenFiles": [
-    "Machine Learning/Recurrent Neural Network.md",
+    "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/Knowledge Representation.md",
+    "Artificial Intelligence/First Order Logic Topics.md",
     "Machine Learning/Transformers.md",
+    "Machine Learning/Recurrent Neural Network.md",
     "Machine Learning/Computer Vision.md",
     "Machine Learning/Neural Networks.md",
     "Machine Learning/Optimization.md",
@@ -171,9 +174,6 @@
     "Artificial Intelligence/Problem, Search, and Heuristics.md",
     "Artificial Intelligence/Agents.md",
     "Artificial Intelligence/Bayesian Inference.md",
-    "Artificial Intelligence/First Order Logic.md",
-    "Artificial Intelligence/Knowledge Representation.md",
-    "Artificial Intelligence/First Order Logic Topics.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence",

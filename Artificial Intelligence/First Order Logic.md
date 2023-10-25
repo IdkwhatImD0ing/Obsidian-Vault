@@ -1,4 +1,4 @@
-	First-Order Logic (FOL) is needed because Propositional Logic, while useful in some situations, has limitations that make it difficult to represent more complex information and relationships.
+First-Order Logic (FOL) is needed because Propositional Logic, while useful in some situations, has limitations that make it difficult to represent more complex information and relationships.
 
  1. **Individuals**: Propositional Logic cannot easily identify specific individuals, like a person (Mary) or a number (3). In FOL, we can use constants to represent individuals, making it easier to talk about specific entities.
 	 1. Instead of just saying "someone" or "something," you can talk about a specific person, like Mary, or a specific number, like 3.
@@ -11,6 +11,13 @@ FOL is more expressive than Propositional Logic because it adds relations, varia
 
 -   "Every elephant is gray": ∀ x (elephant(x) → gray(x))
 -   "There is a white alligator": ∃ x (alligator(x) ∧ white(x))
+## Basic Rules
+
+### Logical Entailment
+
+KB :  a set of sentences
+a : arbitrary sentence
+KB *entails* a - written as KB |= a - iff every model of KB is a model of a, in other words, a is true in all worlds where kb is true
 
 ## Syntax
 
