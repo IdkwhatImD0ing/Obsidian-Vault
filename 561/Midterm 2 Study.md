@@ -163,62 +163,90 @@ And the following conditions:
 
 Note: In your answers, use “e1, e2, e3 ...” for non-constant elements, use variable “s” for
 non-constant stack.
-A. What are the current conditions for the given stack? List all of them.
-Write your answer in the following format:
-Condition1(variable1, variable2, ...)
-Condition2(variable1, variable2, ...)
-...
-B. [6%] What are the preconditions and postconditions for action Pop(s)? For pop(), you remove
-the top element in the sequence. (Assume the stack is not empty for this question.)
-Write your answer in the following format:
-Situation 1:
+### A. Current Conditions for the Given Stack
+Given the stack S: Head→3→7→5→4, the current conditions would be:
+
+1. IsHead(S, 3)
+2. NextTo(3, 7)
+3. NextTo(7, 5)
+4. NextTo(5, 4)
+
+### B. Preconditions and Postconditions for `Pop(s)`
+
+#### Situation 1:
+
 Preconditions:
-Condition1(variable1, variable2, ...)
-Condition2(variable1, variable2, ...)
-...
+1. IsHead(s, e1)
+2. IsEmpty(s) is False
+
 Postconditions:
-Condition1(variable1, variable2, ...)
-Condition2(variable1, variable2, ...)
-...
-Situation 2: (if there are multiple situations)
-...
-C. [7%]In order to sort the elements in the stack (the top element is the smallest), we add a
-new action:
-Switch(e1, e2): switch element e1 and e2 when NextTo(e1, e2), only when e1 is larger than e2.
-and a new condition:
-Larger(e1, e2): element e1 is larger than e2 when NextTo(e1, e2).
-What are the preconditions and postconditions for Switch(e3, e4) in a subsequence
-e1→e2→e3→e4→e5?
-Write your answer in the same format as question B:
-D. [3%]Provide a possible solution (write down the sequence of actions) to sort the given stack
-S: Head→3→7→5→4.
-(the top element is the smallest):
+1. IsHead(s, e2)
+2. NextTo(e1, e2)
+
+### C. Preconditions and Postconditions for `Switch(e3, e4)`
+
+For a subsequence e1→e2→e3→e4→e5:
+
+Preconditions:
+1. NextTo(e3, e4)
+2. Larger(e3, e4)
+
+Postconditions:
+1. NextTo(e4, e3)
+2. Larger(e4, e3) should be False
+
+### D. Sequence of Actions to Sort the Stack
+
+To sort the stack S: Head→3→7→5→4 so that the top element is the smallest, you could use the following sequence of actions:
+
+1. Pop(S) (Current Stack: 7→5→4)
+2. Pop(S) (Current Stack: 5→4)
+3. Pop(S) (Current Stack: 4)
+4. Pop(S) (Current Stack: [])
+5. Push(S, 7)
+6. Push(S, 5)
+7. Push(S, 4)
+8. Push(S, 3)
+
+Now the Stack is sorted as Head→3->4->5->7
+
+### 7. Multiple Choice
+
+1. True definitions of entailment:
+  - b. if and only if is valid. \( KB \models \alpha \) implies \( KB \rightarrow \alpha \)
+  - e. if and only if is valid. \( KB \models \alpha \) implies \( \lnot KB \lor \alpha \)
+
+2. Logical Inference Methods:
+  - a. It is possible to prove D from KB using Backward chaining
+  - c. It is possible to prove D from KB using Resolution
+
+Hope this answers all parts of your question!
 ## Multiple choice
 1. In the discussions, we showed the definitions of entailment, please select all that are true:  
 	a. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵→α  
-	b. if and only if is valid.𝐾𝐵 ⊨α 𝐾𝐵→α  
+	**b. if and only if is valid.𝐾𝐵 ⊨α 𝐾𝐵→α**  
 	c. if and only if is unsatisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
 	d. if and only if is satisfiable.𝐾𝐵 ⊨α 𝐾𝐵∧¬α  
-	e. if and only if is valid.𝐾𝐵 ⊨α ¬𝐾𝐵∨α  
+	**e. if and only if is valid.𝐾𝐵 ⊨α ¬𝐾𝐵∨α**  
 1. In the discussions, we compared several logical inference methods.  
 	Let 𝐾𝐵≡{𝐴→𝐵, ¬𝐴→𝐶, 𝐵→𝐷, 𝐶→𝐷}, please circle all that are true
-	a. It is possible to prove D from KB using Backward chaining  
+	**a. It is possible to prove D from KB using Backward chaining**  
 	b. It is impossible to prove D from KB using Forward chaining  
-	c. It is possible to prove D from KB using Resolution  
+	**c. It is possible to prove D from KB using Resolution**  
 	d. It is impossible to prove D from KB at all  
 	e. It does not make sense to prove D from KB  
 1. If C is a constant, x is a variable, and F is a function, which of these will not unify?  
-		a. x and F(x)  
+		**a. x and F(x)**  
 		b. x and C  
 		c. C and F(x)  
 		d. F(C) and F(x)  
 1. Which one of the following is not true of ground literals?  
-	a. They have only universally quantified variables as arguments.  
+	**a. They have only universally quantified variables as arguments.**  
 	b. They behave just like propositional symbols in automated reasoning.  
 	c. They might unify with literals containing only universally quantified variables.  
 	d. They may contain terms that are functions.  
 1. What is the English equivalent of “¬∃𝑥 (𝐻𝑢𝑚𝑎𝑛(𝑥) ∧ 𝑃𝑒𝑟𝑓𝑒𝑐𝑡(𝑥))”?  
 	a. Not every human is perfect.  
-	b. There is no Perfect human.  
+	**b. There is no Perfect human.**  
 	c. Being a human, implies not being perfect.  
 	d. Some humans are perfect.
