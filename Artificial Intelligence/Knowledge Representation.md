@@ -1,8 +1,3 @@
-### Logical Entailment
-KB :  a set of sentences
-a : arbitrary sentence
-KB *entails* a - written as KB|=a - iff every model of KB is a model of a
-
 ### Logical Equivalence
 Two sentences a and b are logically equivalent writen as a triple = b -- iff  they have the same models
  - α ≡ β iff α |= β and β |= α

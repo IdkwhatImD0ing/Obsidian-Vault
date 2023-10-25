@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7aeeb5863d59d197",
+        "id": "5e16b39325fa8c78",
         "type": "tabs",
         "children": [
           {
-            "id": "3d110aa8dddbb296",
+            "id": "0308c64f006dc303",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5e0e91aa21551b95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial Intelligence/First Order Logic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md"
+                "file": "Artificial Intelligence/First Order Logic.md"
               }
             }
           }
@@ -154,11 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d110aa8dddbb296",
+  "active": "5e0e91aa21551b95",
   "lastOpenFiles": [
-    "Artificial Intelligence/First Order Logic.md",
     "Artificial Intelligence/Knowledge Representation.md",
+    "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/Constraint Satisfication Problems.md",
+    "Artificial Intelligence/Bayesian Inference.md",
     "Artificial Intelligence/First Order Logic Topics.md",
+    "Knowledge.md",
+    "Logical Equivalence.md",
+    "Artificial Intelligence/MDP and Reinforcement Learning.md",
+    "Logical Entailment.md",
     "Machine Learning/Transformers.md",
     "Machine Learning/Recurrent Neural Network.md",
     "Machine Learning/Computer Vision.md",
@@ -167,13 +186,10 @@
     "Machine Learning/Overfitting in Models.md",
     "Machine Learning/Classification.md",
     "Machine Learning/Linear Regression.md",
-    "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Machine Learning",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",
-    "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Artificial Intelligence/Problem, Search, and Heuristics.md",
     "Artificial Intelligence/Agents.md",
-    "Artificial Intelligence/Bayesian Inference.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence",
@@ -182,9 +198,6 @@
     "CSE140/Knowledge Representation.md",
     "CSE140/Knowledge-Based Agent.md",
     "CSE140/Constraint Satisfication Problems.md",
-    "CSE140/Adversarial Search.md",
-    "CSE140/Adversarial Learning.md",
-    "CSE140/Heuristics.md",
-    "Ava - Getting Started.md"
+    "CSE140/Adversarial Search.md"
   ]
 }
