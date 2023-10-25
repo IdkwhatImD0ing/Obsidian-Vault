@@ -136,3 +136,5 @@ Given the following sentences:
 Translate the above sentences into First Order Logic using the following predicates: E(x) which means x is an E examinee R(x, y, z) which means examinee x gets a y in part z, and P(x) which means x passes the exam
 
 
+
+
