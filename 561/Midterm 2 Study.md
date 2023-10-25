@@ -81,6 +81,8 @@
 
 ## First Order Logic
 
+### Problem 1
+
  - The first–order language of (directed) graphs is L = {r}, where r is a binary relation symbol.
  - The only terms are the variables ‘x’, ‘y’, ‘z’ etc.
  - Atomic formulas look like (rxy).Universal and Existential quantifiers work the same way as they normally do.
@@ -99,5 +101,40 @@ an edge going from node x to node y in G.
 5. Write T for True, F for False: 
 	1. “Every vertex has exactly one edge entering it” can be written as:
 		1. ∀x∃y rxy ∧ ∀w∀v∀u (( rvw ∧ ruw ) ⇒ (v = u))
-		2. 
+		2. False
+
+### Problem 2
+Consider a domain with the following relation.
+ - ISPRIME(n) : n is a prime number
+ - HasSS#(x,n) : x has the social security number n
+ - Person(x): x is a person
+
+ - Write T for True, F for False: 
+	 - “Every even natural number n has 2 as it’s factor” can be written as: 
+		 - ∀n. ( (n > 2 ∧ ∃k. n = 2k)
+	 - False, expresses even, but doesnt state two is a factor
+ - Goldbach’s Conjecture says that “Every even natural number n > 2 can be expressed as the sum of two primes."
+	 - Write Goldbach’s Conjecture in First Order Logic. 
+	 - ∀n(n>2∧∃k(n=2k)⇒∃p∃q(ISPRIME(p)∧ISPRIME(q)∧n=p+q))
+ - Write T for True, F for False: 
+	 - “No two people have the same social security number.” can be written as:
+		 - ¬∃x,y,n Person(x) ∧ Person(y) ∧ HasSS#(x,n)∧ HasSS#(y,n) .
+	 - True
+
+## Inference
+
+### Problem 1
+
+1. We designed an exam, which has three parts (P1, P2 and P3) for two types of
+examinees (E and non-E). For each part, there are three ranks (A, B and C). The result for the
+entire exam is either pass or not pass.
+Given the following sentences:
+1. Any E examinee who gets an A in both part P1 and P2 will pass the exam.
+2. Any non-E examinee who gets a C in part P3 or P2 won’t pass the exam.
+3. Some non-E examinees who get a C or B in part P2 and pass the exam.
+4. Alex is an E examinee getting an A in part P1 and Steve is a non-E examinee getting an A in part P3.
+Translate the above sentences into First Order Logic using the following predicates: E(x) which
+means x is an E examinee R(x, y, z) which means examinee x gets a y in part z, and P(x) which
+means x passes the exam
+
 
