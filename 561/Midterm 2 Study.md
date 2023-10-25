@@ -17,7 +17,22 @@
 	 - True
 	 - Valid means it must hold under all circumstances
 	 - Eg P and Not P
- - “From Hates(Alice, Exam) we can infer ∃x Hates(x, Exam)” applies the ExistentialElimination (EE) rule in First-order Logic.
-	 - False, 
+ - “From Hates(Alice, Exam) we can infer ∃x Hates(x, Exam)” applies the Existential Elimination (EE) rule in First-order Logic.
+	 - False
+	 - This is actually Existential Introduction, as it introduces a new existential term
+ - Logical agents apply entailment to a knowledge base to derive new information and make decisions.
+	 - True
+	 - Logical agents use reasoning to make decisions, they do that by using inference and reasoning can be entailed. Expanding their kb with facts that are logically entailed but not stated.
+ - Every propositional formula can be converted into an equivalent formula that is in Conjunctive Normal Form.
+	 - True
+	 - CNF is a way of writing propositional formulas in And and Ors
+ - After applying Skolemization to a sentence, the resulting formula is satisfiable if and only if the original sentence is satisfiable
+	 - True
+	 - Skolemization is a technique to remove existential quantifiers
+	 - It preserves satisfiability
+	 - Not logically equivalent though
+ - Horn clause is a disjunction of literals of which at least one is positive.
+	 - False
+	 - Horn Clause contains at most one positive
 
 
