@@ -19,7 +19,7 @@ a : arbitrary sentence
 KB *entails* a - written as KB |= a - iff every model of KB is a model of a, in other words, a is true in all worlds where kb is true
 
 
-### Inference
+### [[Knowledge Representation#Inference|Inference (Click for more detailed explanation)]]
 Inference is a process in which you draw conclusions based on the information or knowledge you have. It's like solving a puzzle or a mystery based on the clues you've been given.
 
  - "KB ⊢i α": A sentence (α) can be derived from a knowledge base (KB) using an inference procedure (i).

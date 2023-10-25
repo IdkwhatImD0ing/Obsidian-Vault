@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/First Order Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md"
+                "file": "Artificial Intelligence/First Order Logic.md"
               }
             }
           }
@@ -167,16 +166,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e0e91aa21551b95",
+  "active": "0308c64f006dc303",
   "lastOpenFiles": [
     "Artificial Intelligence/First Order Logic Topics.md",
-    "Artificial Intelligence/First Order Logic.md",
+    "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Artificial Intelligence/Knowledge Representation.md",
+    "Artificial Intelligence/First Order Logic.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Artificial Intelligence/Bayesian Inference.md",
     "Knowledge.md",
     "Logical Equivalence.md",
-    "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Logical Entailment.md",
     "Machine Learning/Transformers.md",
     "Machine Learning/Recurrent Neural Network.md",
