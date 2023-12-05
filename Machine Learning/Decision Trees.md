@@ -46,6 +46,6 @@ Some possibilities"
 - Information conveyed by a message is -log(p) = log(n)
 	- eg with 16 messages then we n eed 4 bits to identify send each message
 - Givebn a probability distribution P for n messages, the information conveyed by the distribution (entropy of P) is
-- The information conveyed by the distribution (entropy of P) is H(P) = -Σi P(i) * log2(P(i)) bits
+- The information conveyed by the distribution (entropy of P) is I(P) = - \[p * log p1 + p2\*log p2 + ... pn * log pn*]
 
 

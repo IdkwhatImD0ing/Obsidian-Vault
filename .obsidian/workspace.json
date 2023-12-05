@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Decision Trees.md",
+                "file": "Machine Learning/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Decision Trees.md",
+                "file": "Machine Learning/Basics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Decision Trees.md",
+                "file": "Machine Learning/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Decision Trees.md"
+                "file": "Machine Learning/Basics.md"
               }
             }
           }
@@ -238,8 +238,8 @@
   "active": "887b1a647498e22a",
   "lastOpenFiles": [
     "Machine Learning/Support Vector Machine.md",
-    "Decision Trees.md",
     "Machine Learning/Basics.md",
+    "Machine Learning/Decision Trees.md",
     "Machine Learning/Neural Networks.md",
     "Machine Learning/Optimization.md",
     "Machine Learning/Transformers.md",
