@@ -4,40 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "5e16b39325fa8c78",
+        "id": "ad68d7d899071e40",
         "type": "tabs",
         "children": [
           {
-            "id": "0308c64f006dc303",
+            "id": "3b852e98d633a351",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial Intelligence/First Order Logic.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "4465ca28c0867b2f",
+            "id": "bf887e195bde8bc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "561/Midterm 2 Study.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e0e91aa21551b95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial Intelligence/Knowledge Representation.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "10dd7bb196dfaa68",
@@ -119,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "561/Midterm 2 Study.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "561/Midterm 2 Study.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "561/Midterm 2 Study.md"
+                "file": "Artificial Intelligence/Probability.md"
               }
             }
           }
@@ -180,8 +163,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4465ca28c0867b2f",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
+    "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/First Order Logic.md",
     "561/Midterm 2 Study.md",
     "Artificial Intelligence/Knowledge Representation.md",
@@ -213,7 +197,6 @@
     "Artificial Intelligence",
     "CSE180/Relational Databases.md",
     "CSE140/MDP and Reinforcement Learning.md",
-    "CSE140/Knowledge Representation.md",
-    "CSE140/Knowledge-Based Agent.md"
+    "CSE140/Knowledge Representation.md"
   ]
 }
