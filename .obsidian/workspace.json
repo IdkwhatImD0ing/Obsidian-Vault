@@ -38,9 +38,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0c6ac5c98a17ccf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Temporal Models.md",
+                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Temporal Models.md",
+                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Temporal Models.md"
+                "file": "Artificial Intelligence/Bayesian Inference and Networks.md"
               }
             }
           }
@@ -175,10 +187,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "0c6ac5c98a17ccf5",
   "lastOpenFiles": [
-    "Artificial Intelligence/Probability.md",
+    "Artificial Intelligence/Bayesian Networks.md",
+    "Artificial Intelligence/Bayesian Inference and Networks.md",
     "Artificial Intelligence/Temporal Models.md",
+    "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/First Order Logic.md",
     "561/Midterm 2 Study.md",
     "Artificial Intelligence/Knowledge Representation.md",
@@ -189,7 +203,6 @@
     "Pasted image 20231024233953.png",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
-    "Artificial Intelligence/Bayesian Inference.md",
     "Knowledge.md",
     "Logical Equivalence.md",
     "Logical Entailment.md",
@@ -208,7 +221,6 @@
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence",
-    "CSE180/Relational Databases.md",
-    "CSE140/MDP and Reinforcement Learning.md"
+    "CSE180/Relational Databases.md"
   ]
 }
