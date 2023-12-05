@@ -9,7 +9,11 @@
 Set Omega - Sample Space
 	Eg 6 possible rolls of dice
 
-Probability space 
+Probability space is defined as a triple (Ω, F, P), where Ω is the sample space, F is the set of events, and P is the probability measure defined on F.
+
+An event A is any subset of the sample space Ω, and the probability of event A, denoted P(A), is the measure of the set A according to the probability measure P.
+
+
 
 
 ## Two Key Concepts
