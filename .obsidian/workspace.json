@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Neural Networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Neural Networks.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Optimization.md",
+                "file": "Machine Learning/Neural Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Optimization.md"
+                "file": "Machine Learning/Neural Networks.md"
               }
             }
           }
@@ -237,12 +237,12 @@
   },
   "active": "887b1a647498e22a",
   "lastOpenFiles": [
+    "Machine Learning/Optimization.md",
     "Machine Learning/Overfitting in Models.md",
     "Machine Learning/Linear Regression.md",
     "Machine Learning/Decision Trees.md",
     "Machine Learning/Computer Vision.md",
     "Machine Learning/Classification.md",
-    "Machine Learning/Optimization.md",
     "Machine Learning/Neural Networks.md",
     "Machine Learning/Transformers.md",
     "Machine Learning/Basics.md",

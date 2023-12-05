@@ -1,6 +1,14 @@
 ## Overview
 - Linear models can fall short for complex data.
 - Non-linear mappings can be more expressive but may require more complex learning techniques.
+- Trying to mimic human brain
+	- Human brain divided into regions with some functional specialization
+	- Computation is driven by very large networks of rather slow neurons connected via synapses
+		- Much slower than current computers
+		- 10^11 neurons of > 20 types
+		- 10^14 synapses
+		- 1-10ms cycle time
+		- Signals are noisy spike trains of electrical potential
 
 ## Relation to Neural Networks
 - A linear model is akin to a one-layer neural net.
@@ -11,6 +19,7 @@
 - **Sigmoid**: \(h(a) = \frac{1}{1 + e^{-a}}\)
 - **TanH**: \(h(a) = \frac{e^a - e^{-a}}{e^a + e^{-a}}\)
 
+##
 ## Deep Neural Networks
 - Have multiple layers and a high number of parameters (\(w\)'s).
 
