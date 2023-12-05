@@ -41,11 +41,3 @@ Partial Observable Markov Decision Processes (POMDPs) are used to model decision
 - **Belief State**: In POMDPs, the exact state is not known, so a belief state (probability distribution over possible states) is maintained.
 - **Value Iteration**: An important method in POMDPs for computing the optimal policy.
 
-
-## Marklov Chains
-No observations, no explicit actions, transit randomly
-
-
-## Hidden Markov MOdel
-No excplit actions, state transit randomly
-
