@@ -19,6 +19,13 @@
 	- Variance
 		- How widely is the distribution spread
 		- Deviation squared
+	- Distributions
+		- Fully Joint Probability Table
+			- Multiple Probability Tables joined together
+			- Possible worlds are mutually explosive
+				- Cannot have multiple worlds at once
+			- Possible worlds are exhaustive
+				- 
 - Inferences that can be made from the model
 	- Sum rule
 	- Product Rule
