@@ -14,6 +14,11 @@
 	- Mind
 		- Variables
 		- Value assignments (entailment)
+	- Deviation
+		- How spread is the distribution
+	- Variance
+		- How widely is the distribution spread
+		- Deviation squared
 - Inferences that can be made from the model
 	- Sum rule
 	- Product Rule
