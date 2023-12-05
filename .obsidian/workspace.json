@@ -74,9 +74,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8215cf437bad8cb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Support Vector Machine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "887b1a647498e22a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Decision Trees.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -150,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Basics.md",
+                "file": "Decision Trees.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Basics.md",
+                "file": "Decision Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Basics.md"
+                "file": "Decision Trees.md"
               }
             }
           }
@@ -211,10 +235,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75dee76cb754305d",
+  "active": "887b1a647498e22a",
   "lastOpenFiles": [
-    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Support Vector Machine.md",
+    "Decision Trees.md",
     "Machine Learning/Basics.md",
+    "Machine Learning/Neural Networks.md",
     "Machine Learning/Optimization.md",
     "Machine Learning/Transformers.md",
     "Machine Learning/Recurrent Neural Network.md",
@@ -241,8 +267,6 @@
     "Logical Equivalence.md",
     "Logical Entailment.md",
     "Machine Learning",
-    "Artificial Intelligence/Adversarial Search and Game Playing.md",
-    "Artificial Intelligence/Problem, Search, and Heuristics.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence"
