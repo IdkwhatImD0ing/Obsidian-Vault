@@ -2,5 +2,6 @@
   "obsidian-git",
   "obsidian-textgenerator-plugin",
   "ava",
-  "khoj"
+  "khoj",
+  "companion"
 ]

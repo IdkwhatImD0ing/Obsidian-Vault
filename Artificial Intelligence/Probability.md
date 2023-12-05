@@ -8,7 +8,8 @@
 
 Set Omega - Sample Space
 	Eg 6 possible rolls of dice
-	w exists in Omega is a esample point/possible world/atomic event
+
+Probability space 
 
 
 ## Two Key Concepts
