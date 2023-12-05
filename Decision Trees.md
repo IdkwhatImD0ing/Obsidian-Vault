@@ -28,4 +28,24 @@ Entropy = iP(Yes)ln[P(yes)]-P(no)ln[P(no)]
 Number of boolean funciton
 NUmber of distinct truth tables with 2^n rules = 2^2^n
 
-# ID3
+# ID3 ALgorithm
+
+Choose which attribute to split a given set of examples
+Some possibilities"
+- Random
+- Least Values
+- Most Values
+- Max Gain
+	- Largest expected information, smalest expected size of subtree
+
+## Information Theory
+
+- INformation is measured in bits
+- Infomration is conveyed by message depends on its proibability
+- With n equally probable possible messages, the probability of each is 1/p
+- Information conveyed by a message is -log(p) = log(n)
+	- eg with 16 messages then we n eed 4 bits to identify send each message
+- Givebn a probability distribution P for n messages, the information conveyed by the distribution (entropy of P) is
+- The information conveyed by the distribution (entropy of P) is H(P) = -Σi P(i) * log2(P(i)) bits
+
+
