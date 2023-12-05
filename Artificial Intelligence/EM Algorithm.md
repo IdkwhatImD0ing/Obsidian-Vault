@@ -24,7 +24,7 @@ EM is not a singular algorithm but a framework that can be applied in multiple c
 #### Example
 
 - **Context**: Coin flip bias estimation.
-- **Data**: Sequence of coin flips \( X = [1,0,0,0,0,1,0,0,1] \) where 1 represents heads and 0 represents tails.
+- **Data**: Sequence of coin flips \( X = \[1,0,0,0,0,1,0,0,1] \) where 1 represents heads and 0 represents tails.
 - **Task**: Find the bias of the coin.
 - **Assumption**: Coin flips are independent events.
 - **Calculation**: 
