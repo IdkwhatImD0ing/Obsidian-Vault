@@ -57,14 +57,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/EM Algorithm.md",
+                "file": "Machine Learning/Neural Networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75dee76cb754305d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Basics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -93,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "support vec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/EM Algorithm.md",
+                "file": "Machine Learning/Basics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/EM Algorithm.md",
+                "file": "Machine Learning/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/EM Algorithm.md"
+                "file": "Machine Learning/Basics.md"
               }
             }
           }
@@ -199,10 +211,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8b26bcb71aabdb7",
+  "active": "75dee76cb754305d",
   "lastOpenFiles": [
-    "Artificial Intelligence/Probability.md",
+    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Basics.md",
+    "Machine Learning/Optimization.md",
+    "Machine Learning/Transformers.md",
+    "Machine Learning/Recurrent Neural Network.md",
+    "Machine Learning/Overfitting in Models.md",
+    "Machine Learning/Linear Regression.md",
+    "Machine Learning/Computer Vision.md",
+    "Machine Learning/Classification.md",
     "Artificial Intelligence/EM Algorithm.md",
+    "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/Bayesian Inference and Networks.md",
     "Artificial Intelligence/Bayesian Networks.md",
     "Artificial Intelligence/Temporal Models.md",
@@ -219,18 +240,9 @@
     "Knowledge.md",
     "Logical Equivalence.md",
     "Logical Entailment.md",
-    "Machine Learning/Transformers.md",
-    "Machine Learning/Recurrent Neural Network.md",
-    "Machine Learning/Computer Vision.md",
-    "Machine Learning/Neural Networks.md",
-    "Machine Learning/Optimization.md",
-    "Machine Learning/Overfitting in Models.md",
-    "Machine Learning/Classification.md",
-    "Machine Learning/Linear Regression.md",
     "Machine Learning",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",
     "Artificial Intelligence/Problem, Search, and Heuristics.md",
-    "Artificial Intelligence/Agents.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
     "Artificial Intelligence"
