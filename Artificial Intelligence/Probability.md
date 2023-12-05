@@ -28,13 +28,18 @@
 				- All of the probabilities add to 1
 - Inferences that can be made from the model
 	- Sum rule
-		- P(A|B) + P(~ A) = 1, where ~A represents the negation of A. This rule states that the probability of event A occurring plus the probability of event A not occurring equals 1.
+		- P(A|B) + P(~A|B) = 1, where ~A represents the negation of A. This rule states that the probability of event A occurring plus the probability of event A not occurring equals 1.
 	- Product Rule
-		- P (A and B) = P(A|B) * P(B), where P(A and B) represents the probability of both events A and B occurring.
+		- P (A and B) = P(A|B) * P(B) = P(B|A) * P(A), where P(A and B) represents the probability of both events A and B occurring.
 		- P (A and B | C) = P(A|C) * P(B|AC) = P(B|C) P(A|BC)
-	- Conditional
+	- Conditional Probability
+		- Bayes Theorem
+		- P (A | B) = P(A and B) / P(B)
 	- Marginalization
 	- Normalization
+		- Make the distribution sum to 1
+		- Ensure that all the probabilities for a specific variable add up to 1 by adjusting the probabilities of each possible outcome. 
+		- This is important for accurately representing the likelihood of each outcome within the distribution model.
 ### Formal Definition of  Probability Distribution MOdel
 
 Set Omega - Sample Space
