@@ -10,6 +10,13 @@
 		- 1-10ms cycle time
 		- Signals are noisy spike trains of electrical potential
 
+## Neurons
+- Many inputs
+- Each one has a weight
+	- Learning occurs by adjusting the weights
+- All added together
+	- If over activation, output 1
+	- Else output 0
 ## Relation to Neural Networks
 - A linear model is akin to a one-layer neural net.
 - Activation functions introduce non-linearity.
@@ -18,8 +25,6 @@
 - **ReLU**: \(h(a) = \max(0, a)\)
 - **Sigmoid**: \(h(a) = \frac{1}{1 + e^{-a}}\)
 - **TanH**: \(h(a) = \frac{e^a - e^{-a}}{e^a + e^{-a}}\)
-
-##
 ## Deep Neural Networks
 - Have multiple layers and a high number of parameters (\(w\)'s).
 
