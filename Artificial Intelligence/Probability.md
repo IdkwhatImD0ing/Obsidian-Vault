@@ -4,6 +4,13 @@
 - P(X^Y): Probability X and Y
 - P(X | Y): Probability X if Y
 
+### Formal Definition
+
+Set Omega - Sample Space
+	Eg 6 possible rolls of dice
+	w exists in Omega is a esample point/possible world/atomic event
+
+
 ## Two Key Concepts
 
 - Probability Distribution Model
@@ -25,7 +32,7 @@
 			- Possible worlds are mutually explosive
 				- Cannot have multiple worlds at once
 			- Possible worlds are exhaustive
-				- 
+				- All of the probabilities add to 1
 - Inferences that can be made from the model
 	- Sum rule
 	- Product Rule
