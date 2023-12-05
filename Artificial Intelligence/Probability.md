@@ -4,18 +4,6 @@
 - P(X^Y): Probability X and Y
 - P(X | Y): Probability X if Y
 
-### Formal Definition
-
-Set Omega - Sample Space
-	Eg 6 possible rolls of dice
-
-Probability space is defined as a triple (Ω, F, P), where Ω is the sample space, F is the set of events, and P is the probability measure defined on F.
-
-An event A is any subset of the sample space Ω, and the probability of event A, denoted P(A), is the measure of the set A according to the probability measure P.
-
-
-
-
 ## Two Key Concepts
 
 - Probability Distribution Model
@@ -40,7 +28,20 @@ An event A is any subset of the sample space Ω, and the probability of event A,
 				- All of the probabilities add to 1
 - Inferences that can be made from the model
 	- Sum rule
+		- P(A|B) + P(~ A) = 1, where ~A represents the negation of A. This rule states that the probability of event A occurring plus the probability of event A not occurring equals 1.
 	- Product Rule
+		- P (A and B) = P(A|B) * P(B), where P(A and B) represents the probability of both events A and B occurring.
+		- P (A and B | C) = P(A|C) * P(B|AC) = P(B|C) P(A|BC)
 	- Conditional
 	- Marginalization
 	- Normalization
+### Formal Definition of  Probability Distribution MOdel
+
+Set Omega - Sample Space
+	Eg 6 possible rolls of dice
+
+Probability space is defined as a triple (Ω, F, P), where Ω is the sample space, F is the set of events, and P is the probability measure defined on F.
+
+An event A is any subset of the sample space Ω, and the probability of event A, denoted P(A), is the measure of the set A according to the probability measure P.
+
+
