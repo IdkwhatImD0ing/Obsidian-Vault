@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Bayesian Inference and Networks.md",
+                "file": "Artificial Intelligence/Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Bayesian Inference and Networks.md"
+                "file": "Artificial Intelligence/Probability.md"
               }
             }
           }
@@ -189,8 +189,8 @@
   },
   "active": "0c6ac5c98a17ccf5",
   "lastOpenFiles": [
-    "Artificial Intelligence/Bayesian Networks.md",
     "Artificial Intelligence/Bayesian Inference and Networks.md",
+    "Artificial Intelligence/Bayesian Networks.md",
     "Artificial Intelligence/Temporal Models.md",
     "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/First Order Logic.md",
