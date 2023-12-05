@@ -1,7 +1,7 @@
 ## Probability Review
 
  - **Probability distributions**:
-	 - are tables that show the likelihood of different outcomes for unobserved random variables. 
+	 - Are tables that show the likelihood of different outcomes for unobserved random variables. 
 	 - For example, a distribution for weather temperature (T) might have "warm" with a probability (P) of 0.5 and "cold" with a probability of 0.5. 
 	 - Another distribution for weather type (W) might have "sun" with a probability of 0.6, "rain" with a probability of 0.1, and "fog" with a probability of 0.3.
  - **Joint distributions:**
