@@ -50,9 +50,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e8b26bcb71aabdb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial Intelligence/EM Algorithm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -81,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "skolem",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Intelligence/Probability.md",
+                "file": "Artificial Intelligence/EM Algorithm.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Intelligence/Probability.md",
+                "file": "Artificial Intelligence/EM Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Intelligence/Probability.md"
+                "file": "Artificial Intelligence/EM Algorithm.md"
               }
             }
           }
@@ -187,12 +199,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c6ac5c98a17ccf5",
+  "active": "e8b26bcb71aabdb7",
   "lastOpenFiles": [
+    "Artificial Intelligence/Probability.md",
+    "Artificial Intelligence/EM Algorithm.md",
     "Artificial Intelligence/Bayesian Inference and Networks.md",
     "Artificial Intelligence/Bayesian Networks.md",
     "Artificial Intelligence/Temporal Models.md",
-    "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/First Order Logic.md",
     "561/Midterm 2 Study.md",
     "Artificial Intelligence/Knowledge Representation.md",
@@ -220,7 +233,6 @@
     "Artificial Intelligence/Agents.md",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
-    "Artificial Intelligence",
-    "CSE180/Relational Databases.md"
+    "Artificial Intelligence"
   ]
 }
