@@ -14,4 +14,18 @@ Nodes are questions.
 - etc
 - 
 
-### In
+### Inductive Learning of Decision Tree
+
+Simplest: Construct a decision tree with one leaf for every example
+Memory based learning, not good generalizaton
+
+Advanced. split on each variable so that the purity of each split increases, eithe ronly yes or only no
+
+Puyrety measure with entropy
+Entropy = iP(Yes)ln[P(yes)]-P(no)ln[P(no)]
+
+### How many distinct decision trees with n boolean attributes?
+Number of boolean funciton
+NUmber of distinct truth tables with 2^n rules = 2^2^n
+
+# ID3
