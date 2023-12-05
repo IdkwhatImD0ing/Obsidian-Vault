@@ -36,6 +36,10 @@
 		- Bayes Theorem
 		- P (A | B) = P(A and B) / P(B)
 	- Marginalization
+		- Introducing a variable as an extra condition
+		- To plug in the numbers we know
+		- P(X|Y) = Summation of P(X|Y, Z = z) * P(Z = z|Y)
+
 	- Normalization
 		- Make the distribution sum to 1
 		- Ensure that all the probabilities for a specific variable add up to 1 by adjusting the probabilities of each possible outcome. 
