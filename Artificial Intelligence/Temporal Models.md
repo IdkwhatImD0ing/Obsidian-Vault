@@ -41,3 +41,40 @@ Partial Observable Markov Decision Processes (POMDPs) are used to model decision
 - **Belief State**: In POMDPs, the exact state is not known, so a belief state (probability distribution over possible states) is maintained.
 - **Value Iteration**: An important method in POMDPs for computing the optimal policy.
 
+Your additional notes on temporal models are a good start. I'll expand on each model to provide a more comprehensive understanding.
+
+# Other Temporal Models
+### Markov Chains
+- **Definition**: A Markov Chain is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
+- **Characteristics**: 
+  - Discrete state space.
+  - Time-homogeneous transitions, meaning the transition probabilities are independent of time.
+- **Application**: Used in various fields like finance, economics, and natural language processing for modeling random systems that change states over time.
+
+### Hidden Markov Model (HMM)
+- **Definition**: An HMM is a statistical model where the system being modeled is assumed to follow a Markov process with hidden states.
+- **Characteristics**: 
+  - Set of hidden states, observed data, and a model of the state transitions, observation likelihood, and initial state distribution.
+  - Useful in temporal pattern recognition such as speech, handwriting, gesture recognition, part-of-speech tagging, and bioinformatics.
+- **Differences from Markov Chains**: In HMMs, the state is not directly visible, but the output, dependent on the state, is visible.
+
+### Dynamic Bayesian Networks (DBNs)
+- **Definition**: DBNs are a general model for stochastic processes. They extend Bayesian networks by modeling temporal sequences.
+- **Characteristics**: 
+  - Composed of a sequence of Bayesian networks, one for each time slice.
+  - Can represent both discrete and continuous variables.
+- **Application**: Used in robotics, speech recognition, biology, and others for modeling time-varying phenomena.
+
+### Continuous State Models
+- **Definition**: These models deal with systems where the state space is continuous.
+- **Characteristics**: 
+  - State transitions may involve probabilistic functions or differential equations.
+  - Often used in conjunction with techniques like Kalman filters.
+- **Application**: Relevant in fields like robotics, physics, and economics where the systems have continuous dynamics.
+
+### Partially Observable Markov Decision Processes (POMDPs)
+- **Definition**: POMDPs are an extension of Markov decision processes (MDPs) to include observation and information gathering.
+- **Characteristics**: 
+  - Includes a set of states, a set of actions, a set of observations, transition probabilities, observation probabilities, and reward functions.
+  - Models decision-making in uncertain, dynamic environments.
+- **Applications**: Useful in areas like robotics, automated control, and economics.
