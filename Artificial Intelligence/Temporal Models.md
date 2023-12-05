@@ -6,5 +6,12 @@ We can infer
 - the probability of every state sequence that I went through (explanation)
 - the most likely sequence of states I went through (Viterbi Algorithm)
 
-## Forward Procedure
+## Where am I now?
+### Forward Procedure
 Main Idea: do not consider all possible state sequences, but every step in the experience and compute P(O|AMC) incrementally on time t:
+
+### Backward Procedure
+Similar to forward
+But starting from the end and walking backwards
+
+Finally, once you get alpha for all states at T, the state most likely is the state i that alpha(i) at t is highest
