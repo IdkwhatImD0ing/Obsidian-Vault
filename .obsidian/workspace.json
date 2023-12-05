@@ -93,7 +93,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Basics.md",
+                "file": "Machine Learning/Optimization.md",
                 "mode": "source",
                 "source": false
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Basics.md",
+                "file": "Machine Learning/Optimization.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Basics.md",
+                "file": "Machine Learning/Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Basics.md"
+                "file": "Machine Learning/Optimization.md"
               }
             }
           }
@@ -237,17 +237,17 @@
   },
   "active": "887b1a647498e22a",
   "lastOpenFiles": [
-    "Machine Learning/Support Vector Machine.md",
-    "Machine Learning/Basics.md",
-    "Machine Learning/Decision Trees.md",
-    "Machine Learning/Neural Networks.md",
-    "Machine Learning/Optimization.md",
-    "Machine Learning/Transformers.md",
-    "Machine Learning/Recurrent Neural Network.md",
     "Machine Learning/Overfitting in Models.md",
     "Machine Learning/Linear Regression.md",
+    "Machine Learning/Decision Trees.md",
     "Machine Learning/Computer Vision.md",
     "Machine Learning/Classification.md",
+    "Machine Learning/Optimization.md",
+    "Machine Learning/Neural Networks.md",
+    "Machine Learning/Transformers.md",
+    "Machine Learning/Basics.md",
+    "Machine Learning/Support Vector Machine.md",
+    "Machine Learning/Recurrent Neural Network.md",
     "Artificial Intelligence/EM Algorithm.md",
     "Artificial Intelligence/Probability.md",
     "Artificial Intelligence/Bayesian Inference and Networks.md",
