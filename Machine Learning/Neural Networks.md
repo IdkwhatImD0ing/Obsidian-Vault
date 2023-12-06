@@ -32,7 +32,9 @@
 1. **Initialize Weights**: Start with random values.
 2. **Loop**:
   - Randomly pick a data point.
-  - Forward propagate to compute \(a\) and \(o\).
+  - Forward propagate to compute \(a\) and \(o\)
+	  - a stands for activations
+	  - o stands for output of the network.
   - Backward propagate to compute gradients.
   - Update weights using gradients.
 
