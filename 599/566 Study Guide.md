@@ -1,3 +1,47 @@
+### Pre Knowledge:
+
+### Linear Models
+
+Linear models are foundational to understanding machine learning. They make predictions by assuming a linear relationship between the input features and the output.
+
+#### Linear Regression
+
+- **Goal**: Predict a continuous output variable.
+- **Model**:$$ ( y = \mathbf{w}^\top \mathbf{x} + b )$$, where ( y ) is the predicted value,$$ ( \mathbf{w} )$$ is the weight vector, $$( \mathbf{x} )$$ is the feature vector, and ( b ) is the bias.
+- **Loss Function**: Mean Squared Error (MSE), which measures the average of the squares of the errors between the actual and predicted values.
+
+#### Logistic Regression
+
+- **Goal**: Binary classification.
+- **Model**: Outputs probabilities of the two classes using the logistic function$$ ( \sigma(z) = \frac{1}{1 + e^{-z}} ).$$
+- **Loss Function**: Cross-entropy loss, which measures the performance of a classification model whose output is a probability value between 0 and 1.
+
+---
+
+### ML as Function Approximation
+
+Machine learning can be viewed as a function approximation problem, where the goal is to find a function ( f ) that best maps input data $$( \mathbf{x} )$$ to an output ( y ).
+
+#### Function Approximation
+
+- **Concept**: All ML models, from linear regression to deep neural networks, are essentially approximating the underlying true function that describes the data.
+- **Importance**: Understanding this helps in selecting the right complexity for the model and avoiding overfitting or underfitting.
+
+---
+
+### Training Dynamics
+
+The process of training neural networks involves navigating a high-dimensional loss landscape to find parameters that minimize the loss function.
+
+#### Overfitting and Underfitting
+
+- **Overfitting**: When a model learns the training data too well, including noise and outliers, and performs poorly on unseen data.
+- **Underfitting**: When a model is too simple to capture the underlying pattern in the data and thus performs poorly even on the training data.
+
+#### Regularization Techniques
+
+- Techniques like L1 and L2 regularization, dropout, and early stopping are used to prevent overfitting by adding constraints or penalties to the learning process
+
 ### 1. Classical Machine Learning
 
 Classical machine learning encompasses algorithms that allow computers to learn from and make predictions or decisions based on data. Here are the key topics within classical ML:
