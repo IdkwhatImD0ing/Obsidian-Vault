@@ -194,3 +194,25 @@ GNNs have found utility in a diverse array of applications, such as:
 - **Recommender Systems**: Enhancing recommendations by modeling the complex relationships between users and items as a graph, capturing the shared interests and interactions.
 - **Network Traffic Prediction**: Understanding and forecasting traffic patterns by representing the network infrastructure as a graph, with routers as nodes and connections as edges.
 
+---
+
+### Graph Neural Network (GNN)
+
+The term "Graph Neural Network" (GNN) is a broad category that encompasses all neural network models that operate on graph data. It is not a specific model but rather a class of models designed to handle the complexity of graph structures. GNNs leverage the connections between nodes (entities) and use the graph topology to inform the learning process. They are characterized by the use of message passing or neighborhood aggregation to update node representations, as described earlier.
+
+### Graph Convolutional Network (GCN)
+
+Graph Convolutional Network (GCN), on the other hand, is a specific type of GNN. It is one of the most popular and widely used GNN architectures. The "convolutional" aspect in GCNs is inspired by the success of convolutional neural networks (CNNs) in processing grid-structured data like images. However, unlike CNNs, GCNs deal with data that is not regularly structured, which means they must handle graphs where nodes can have varying numbers of neighbors.
+
+The key idea behind GCNs is to generalize the convolution operation from traditional CNNs to work on graph data. In a GCN, the convolution operation is defined as an aggregation (or filtering) of a node's features and its neighbors' features. This is typically achieved through a weighted sum followed by a non-linear activation function. The weights are shared across all nodes in the graph, analogous to how filter weights are shared across different parts of an image in CNNs.
+
+#### Key Differences
+
+- **Scope**: GNN is a generic term for any neural network model that processes graphs, while GCN is a specific instance or type of GNN that uses a convolution-like operation.
+    
+- **Convolution Operation**: GCNs specifically implement a convolution operation that aggregates neighbor information in a manner similar to how CNNs aggregate pixel information in local neighborhoods. GNNs, in general, may use various other methods for aggregation or message passing that do not necessarily resemble convolution.
+    
+- **Architectural Variations**: There are various other types of GNNs, such as Graph Attention Networks (GATs), which use attention mechanisms to weigh neighbor contributions, or GraphSAGE, which samples a fixed number of neighbors for scalability. GCNs represent just one architectural approach within this broader family.
+    
+
+In summary, while a GCN is a specific type of GNN that applies a convolutional approach to graph data, GNN is the umbrella term for all neural network models designed for graph-structured data. GCNs have gained popularity due to their simplicity and effectiveness in various tasks, but the field of GNNs is diverse and continually evolving with new architectures and methods.
