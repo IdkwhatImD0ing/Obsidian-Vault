@@ -58,3 +58,29 @@ Neural networks are computational models inspired by the human brain, capable of
   - **Input Layer**: Receives the input features.
   - **Hidden Layers**: Each neuron in these layers computes a weighted sum of its inputs, adds a bias, and applies an activation function. The number of hidden layers and the number of neurons in each layer define the architecture of the network.
   - **Output Layer**: Produces the final prediction of the neural network. For classification tasks, the output layer often uses a softmax function to generate probabilities for each class.
+
+---
+
+### 1. Neural Network Basics
+
+#### Backpropagation
+
+- **Backpropagation** is the cornerstone of neural network training. It is a method used for calculating the gradient of the loss function with respect to each weight in the network, by applying the chain rule of calculus. This process allows the model to adjust its weights and biases to minimize the loss function.
+  - **Process**: After forward propagation (where inputs are passed through the network to get an output), the loss (error) is computed. During backpropagation, this error is passed backward through the network, providing the feedback necessary for adjusting the weights and biases.
+  - **Learning Rate**: The magnitude of weight updates during backpropagation is determined by the learning rate. A rate too high can lead to unstable training; too low, and training may be too slow or stall.
+
+#### Vanishing Gradient Problem
+
+- The **vanishing gradient problem** occurs when gradients of the loss function become too small, effectively stopping the network from learning. This issue is particularly prevalent in deep networks with many layers.
+  - **Cause**: Primarily due to the choice of activation functions like the sigmoid or tanh, where gradients can become very small, thus diminishing the gradients during backpropagation.
+  - **Solutions**: Use of ReLU (Rectified Linear Unit) activation function, careful initialization of weights, and architectures designed to mitigate this problem, such as LSTM networks for sequence data.
+
+### 2. Different Types of Neural Networks
+
+#### Convolutional Neural Networks (CNNs)
+
+- **CNNs** are specialized neural networks for processing data with a grid-like topology. They are particularly well-suited for image and video recognition, image classification, and also for applications in natural language processing and other areas.
+  - **Convolutional Layers**: These layers apply a convolution operation to the input, passing the result to the next layer. This allows the network to focus on local input patterns, which is particularly effective for tasks like image recognition.
+  - **Pooling Layers**: Pooling (subsampling or downscaling) reduces the dimensionality of each feature map but retains the most important information. Max pooling, for example, selects the maximum element from the region of the feature map covered by the filter.
+  - **Advantages**: CNNs automatically detect and focus on important features without needing any manual feature extraction. They are highly efficient for image and pattern recognition due to their hierarchical structure, which processes data in a way that mimics the human visual system.
+
