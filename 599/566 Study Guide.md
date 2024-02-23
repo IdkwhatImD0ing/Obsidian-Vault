@@ -75,6 +75,50 @@ Neural networks are computational models inspired by the human brain, capable of
   - **Cause**: Primarily due to the choice of activation functions like the sigmoid or tanh, where gradients can become very small, thus diminishing the gradients during backpropagation.
   - **Solutions**: Use of ReLU (Rectified Linear Unit) activation function, careful initialization of weights, and architectures designed to mitigate this problem, such as LSTM networks for sequence data.
 
+### Convolutional Neural Networks (CNNs)
+
+CNNs are designed to process data with a grid-like topology, such as images. They excel in tasks like image and video recognition, image classification, and are also useful in natural language processing.
+
+#### Convolutional Layers
+
+- **Filters (Kernels)**: Small matrices that apply effects like blurring or edge detection. In CNNs, these filters are learned, allowing the network to detect important features.
+- **Stride**: The number of pixels we skip as we slide the filter across the image. A larger stride reduces the output feature map's size, effectively downsampling the image.
+- **Padding**:
+  - **Valid Padding**: No padding is applied; the output size is smaller than the input size.
+  - **Same Padding**: Padding is added to ensure the output feature map has the same dimensions as the input, useful for deep networks.
+- **Output Size Calculation**: $$ \text{Output size} = \frac{W - F + 2P}{S} + 1 $$, where \(W\) is the input width, \(F\) is the filter size, \(P\) is padding, and \(S\) is stride.
+- **Activation Function**: Post-convolution, a non-linearity (e.g., ReLU) is introduced to help the network learn complex patterns.
+
+#### Pooling Layers
+
+- **Purpose**: Reduce the spatial dimensions (width, height) of the input volume for the next convolutional layer. It helps reduce computation and controls overfitting.
+- **Types**:
+  - **Max Pooling**: Selects the maximum element from the region of the feature map covered by the filter. It's the most common pooling method.
+  - **Average Pooling**: Calculates the average of the elements in the region of the feature map covered by the filter.
+- **Key Parameters**:
+  - **Filter Size**: Typically 2x2.
+  - **Stride**: Usually set to the same size as the filter to reduce the size of the output by 75%.
+  - **Effect**: Pooling layers reduce the number of parameters and computation in the network, and they also help achieve spatial invariance to input distortions.
+
+#### Fully Connected (FC) Layers
+
+- **Description**: Neurons in a fully connected layer have full connections to all activations in the previous layer, as seen in traditional neural networks. Their role is to combine features to classify images.
+- **Function**: After feature extraction through convolutional and pooling layers, the high-level reasoning in the neural network is done via fully connected layers. The output from the final pooling or convolutional layer is flattened and connected to a fully connected layer.
+- **Activation Function**: ReLU is commonly used, though the final FC layer often uses a softmax activation function for classification tasks.
+
+#### Softmax Layer
+
+- **Purpose**: The softmax layer is often used as the final layer in classification networks. It converts the output to a probability distribution over predicted output classes.
+- **Function**: It applies the softmax function to the input, which is computed as the exponential of the given input value divided by the sum of exponential values of all values in the input vector.
+- **Use Case**: Useful for multi-class classification problems where each class is mutually exclusive.
+
+### Example of a CNN Architecture
+
+1. **Input Image**: Assume a 28x28 grayscale image.
+2. **Convolutional Layer**: Applies several filters to detect basic features like edges and blobs.
+3. **Pooling Layer**: Reduces the spatial dimensions with max pooling.
+4. **Fully Connected Layer**: High-level reasoning, where the spatially reduced but feature-rich information from convolutional and pooling layers is flattened and fed.
+5. **Softmax Layer**: Outputs a probability distribution over the classes to classify the image.
 
 ---
 
