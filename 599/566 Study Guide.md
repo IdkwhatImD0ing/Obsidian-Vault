@@ -1,5 +1,3 @@
-### Pre Knowledge:
-
 ### Linear Models
 
 Linear models are foundational to understanding machine learning. They make predictions by assuming a linear relationship between the input features and the output.
