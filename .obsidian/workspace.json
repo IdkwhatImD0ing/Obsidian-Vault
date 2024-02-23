@@ -98,9 +98,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2916aa76a07afb6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "599/566 Study Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -174,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fun/Convolutional Neural Networks.md",
+                "file": "599/566 Study Guide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fun/Convolutional Neural Networks.md",
+                "file": "599/566 Study Guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fun/Convolutional Neural Networks.md"
+                "file": "599/566 Study Guide.md"
               }
             }
           }
@@ -235,8 +247,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "887b1a647498e22a",
+  "active": "2916aa76a07afb6f",
   "lastOpenFiles": [
+    "Fun/Convolutional Neural Networks.md",
+    "599/566 Study Guide.md",
+    "599",
     "561/Midterm 2 Study.md",
     "Machine Learning/Neural Networks.md",
     "Machine Learning/Optimization.md",
@@ -264,8 +279,6 @@
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Knowledge.md",
-    "Logical Equivalence.md",
-    "Logical Entailment.md",
     "Machine Learning",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
