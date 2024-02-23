@@ -112,13 +112,20 @@ CNNs are designed to process data with a grid-like topology, such as images. The
 - **Function**: It applies the softmax function to the input, which is computed as the exponential of the given input value divided by the sum of exponential values of all values in the input vector.
 - **Use Case**: Useful for multi-class classification problems where each class is mutually exclusive.
 
+#### Batch Normalization
+ - Batch normalization is a technique to normalize the inputs of each layer, so as to fight the internal covariate shift problem, which helps in:
+	 - Speeding Up Training: By reducing the number of training epochs required to train deep networks.
+	 - Improving Performance: By stabilizing the learning process and reducing the sensitivity to network initialization.
+	 - Functionality: It normalizes the output of a previous activation layer by subtracting the batch mean and dividing by the batch standard deviation. Furthermore, it allows each layer of a network to learn on a more stable distribution of inputs, and it also acts as a regularizer, reducing (sometimes eliminating) the need for Dropout.
+
 ### Example of a CNN Architecture
 
 1. **Input Image**: Assume a 28x28 grayscale image.
 2. **Convolutional Layer**: Applies several filters to detect basic features like edges and blobs.
 3. **Pooling Layer**: Reduces the spatial dimensions with max pooling.
-4. **Fully Connected Layer**: High-level reasoning, where the spatially reduced but feature-rich information from convolutional and pooling layers is flattened and fed.
-5. **Softmax Layer**: Outputs a probability distribution over the classes to classify the image.
+4. **Batch Normalization Layer**: Normalizes the output of a previous activation layer by subtracting the batch mean and dividing by the batch standard deviation, thereby stabilizing the distribution of inputs and improving network performance. It also acts as a regularizer, reducing the need for dropout. 
+5. **Fully Connected Layer**: High-level reasoning, where the spatially reduced but feature-rich information from convolutional and pooling layers is flattened and fed.
+6. **Softmax Layer**: Outputs a probability distribution over the classes to classify the image.
 
 ---
 
