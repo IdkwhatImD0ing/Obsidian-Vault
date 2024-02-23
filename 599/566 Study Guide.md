@@ -166,4 +166,3 @@ CNNs are designed to process data with a grid-like topology, such as images. The
 - **Applications**: GNNs are used in a wide range of applications, including but not limited to, chemical compound analysis (predicting molecule properties), recommender systems (by modeling user-item interactions as a graph), and network traffic prediction.
     
 
-By leveraging the sequential memory capabilities of RNNs and LSTMs, and the structured data processing power of GNNs, these networks can tackle complex problems across various domains, from natural language processing to computational chemistry and social network analysis. Understanding these types equips you with the knowledge to apply neural networks to a broad array of tasks that involve sequential or structured data.
