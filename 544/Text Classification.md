@@ -1,70 +1,56 @@
-Overall Definition: Text classification is the act of categorizing instances of data into "classes", where class members share some similarity
+Let's reintroduce the specific equations and mathematical descriptions back into your notes, especially for the TF-IDF section, which is crucial for understanding how it's calculated:
+
+---
+
+**Overall Definition:** 
+Text classification involves categorizing data instances into "classes" based on their similarities.
 
 ## Preprocessing
+- **Tokenization**: Remove extra spaces and non-essential tokens or characters.
+- **Optional Techniques**: Include lemmatization, lower casing, and contracting to refine tokens.
 
-For preprocessing, we do the simple tokenization, where we remove extra spaces, unhelpful tokens, and characters
+## Feature Extraction
+### Simple Method: Bag of Words (BoW)
+- Description: Represents text as an array counting each word’s occurrence.
+- Limitations:
+  - Lacks contextual information.
+  - Fails to capture word dependencies (e.g., "New York" vs. "new book").
+  - Dominated by common words.
+  - Results in highly sparse matrices.
 
-We can also do optional ones such as lemmatization, lower casing, contracting
+### Advanced Method: TF-IDF
+- **Term Frequency (TF)**: The frequency of a word in a document, calculated as:
+ $$ 
+  \text{TF}(word) = \frac{\text{Number of times the word appears in the document}}{\text{Total number of words in the document}}
+  $$
+- **Inverse Document Frequency (IDF)**: Measures a word's informativeness, calculated as:
+$$  
+  \text{IDF}(word) = \log\left(\frac{\text{Total number of documents}}{\text{Number of documents containing the word}}\right)
+  $$
+- **TF-IDF Score**: The product of TF and IDF, emphasizing words that are distinctive to a document:
+$$  
+  \text{TF-IDF} = \text{TF}(word) \times \text{IDF}(word)
+  $$
 
-## Feature Extracting
+## Models: Generative vs Discriminative
+### Generative Models
+- Model the joint probability distribution P(X, Y).
+- Use Bayes' rule to estimate P(Y|X), the posterior probability of a class given the input.
+- Useful for text generation but can be complex and sensitive to outliers.
 
-### Simple: Bag of Words
-
-Simply have an array where the the number of each word i is the value j
-
-Limitations:
-- No contextual information
-- No word dependencies: new york vs new book
-- Dominant by common words
-- Highly Sparese
-
-### Better: TF-IDF
-Core Idea: Reflect how important a word is to an instance in the dataset
-
-**What is term frequency?**
-The frequency of a word appears in a document
-Word i in document / all words in document
-
-**What is Inverse Document Frequency?**
-Measuring how informative a word is
-log(documents/documents with word i)
-That means the less number of times the word appears in documents, the higher its IDF value will be.
-
-**Result:** TF-IDF is simply the multiplication of the two scores
-
-## Models: GEnerative vs Discriminative
-
-### Generative: Modeling Joint Distribution P(X, Y)
-Use Bayes rule to estimate the posterior probability of class Y given input X, P(Y|X).
-Returns class to generate that instance
-
-### Descriminative: Modeling Posterior P(Y | X)
-Returns the exact function that minimizes clasification errors
-
-**What is the Difference?**
-- Discriminative classifiers are more effective, since they directly optimize the classification
-	- Sensive to features, which are heuristically designed
-	- Overfitting can happen if datasets are small
-- Generative model the joint probability
-	- Helpful when generating text
-	- Harder thanproblem than classification
-	- Vulnerable to outlier
+### Discriminative Models
+- Directly model the conditional probability P(Y | X).
+- Focus on minimizing classification errors and are generally more effective.
+- Can overfit smaller datasets due to their sensitivity to feature design.
 
 ## Perceptron
+- Historical Context: The first neural network model from the 1960s, inspired by the nervous system.
+- Structure: Simple, single-layer model with multiple inputs and one output.
+- Perceptron Convergence Theorem: Guarantees a solution if one exists, provided the data is linearly separable.
+- Limitation: Not effective for non-linearly separable data.
 
-First Neural Network from 1960s
-Nervous System
+## Challenges in Traditional Text Classification
+- Heavy reliance on model optimization, assuming features are predefined.
+- Insufficient focus on feature representation, relying mostly on frequency (BoW, TF-IDF) without capturing semantics or context.
 
-Simple, single layer models
-Multiple INputs, one outputs
-
-Perceptron Convergence Theorem: guaranteed to find a solution in finite time if a solution exists
-
-Only problem is that if data points are not linearly seperable, then its not optimal.
-
-## Problems of Traditional Text Calssfication
-- Great effort on models, assuming features are given
-- Insufficient attention on feature representations
-- BOW, TF-IDF
-	- Only frequency information, no semantics
-	- No contextual
+These additions provide a clearer mathematical foundation for your notes, particularly for understanding how TF-IDF works in practical terms.
