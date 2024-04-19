@@ -32,4 +32,20 @@ That means the less number of times the word appears in documents, the higher it
 
 **Result:** TF-IDF is simply the multiplication of the two scores
 
-## <
+## Models: GEnerative vs Discriminative
+
+### Generative: Modeling Joint Distribution P(X, Y)
+Use Bayes rule to estimate the posterior probability of class Y given input X, P(Y|X).
+Returns class to generate that instance
+
+### Descriminative: Modeling Posterior P(Y | X)
+Returns the exact function that minimizes clasification errors
+
+**What is the Difference?**
+- Discriminative classifiers are more effective, since they directly optimize the classification
+	- Sensive to features, which are heuristically designed
+	- Overfitting can happen if datasets are small
+- Generative model the joint probability
+	- Helpful when generating text
+	- Harder thanproblem than classification
+	- Vulnerable to outlier
