@@ -20,12 +20,14 @@
             }
           },
           {
-            "id": "b1419764c0801667",
+            "id": "4be80ae266d938cd",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.8"
+                "file": "544/Basics.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -104,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "599/566 Study Guide.md",
+                "file": "544/Basics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "599/566 Study Guide.md",
+                "file": "544/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "599/566 Study Guide.md"
+                "file": "544/Basics.md"
               }
             }
           }
@@ -165,10 +167,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b1419764c0801667",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "Fun/Convolutional Neural Networks.md",
     "599/566 Study Guide.md",
+    "544/Basics.md",
+    "544",
+    "Fun/Convolutional Neural Networks.md",
     "599",
     "561/Midterm 2 Study.md",
     "Machine Learning/Neural Networks.md",
@@ -196,7 +200,6 @@
     "Pasted image 20231024233953.png",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
     "Artificial Intelligence/Constraint Satisfication Problems.md",
-    "Knowledge.md",
     "Machine Learning",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",
