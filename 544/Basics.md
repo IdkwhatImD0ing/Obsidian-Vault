@@ -42,3 +42,9 @@ For example
 - Classification
 - Structured Prediction
 - Machine Translation
+
+### Model Evaluation
+Important to know
+Accuracy:
+Porportion of correct
+Precisi

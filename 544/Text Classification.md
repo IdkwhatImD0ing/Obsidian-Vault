@@ -49,3 +49,15 @@ Returns the exact function that minimizes clasification errors
 	- Helpful when generating text
 	- Harder thanproblem than classification
 	- Vulnerable to outlier
+
+## Perceptron
+
+First Neural Network from 1960s
+Nervous System
+
+Simple, single layer models
+Multiple INputs, one outputs
+
+Perceptron Convergence Theorem: guaranteed to find a solution in finite time if a solution exists
+
+Only problem is that if data points are not linearly seperable, then its not optimal.
