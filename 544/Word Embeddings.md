@@ -39,3 +39,6 @@ Use word ectors to approximate pairwise mutla inforrmation of two words
 
 Similar to Word2Vec, there are two sets of word vectors in GloVe – is the input vector of the word – is the output vector of the word uw w vw w
 
+
+## Word2Vec vs GloVe
+No particular word embedding approach is the SOTA for all application
