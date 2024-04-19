@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "43477938c62d4ca5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "544/Text Classification.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "544/Basics.md",
+                "file": "544/Text Classification.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "544/Basics.md",
+                "file": "544/Text Classification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "544/Basics.md"
+                "file": "544/Text Classification.md"
               }
             }
           }
@@ -169,8 +181,9 @@
   },
   "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "599/566 Study Guide.md",
     "544/Basics.md",
+    "544/Text Classification.md",
+    "599/566 Study Guide.md",
     "544",
     "Fun/Convolutional Neural Networks.md",
     "599",
@@ -199,7 +212,6 @@
     "Pasted image 20231024233958.png",
     "Pasted image 20231024233953.png",
     "Artificial Intelligence/MDP and Reinforcement Learning.md",
-    "Artificial Intelligence/Constraint Satisfication Problems.md",
     "Machine Learning",
     "Images/Pasted image 20230319170422.png",
     "Images/Pasted image 20230318212608.png",

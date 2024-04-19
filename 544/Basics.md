@@ -24,3 +24,21 @@ Types
 	- Tokenization, tokenize -> token
 	- Went, gone, goes -> go
 - Lemmatization can be lossy
+
+## Feature Extraction
+
+Feature extracion is when we represent language as a vector of veatures so they can be used as inputs to mathematical/statistical models.
+
+Examples:
+- Sentiment Analysis
+- NER
+- Deep learning festure extraction
+
+## Machine Learning Models
+
+Models can be grouped into categories
+
+For example
+- Classification
+- Structured Prediction
+- Machine Translation
