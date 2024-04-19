@@ -61,3 +61,10 @@ Multiple INputs, one outputs
 Perceptron Convergence Theorem: guaranteed to find a solution in finite time if a solution exists
 
 Only problem is that if data points are not linearly seperable, then its not optimal.
+
+## Problems of Traditional Text Calssfication
+- Great effort on models, assuming features are given
+- Insufficient attention on feature representations
+- BOW, TF-IDF
+	- Only frequency information, no semantics
+	- No contextual
