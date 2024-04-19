@@ -1,44 +1,62 @@
-## Recall: Challenges in Traditional Text Classification
-- Heavy reliance on model optimization, assuming features are predefined.
-- Insufficient focus on feature representation, relying mostly on frequency (BoW, TF-IDF) without capturing semantics or context.
+# Challenges in Traditional Text Classification
+
+## Key Challenges
+- **Model Optimization**: Traditional approaches heavily rely on model optimization with a presumption that features are predefined.
+- **Feature Representation**:
+  - Focus mainly on frequency measures like Bag of Words (BoW) and TF-IDF.
+  - Lack incorporation of semantics or contextual meanings.
 
 ## Word Embeddings
-- Same size used for all words
-- One dense vector
-- Relatively low dimentional
 
-The Distributional Hypothesis in Computational Linguistics: “Similar words occur in similar contexts” (Firth, ’57)
+- **Characteristics**:
+  - Uniform size for all words.
+  - Represented by one dense vector.
+  - Typically low dimensional.
 
-## Two Main Types
+### The Distributional Hypothesis
+- **Origin**: Proposed by Firth in 1957.
+- **Principle**: "Similar words occur in similar contexts", suggesting that words appearing in similar contexts tend to have similar meanings.
 
-### Prediction Based: Word2Vec
-Distributed REpresentations of Words Phrases and their Compositionality
-Core Idea: learning embeddings using a prediction task involving neighboring words in a huge real-world corpus
-Contexts: surrounding words of a fixed small window in a piece of texts
-Similarity: conditional probability to predict a word occurring in the same context
-Skip-Gram: given a center word, we predict the context word
+## Two Main Types of Word Embeddings
 
- - Vocab
- - Dictionary of words
- - Two sets of embeddig vectors
- - one input vector
- - one output vector
- - use softmax to predict probability
+### 1. Prediction Based: Word2Vec
 
-### Problems
-Sparsity Problems
-- Vectors of frequent words updated more than rare workds
-Expensive computation
-- Summation in probability
+#### Overview
+- **Full Name**: Distributed Representations of Words, Phrases, and their Compositionality.
+- **Core Idea**: Learning embeddings via a prediction task that involves neighboring words in a large real-world corpus.
 
-Word2Vec is hard to be interpreted
-### Factorization Based: GloVe
-Global Vectors for Word Representation (stanford)
+#### Characteristics
+- **Contexts**: Surrounding words within a fixed small window in text.
+- **Similarity Measure**: Conditional probability to predict a word occurring in the same context.
+- **Model Variants**: Skip-Gram model, where a center word is used to predict context words.
 
-Use word ectors to approximate pairwise mutla inforrmation of two words
+#### Technical Details
+- **Vocabulary and Dictionary of Words**.
+- **Two Sets of Embedding Vectors**:
+  - One input vector.
+  - One output vector.
+- **Probability Prediction**: Utilizes softmax function.
 
-Similar to Word2Vec, there are two sets of word vectors in GloVe – is the input vector of the word – is the output vector of the word uw w vw w
+#### Challenges
+- **Sparsity**: Vectors of frequent words are updated more than those of rare words.
+- **Computational Expense**: High due to summation involved in probability calculation.
+- **Interpretability**: Difficult to interpret Word2Vec vectors.
 
+### 2. Factorization Based: GloVe
 
-## Word2Vec vs GloVe
-No particular word embedding approach is the SOTA for all application
+#### Overview
+- **Full Name**: Global Vectors for Word Representation.
+- **Developed by**: Stanford.
+- **Core Principle**: Utilize word vectors to approximate pairwise mutual information of two words.
+
+#### Characteristics
+- **Similar to Word2Vec**:
+  - Contains two sets of word vectors for each word: input (`uw`) and output (`vw`).
+
+## Comparison: Word2Vec vs GloVe
+- No single word embedding approach is considered state-of-the-art (SOTA) for all applications.
+
+## Highlights
+
+- "Similar words occur in similar contexts" — Firth, '57.
+- Word2Vec and GloVe, while serving similar purposes, have unique characteristics and applications.
