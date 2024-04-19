@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "544/Basics.md",
+                "file": "544/Text Classification.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "544/Basics.md",
+                "file": "544/Text Classification.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "544/Basics.md",
+                "file": "544/Text Classification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "544/Basics.md"
+                "file": "544/Text Classification.md"
               }
             }
           }
@@ -181,8 +181,8 @@
   },
   "active": "43477938c62d4ca5",
   "lastOpenFiles": [
-    "544/Text Classification.md",
     "544/Basics.md",
+    "544/Text Classification.md",
     "566/566 Study Guide.md",
     "544",
     "Fun/Convolutional Neural Networks.md",
