@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "579e69a389269309",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "570/Network Flow Problem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "544/Word Embeddings.md",
+                "file": "570/Network Flow Problem.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "544/Word Embeddings.md",
+                "file": "570/Network Flow Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "544/Word Embeddings.md"
+                "file": "570/Network Flow Problem.md"
               }
             }
           }
@@ -191,10 +203,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60724138bcfe72a0",
+  "active": "71d40c15f74b5cc6",
   "lastOpenFiles": [
-    "544/Text Classification.md",
+    "570/Network Flow Problem.md",
+    "570",
     "544/Word Embeddings.md",
+    "544/Text Classification.md",
     "544/Basics.md",
     "566/566 Study Guide.md",
     "544",
@@ -220,8 +234,6 @@
     "Artificial Intelligence/First Order Logic.md",
     "Artificial Intelligence/Knowledge Representation.md",
     "561",
-    "CSE180/Design Theory and Functional Dependency.md",
-    "Artificial Intelligence/First Order Logic Topics.md",
     "Pasted image 20231024233958.png",
     "Pasted image 20231024233953.png",
     "Machine Learning",
