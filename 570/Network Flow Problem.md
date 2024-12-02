@@ -16,3 +16,9 @@ Push on the bottleneck, then draw residual graphs
 
 This is ford fulkerson algorithm
 Given G, st, c in N+
+Start with F(u,v) = 0 and Gf = G
+
+while exists an augmenting path in G
+find bottleneck
+augment the flow along this path
+update the residual graph Gf
