@@ -61,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/The Max Flow Problem and Its Applications Explained.md",
+                "file": "570/Max Flow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6115af3ab22ded0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -142,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/The Max Flow Problem and Its Applications Explained.md",
+                "file": "Untitled.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "570/The Max Flow Problem and Its Applications Explained.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "570/The Max Flow Problem and Its Applications Explained.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -203,9 +215,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "579e69a389269309",
+  "active": "e6115af3ab22ded0",
   "lastOpenFiles": [
-    "570/The Max Flow Problem and Its Applications Explained.md",
+    "570/Max Flow.md",
+    "Untitled.md",
     "570",
     "544/Word Embeddings.md",
     "544/Text Classification.md",
