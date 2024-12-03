@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/Network Flow Problem.md",
+                "file": "570/The Max Flow Problem and Its Applications Explained.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/Network Flow Problem.md",
+                "file": "570/The Max Flow Problem and Its Applications Explained.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "570/Network Flow Problem.md",
+                "file": "570/The Max Flow Problem and Its Applications Explained.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "570/Network Flow Problem.md"
+                "file": "570/The Max Flow Problem and Its Applications Explained.md"
               }
             }
           }
@@ -203,9 +203,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71d40c15f74b5cc6",
+  "active": "579e69a389269309",
   "lastOpenFiles": [
-    "570/Network Flow Problem.md",
+    "570/The Max Flow Problem and Its Applications Explained.md",
     "570",
     "544/Word Embeddings.md",
     "544/Text Classification.md",
