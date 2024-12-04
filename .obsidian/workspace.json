@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2916aa76a07afb6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "566/566 Study Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4be80ae266d938cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "544/Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "43477938c62d4ca5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "544/Text Classification.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "60724138bcfe72a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "544/Word Embeddings.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "579e69a389269309",
             "type": "leaf",
             "state": {
@@ -64,23 +16,27 @@
                 "file": "570/Max Flow.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Max Flow"
             }
           },
           {
-            "id": "e6115af3ab22ded0",
+            "id": "7de9024c98f5e2c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/Max Flow Pt2.md",
+                "file": "Linear Programming.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Linear Programming"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -115,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -123,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -131,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -154,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/Max Flow Pt2.md",
+                "file": "Linear Programming.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Linear Programming"
             }
           },
           {
@@ -171,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "570/Max Flow Pt2.md",
+                "file": "Linear Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Linear Programming"
             }
           },
           {
@@ -185,7 +153,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -194,8 +164,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "570/Max Flow Pt2.md"
-              }
+                "file": "Linear Programming.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Linear Programming"
             }
           }
         ]
@@ -215,9 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6115af3ab22ded0",
+  "active": "7de9024c98f5e2c4",
   "lastOpenFiles": [
     "570/Max Flow.md",
+    "Linear Programming.md",
     "570/Max Flow Pt2.md",
     "570",
     "544/Word Embeddings.md",
@@ -245,7 +218,6 @@
     "Artificial Intelligence/Bayesian Networks.md",
     "Artificial Intelligence/Temporal Models.md",
     "Artificial Intelligence/First Order Logic.md",
-    "Artificial Intelligence/Knowledge Representation.md",
     "561",
     "Pasted image 20231024233958.png",
     "Pasted image 20231024233953.png",
