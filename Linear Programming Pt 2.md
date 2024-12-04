@@ -72,3 +72,90 @@ One way to visualize NDTM is that it makes
 an exact copy of itself for each available  
 transition, and each machine continues the  
 computation.
+
+Now what is NP?
+Its a complexity class that can be soled by a nondeterminsitc Turning maching in poolynomial time
+
+NP problem has a certificate that can be checked by a polynomial time deterministic Turning machine
+UIse last definiton for proving NP compelteness
+
+
+
+
+
+It has been proven that Nondeterministic TM can be simulated by  
+Deterministic TM. Rabin & Scott in 1959 shown that adding non-  
+determinism does not result in more powerful machine.  
+But how fast we can do that simulation?  
+The famous P ≠ NP conjecture, would answer that we cannot hope to  
+simulate nondeterministic Turing machines very fast (in polynomial time).
+
+
+P and NP complexity classes  
+P = set of problems that can be solved in polynomial time by a  
+deterministic TM.  
+NP = set of problems for which solution can be verified in  
+polynomial time by a deterministic TM.
+
+To reduce a decision problem Y to a decision problem X (we write Y ≤p X)  
+we want a function f that maps Y to X such that:  
+1) f is a polynomial time computable  
+2) ∀y ∈ Y (y is instance of Y) is YES if and only if f(y) ∈ X is YES.  
+We use this to prove NP completeness:  
+knowing that Y is hard, we prove that X is at least as hard as Y.
+
+If we can solve X in polynomial time,  
+we can solve Y in polynomial time.
+
+Bipartite Matching ≤p Max-Flow  
+Examples:  
+If we can solve X in polynomial time,  
+we can solve Y in polynomial time.  
+Circulation ≤p Max-Flow
+
+
+If we can solve X, we can solve Y.  
+Knowing that Y is hard, we prove that X is harder.  
+The contrapositive of the statement "if A, then B"  
+is "if not B, then not A."  
+If we cannot solve Y, we cannot solve X.  
+In plain form: X is at least as hard as Y.
+
+Two ways of using Y ≤p X  
+1) Knowing that X is easy  
+If we can solve X in polynomial time,  
+we can solve Y in polynomial time.  
+2) Knowing that Y is hard  
+Then we can prove that X is at least as hard as Y
+
+
+NP-Hard and NP-Complete  
+X is NP-Hard, if ∀Y ∈ NP and Y ≤p X.  
+X is NP-Complete, if X is NP-Hard and X  NP.
+
+NPC problems are  
+the most  
+difficult NP  
+problems.  
+NPH problems  
+do not have to be  
+in NP.  
+optimization
+
+Not known if NPC problems can be solved by a deterministic TM in polynomial time
+
+NPC = P
+NPH = NPH
+P = NP
+
+NP-Completeness Proof Method  
+To show that X is NP-Complete:  
+1) Show that X is in NP  
+2) Pick a problem Y, known to be an NP-Complete  
+3) Prove Y ≤p X (reduce Y to X)  
+Algorithm for Y  
+Algorithm for X  
+Y X  
+Transf.  
+yes  
+no
