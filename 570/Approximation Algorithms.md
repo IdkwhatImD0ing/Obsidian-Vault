@@ -22,8 +22,8 @@ We'll explain each concept in simple terms, assuming no prior knowledge. Let's g
 The **Traveling Salesman Problem (TSP)** is a classic optimization problem:
 
 - Imagine a salesperson who needs to visit a list of cities.
-- They must start from their home city, visit each city exactly once, and return to the starting city.
-- The goal is to find the shortest possible route that satisfies these conditions.
+- They must start from their home city, visit each city **exactly once**, and return to the starting city.
+- The goal is to find the **shortest possible route** that satisfies these conditions.
 
 **Visualization:**
 
@@ -48,17 +48,27 @@ The salesperson needs to find the shortest route that starts and ends at city A 
 
 ### What Does "In NP" Mean?
 
-- **NP (Nondeterministic Polynomial time)**: A class of problems for which a solution can be **verified** quickly (in polynomial time).
-- If you can check a given solution quickly, the problem is in NP.
+- **NP (Nondeterministic Polynomial time)**: A class of problems for which a solution can be **verified** quickly (in polynomial time) by a deterministic algorithm.
+- **Polynomial Time**: An algorithm runs in polynomial time if its running time can be expressed as a polynomial function of the size of the input (like $n$, $n^2$, $n^3$).
+
+**Explanation of Terms:**
+
+- **Deterministic Algorithm**: An algorithm that, given a particular input, will always produce the same output following a predictable sequence of steps.
+- **Nondeterministic Algorithm**: An algorithm that can make "guesses" or choose from multiple options at each step. In theory, it explores all possible choices simultaneously to find a solution.
 
 ### Is TSP in NP?
 
 - **Yes**, the TSP is in NP.
-- Given a proposed route (a sequence of cities), we can calculate its total length and verify whether it:
-  - Visits each city exactly once.
-  - Starts and ends at the specified city.
-  - Has a total length less than a given value.
-- This verification can be done quickly.
+- **Why?**
+
+  - Given a proposed route (a sequence of cities), we can:
+
+    - Verify that it visits each city exactly once.
+    - Verify that it starts and ends at the specified city.
+    - Calculate the total length of the route.
+    - Check if the total length is less than a given value.
+
+  - These checks can be done quickly, in polynomial time.
 
 ### Is TSP NP-Complete?
 
@@ -71,10 +81,19 @@ The salesperson needs to find the shortest route that starts and ends at city A 
 
 ### Decision Version of TSP
 
-- **Problem Statement**: Given a set of cities, distances between them, and a number \( k \), is there a tour that:
-  - Starts and ends at a specified city.
-  - Visits each city exactly once.
-  - Has a total length less than or equal to \( k \)?
+- **Problem Statement**:
+
+  - Given:
+
+    - A set of cities.
+    - Distances between each pair of cities.
+    - A number $k$.
+
+  - Question: Is there a tour (route) that:
+
+    - Starts and ends at a specified city.
+    - Visits each city exactly once.
+    - Has a total length less than or equal to $k$?
 
 ### Proving TSP is NP-Complete
 
@@ -89,36 +108,41 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
 
 2. **Reduction Process**:
 
-   - **Input**: A graph \( G = (V, E) \).
-   - **Construct**: A complete graph \( G' = (V', E') \) where:
-     - \( V' = V \) (same set of vertices).
+   - **Input**: A graph $G = (V, E)$.
+   - **Construct**: A complete graph $G' = (V', E')$ where:
+
+     - $V' = V$ (same set of vertices).
      - **Edge Costs**:
-       - \( c(u, v) = 1 \) if \( (u, v) \) is an edge in \( G \).
-       - \( c(u, v) = 2 \) if \( (u, v) \) is **not** an edge in \( G \).
-   - **Set** \( k = |V| \) (the number of vertices).
+
+       - $c(u, v) = 1$ if $(u, v) \in E$ (edge exists in $G$).
+       - $c(u, v) = 2$ if $(u, v) \notin E$ (edge does not exist in $G$).
+
+   - **Set** $k = |V|$ (the number of vertices).
 
 3. **Claim**:
 
-   - \( G \) has a Hamiltonian cycle **if and only if** \( G' \) has a tour of total cost \( \leq k \).
+   - $G$ has a Hamiltonian cycle **if and only if** $G'$ has a tour of total cost $\leq k$.
 
 #### Proof of NP-Completeness
 
-- **Forward Direction (\( \Rightarrow \))**:
+- **Forward Direction ($\Rightarrow$)**:
 
-  - If \( G \) has a Hamiltonian cycle, then:
-    - This cycle uses only edges from \( G \), which have cost 1 in \( G' \).
-    - Total cost of the tour in \( G' \) is \( |V| \times 1 = |V| = k \).
+  - If $G$ has a Hamiltonian cycle, then:
 
-- **Backward Direction (\( \Leftarrow \))**:
+    - This cycle uses only edges from $G$, which have cost 1 in $G'$.
+    - Total cost of the tour in $G'$ is $|V| \times 1 = |V| = k$.
 
-  - If \( G' \) has a tour of total cost \( \leq k \):
-    - Since edges not in \( G \) have cost 2, using any of them would exceed the total cost \( k \).
-    - Therefore, the tour uses only edges of cost 1, which correspond to edges in \( G \).
-    - Thus, these edges form a Hamiltonian cycle in \( G \).
+- **Backward Direction ($\Leftarrow$)**:
+
+  - If $G'$ has a tour of total cost $\leq k$:
+
+    - Since edges not in $G$ have cost 2, using any of them would exceed the total cost $k$.
+    - Therefore, the tour uses only edges of cost 1, which correspond to edges in $G$.
+    - Thus, these edges form a Hamiltonian cycle in $G$.
 
 - **Conclusion**:
 
-  - Finding such a tour in \( G' \) solves the Hamiltonian Cycle problem in \( G \).
+  - Finding such a tour in $G'$ solves the Hamiltonian Cycle problem in $G$.
   - Since HC is NP-Complete, and we can reduce it to TSP, the decision version of TSP is NP-Complete.
 
 ---
@@ -157,8 +181,8 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
 
 1. **Initialization**:
 
-   - Given a graph \( G = (V, E) \) with \( n \) vertices.
-   - Available colors: Integers \( \{1, 2, 3, \dots, n\} \).
+   - Given a graph $G = (V, E)$ with $n$ vertices.
+   - Available colors: Integers $\{1, 2, 3, \dots, n\}$.
 
 2. **Order Vertices**:
 
@@ -170,7 +194,9 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
 
      - Assign color 1 to the first vertex (highest degree).
      - For each subsequent vertex:
+
        - If it is **not adjacent** to any vertex already colored with color 1, assign color 1.
+
      - Remove all vertices colored with color 1 from consideration.
 
    - **Subsequent Colors**:
@@ -190,7 +216,7 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
   - **Color 1**: Assign to A.
   - **Color 2**: Assign to B (since B is adjacent to A).
   - **Color 1**: Assign to E (not adjacent to A).
-  - **Color 3**: Assign to C and D as they are adjacent to A or B.
+  - **Color 3**: Assign to C and D (since they are adjacent to A or B).
 
 - **Result**: Used 3 colors.
 
@@ -207,29 +233,29 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
 - **Goal**: Minimize a certain value (e.g., cost, length).
 - **Definition**:
 
-  - Let \( P \) be a minimization problem.
-  - Let \( I \) be an instance of \( P \).
-  - Let \( \text{OPT}(I) \) be the optimal (minimum) solution for \( I \).
-  - Let \( \text{ALG}(I) \) be the solution provided by an approximation algorithm.
+  - Let $P$ be a minimization problem.
+  - Let $I$ be an instance of $P$.
+  - Let $\text{OPT}(I)$ be the optimal (minimum) solution for $I$.
+  - Let $\text{ALG}(I)$ be the solution provided by an approximation algorithm.
 
-- **Approximation Ratio (\( \alpha \))**:
+- **Approximation Ratio ($\alpha$)**:
 
-  - \( \alpha \geq 1 \) such that:
+  - $\alpha \geq 1$ such that:
     $$
     \text{ALG}(I) \leq \alpha \times \text{OPT}(I)
     $$
-  - **Interpretation**: The algorithm's solution is at most \( \alpha \) times the optimal solution.
+  - **Interpretation**: The algorithm's solution is at most $\alpha$ times the optimal solution.
 
 ### Maximization Problems
 
 - **Goal**: Maximize a certain value (e.g., profit, score).
 - **Definition**:
 
-  - \( 0 < \alpha \leq 1 \) such that:
+  - $0 < \alpha \leq 1$ such that:
     $$
     \text{ALG}(I) \geq \alpha \times \text{OPT}(I)
     $$
-  - **Interpretation**: The algorithm's solution is at least \( \alpha \) times the optimal solution.
+  - **Interpretation**: The algorithm's solution is at least $\alpha$ times the optimal solution.
 
 ### Purpose of Approximation Ratio
 
@@ -240,7 +266,7 @@ To prove that the decision version of TSP is NP-Complete, we can reduce a known 
 
 ## 7. What Is a 2-Approximation Algorithm?
 
-A **2-approximation algorithm** is an approximation algorithm with an approximation ratio \( \alpha = 2 \).
+A **2-approximation algorithm** is an approximation algorithm with an approximation ratio $\alpha = 2$.
 
 ### For Minimization Problems
 
@@ -257,18 +283,18 @@ A **2-approximation algorithm** is an approximation algorithm with an approximat
 
 - **Simple 2-Approximation Algorithm**:
 
-  1. **Initialize**: Start with an empty set \( C \).
+  1. **Initialize**: Start with an empty set $C$.
   2. **While** there are edges left in the graph:
 
-     - Pick any edge \( (u, v) \).
-     - Add both \( u \) and \( v \) to \( C \).
-     - Remove all edges connected to \( u \) or \( v \) from the graph.
+     - Pick any edge $(u, v)$.
+     - Add both $u$ and $v$ to $C$.
+     - Remove all edges connected to $u$ or $v$ from the graph.
 
-  3. **Result**: \( C \) is a vertex cover.
+  3. **Result**: $C$ is a vertex cover.
 
 - **Approximation Ratio**:
 
-  - The size of \( C \) is at most **twice** the size of the minimum vertex cover.
+  - The size of $C$ is at most **twice** the size of the minimum vertex cover.
   - **Reasoning**:
 
     - In the worst case, the optimal solution selects one vertex per edge.
@@ -296,7 +322,3 @@ A **2-approximation algorithm** is an approximation algorithm with an approximat
 - **Approximation Algorithms**: Useful for finding good enough solutions when exact solutions are impractical.
 - **Approximation Ratio**: A measure of how close the algorithm's solution is to the optimal solution.
 - **2-Approximation Algorithm**: Guarantees that the solution is no worse than twice the optimal solution.
-
----
-
-Feel free to revisit any section for clarity, and remember that these concepts build a foundation for understanding more advanced topics in algorithms and computational complexity!
