@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/Approximation Algorithms.md",
+                "file": "570/Linear Programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Approximation Algorithms"
+              "title": "Linear Programming"
             }
           }
         ],
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/Approximation Algorithms.md",
+                "file": "570/Linear Programming.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Approximation Algorithms"
+              "title": "Backlinks for Linear Programming"
             }
           },
           {
@@ -231,11 +231,11 @@
   },
   "active": "745f7350dee966b8",
   "lastOpenFiles": [
+    "570/Approximation Algorithms.md",
     "570/Linear Programming.md",
     "570/NP Completeness.md",
     "570/Max Flow Pt2.md",
     "570/Max Flow.md",
-    "570/Approximation Algorithms.md",
     "570/NP Completeness Pt 2.md",
     "570",
     "544/Word Embeddings.md",
