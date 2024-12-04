@@ -87,3 +87,28 @@ K1984 karmarkal faster aclled interior poinMoevs inside the poly tops while simp
 
 
 
+A cargo plane can carry a maximum weight of 100 tons and a  
+maximum volume of 60 cubic meters. There are three materials to  
+be transported, and the cargo company may choose to carry any  
+amount of each, up to the maximum available limits given below.  
+Write a linear program that optimizes revenue within the  
+constraints.  
+Density Volume Price  
+Material 1 2 tons/m3 40 m3 $1,000 per m3  
+Material 2 1 tons/m3 30 m3 $2,000 per m3  
+Material 3 3 tons/m3 20 m3 $12,000 per m3
+To write a linear program that optimizes revenue within the constraints
+
+Reveju8e is max
+Let x1 x2 x3 bhe the volumes
+
+Objective function is to max (1000x1 + 2000x x2 + 12000 x3)
+
+Subject to the following constraints
+2x1 + x2 + 3x3 <= 100
+x1 + x2 +x3 <= 60
+
+0<= xd1 <= 40, 0<= x2<= 30, 0<= x3<= 30
+
+In matrix form
+
