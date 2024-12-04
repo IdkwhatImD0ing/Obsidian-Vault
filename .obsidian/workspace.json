@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/Approximation Algorithms.md",
+                "file": "570/Max Flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Approximation Algorithms"
+              "title": "Max Flow"
             }
           }
         ],
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/Approximation Algorithms.md",
+                "file": "570/Max Flow.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Approximation Algorithms"
+              "title": "Backlinks for Max Flow"
             }
           },
           {
@@ -179,12 +179,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "570/Approximation Algorithms.md",
+                "file": "570/Max Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Approximation Algorithms"
+              "title": "Outgoing links from Max Flow"
             }
           },
           {
@@ -206,10 +206,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "570/Approximation Algorithms.md"
+                "file": "570/Max Flow.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Approximation Algorithms"
+              "title": "Outline of Max Flow"
             }
           }
         ]
@@ -231,8 +231,8 @@
   },
   "active": "745f7350dee966b8",
   "lastOpenFiles": [
-    "570/NP Completeness Pt 2.md",
     "570/Approximation Algorithms.md",
+    "570/NP Completeness Pt 2.md",
     "570/NP Completeness.md",
     "570/Linear Programming.md",
     "570/Max Flow.md",
