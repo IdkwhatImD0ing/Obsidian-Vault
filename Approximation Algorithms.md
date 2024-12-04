@@ -39,3 +39,6 @@ Since k=V, every edge traversed must have weight 1.
 Thus, this will create a HC of length k.
 
 Supppose given a NP hard problem to solve
+
+Cabn we find a polynomial teim aclgorihtm that produces a good enough solution?
+An algoritjj that retunr sn
