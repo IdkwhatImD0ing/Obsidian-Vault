@@ -12,7 +12,7 @@ Before diving into LP, it's important to understand **problem reduction**. Reduc
 
 ### Formal Definition of Reduction
 
-To reduce a problem **Y** to a problem **X** (denoted as **\( Y \leq_p X \)**), we need:
+To reduce a problem **Y** to a problem **X** (denoted as $( Y leq_p X )$), we need:
 
 1. A function **\( f \)** that maps instances of **Y** to instances of **X**.
 2. **\( f \)** must be **computable in polynomial time**.
