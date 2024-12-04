@@ -41,4 +41,45 @@ Thus, this will create a HC of length k.
 Supppose given a NP hard problem to solve
 
 Cabn we find a polynomial teim aclgorihtm that produces a good enough solution?
-An algoritjj that retunr sn
+An algoritjj that retunr near optimal solutions is called an approximation algorithm
+
+Given a graph G=(V,E), find the  
+minimum number of colors required to  
+color vertices, so no two adjacent  
+vertices have the same color.  
+This is NP-hard problem.  
+Let us develop a solution that is close  
+enough to the optimal solution.
+
+
+Greedy Approximation  
+Given G = (V, E) with n vertices.  
+Use the integers {1, 2, 3, ..., n} to represent colors.  
+Order vertices by degree in descending order.  
+Color the first vertex (highest degree) with color 1.  
+Go down the vertex list and color every vertex not adjacent to it  
+with color 1.  
+Remove all colored vertices from the list.  
+Repeat for uncolored vertices with color 2.
+
+
+ormal Definition  
+Let P be a minimization (convex) problem, and I be an instance of P.  
+Let ALG(I) be a solution returned by an algorithm.  
+Let OPT(I) be the optimal solution.  
+Then ALG(I) is said to be a 𝛼-approximation algorithm for some 𝛼 > 1,  
+if for ALG(I) ≤ 𝛼 ∙ OPT(I).  
+These notions allow us to  
+circumvent NP-hardness by  
+designing polynomial-time  
+algorithm with worst-case  
+guarantees!
+
+Maximization Problem  
+Let P be a maximization (convex) problem, and I be an instance of P.  
+Let ALG(I) be a solution returned by an algorithm.  
+Let OPT(I) be the optimal solution.  
+Then ALG(I) is said to be a 𝛼 -approximation algorithm for some  
+0 < 𝛼 < 1, if for ALG(I) ≥ 𝛼 ∙ OPT(I).
+
+What is 2 approximatnion?????
