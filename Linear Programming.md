@@ -100,10 +100,15 @@ Material 3 3 tons/m3 20 m3 $12,000 per m3
 To write a linear program that optimizes revenue within the constraints
 
 Reveju8e is max
+a) Define your variables. (Describe what they represent in English)  
+
 Let x1 x2 x3 bhe the volumes
+
+b) What is the objective function?  
 
 Objective function is to max (1000x1 + 2000x x2 + 12000 x3)
 
+c) What are the constraints in your LP?
 Subject to the following constraints
 2x1 + x2 + 3x3 <= 100
 x1 + x2 +x3 <= 60
@@ -119,6 +124,10 @@ x = (X1 X2 X3)
 C = (1000, 2000, 12000)
 b = (100,60,40,30,20)
 A = (2 1 3, 1 1 1, 1 0 0, 0 1 0, 0 0 1)
+
+
+
+Duality shouldnt be onm thefinal
 
 
 For every linear program there is a dual linear program
@@ -142,7 +151,7 @@ x1 + x2 + 4x3 ≤ 8
 2x1 + 5x2 - x3 ≤ -7  
 x1, x2 ,x3 ≥ 0
 
-rite the dual problem
+Write the dual problem
 
 Primal LP
 max ( cT x)  
@@ -153,3 +162,48 @@ Dual LP
 min ( bT y)  
 AT y ≥ c  
 y ≥ 0
+
+x = x1 x2 x3 c = 7 -1 5
+b = 8 3 -7
+A = 1 1 4
+3 -1 2
+2 5 -1
+
+AT?
+y = y1 y2 y3
+min()
+Then equation
+
+Help me solve the above ^
+
+
+Consider the max LP constrains  
+a11x1+...+a1nxn ≤ b1  
+...  
+am1x1+...+amnxn ≤ bm  
+1) Multiply each equation by a new variable yk ≥ 0.  
+2) Add up those m equations.  
+3) Collect terms wrt to xk.  
+4) Choose yk in a way such that AT y ≥ c.
+
+Weak duality
+Weak Duality. The optimum of the dual is an upper bound to the  
+optimum of the primal.  
+primal linear  
+program  
+max ( cT x)  
+A x ≤ b  
+x ≥ 0  
+dual linear program  
+opt(primal) ≤ opt(dual)
+
+What is the optium?
+
+Theorem (The weak duality).  
+Let P and D be primal and dual LP correspondingly.  
+If x is a feasible solution for P and y is a feasible solution for D, then  
+cTx ≤ bTy.
+
+Theorem (The strong duality).  
+Let P and D be primal and dual LP correspondingly.  
+If P and D are feasible, then cTx = bTy.  
