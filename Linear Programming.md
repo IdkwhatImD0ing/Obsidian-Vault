@@ -112,3 +112,44 @@ x1 + x2 +x3 <= 60
 
 In matrix form
 
+x1 <=40 -> 1x1 + 0x2 + 3x3 <= 4-
+x2<=30-> 0x1 +1x2 +0x3 <= 3-
+
+x = (X1 X2 X3)
+C = (1000, 2000, 12000)
+b = (100,60,40,30,20)
+A = (2 1 3, 1 1 1, 1 0 0, 0 1 0, 0 0 1)
+
+
+For every linear program there is a dual linear program
+
+Duality
+The dual of the standard (primal) maximum problem
+max cT x
+Ax <= b ad x>0= 0 Is primal
+
+
+Is defined to tbe the standard minimum problem
+
+min bTy
+ATy >= c and y>= 0 dual
+
+Example duality
+
+max(7x1 - x2 + 5x3)  
+x1 + x2 + 4x3 ≤ 8  
+3x1 - x2 + 2x3 ≤ 3  
+2x1 + 5x2 - x3 ≤ -7  
+x1, x2 ,x3 ≥ 0
+
+rite the dual problem
+
+Primal LP
+max ( cT x)  
+A x ≤ b  
+x ≥ 0
+
+Dual LP
+min ( bT y)  
+AT y ≥ c  
+y ≥ 0
