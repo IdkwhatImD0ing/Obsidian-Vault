@@ -1,168 +1,250 @@
-Review:
-n 1936 Alan Turing described:  
-• A simple formal model of computation now known as Turing machines.  
-• A proof that TM can NOT solve the halting problem.  
-• A proof that NO Turing machine can determine whether a given  
-proposition is provable from the axioms of first-order logic.  
-• Compelling arguments that a problem not computable by a Turing  
-machine is not “computable” in the absolute (human) sense.  
-• A non-deterministic Turing machine: for each state it makes an  
-arbitrary choice between a finite of possible transitions.
-Non-Deterministic Turing Machine  
-• NDTM is a choice machine: for each state it makes an arbitrary  
-choice between a finite (possibly zero) number of states.  
-• The computation of a NDTM is a tree of possible configuration paths.  
-• One way to visualize NDTM is that it makes an exact copy of itself  
-for each available transition, and each machine continues the  
-computation.  
-• Rabin & Scott in 1959 shown that adding non-determinism does not  
-result in more powerful machine.  
-• For any NDTM, there is a DTM that accepts and rejects exactly the  
-same strings as NDTM.  
-• P vs. NP is about whether we can simulate NDTM in polynomial time.
-Complexity Classes  
-P = set of problems that can be solved in polynomial time by a DTM.  
-NP = set of problems for which solution can be verified in  
-polynomial time by a deterministic TM.  
-X is NP-Hard, if ∀Y ∈ NP and Y ≤p X.  
-X is NP-Complete,  
-if X is NP-Hard and X  NP.  
-NP = set of problems that can be solved in polynomial time by a NDTM.
+	## Introduction
 
-It’s not known if NPC problems can be solved by a deterministic TM in  
-polynomial time.  
-NPC problems are  
-the most  
-difficult NP  
-problems.  
-optimization &  
-decision  
-problems  
-NPC problems can be solved by a non-deterministic TM in polynomial  
-time.
+Computational complexity is a field in computer science that studies how difficult problems are to solve. In this guide, we'll explore key concepts like **Turing Machines**, **P vs. NP**, **NP-Complete** problems, and how to prove that a problem is NP-Complete. We'll explain these ideas in simple terms, with examples, so you can understand them easily—even if you're new to the topic.
 
+---
 
-NP-Completeness Proof Method  
-To show that X is NP-Complete:  
-1) Show that X is in NP  
-2) Pick a problem Y, known to be an NP-Complete  
-3) Prove Y ≤p X (reduce Y to X)  
-In lecture 11 we have proved that Independent Set  
-is NP-Complete by reduction from 3-SAT (3SAT ≤p IndSet)  
-Reduction from 3SAT to IndSet consists of three parts:  
-• we transform an arbitrary CNF formula into a special graph G and a  
-specific integer k, in polynomial time.  
-• we transform an arbitrary satisfying assignment for 3SAT into an  
-independent set in G of size k.  
-• we transform an arbitrary independent set (in G) of size k into a  
-satisfying assignment for 3SAT.
+## 1. Alan Turing and Turing Machines
 
-Vertex Cover  
-Given G=(V,E), find the smallest S⊂V s.t. every  
-edge is incident to vertices in S.  
-The minimum vertex cover problem, MinVC, asks  
-for the size of the smallest vertex cover in a  
-given graph.
+### Who Was Alan Turing?
 
-Decision version
-Given f and k, does G contain a vc of size vc <= k
+- **Alan Turing** was a British mathematician and computer scientist who, in 1936, introduced the concept of a **Turing Machine**.
+- He is considered one of the fathers of computer science.
 
-Theorem for a graph G Ve S is an independent set if and only if vs is a vertex cover
+### What Is a Turing Machine?
 
-Forward Proof
-Given S is an IS
+- A **Turing Machine (TM)** is a theoretical model that represents a computer.
+- It consists of:
+  - An **infinite tape** divided into cells (like memory).
+  - A **head** that can read and write symbols on the tape and move left or right.
+  - A set of **states** that determine the machine's actions based on the current symbol.
 
+### Key Contributions by Turing
 
-x in IS then y not in Is if follows and y is in VC
-if y in Is then x not in Is if follows and x in vc
-x y both not in IS then x y in VC
+- **Halting Problem**: Turing proved that there is no general algorithm to decide whether a given Turing Machine will halt (stop running) or run forever on a particular input.
+- **Undecidability**: He showed that some problems cannot be solved by any algorithm.
+- **First-Order Logic**: He proved that no Turing Machine can determine whether a given statement is provable from the basic rules of logic.
+- **Non-Deterministic Turing Machine**: Turing introduced the idea of machines that can make arbitrary choices at certain steps.
 
-Backwards proof
-Given a vc
-Pick for all x y s.t x not in VC y in VC
-There exists edge x, y, does not proof by contradiction
+---
 
-it follows x, y in IS
+## 2. Deterministic vs. Non-Deterministic Turing Machines
 
+### Deterministic Turing Machine (DTM)
 
-Min Vertex Cover in NP-Hard  
-Claim: a graph G=(V,E) has an independent set of size at least k if and  
-only if G has a vertex cover of size at most V-k.  
-MaxIndSet ≤p MinVC  
-Ind. Set ≤p Vertex Cover  
-Vertex Cover in NP-Complete  
-By the previous theorem.  
-By the previous theorem.
+- **Definition**: At each step, the machine has exactly one action it can take based on its current state and the symbol it's reading.
+- **Analogy**: It's like following a recipe step by step without any choices.
 
-Hamiltonian Cycle Problem  
-A Hamiltonian cycle (HC) in a graph is a cycle that  
-visits each vertex exactly once.  
-Problem Statement:  
-Given a directed or undirected graph G = (V,E). Find if  
-the graph contains a Hamiltonian cycle.  
-We can prove it that HC problem is NP-complete by reduction from  
-SAT, but we won’t.
+### Non-Deterministic Turing Machine (NDTM)
 
-ssuming that finding a Hamiltonian Cycle (HC) in a graph is NP-  
-complete, prove that finding a Hamiltonian Path is also NP-  
-complete. HP is a path that visits each vertex exactly once and  
-isn’t required to return to its starting point.
+- **Definition**: At certain steps, the machine can choose between multiple possible actions.
+- **How It Works**:
+  - Think of it as a tree where each branch represents a possible computation path.
+  - The machine "branches" into all possible paths simultaneously.
+- **Visualization**: Imagine the machine makes copies of itself for each possible choice, and all copies proceed independently.
 
+### Key Points
 
-HP in NP verify in polynomial time
+- **Equivalence**:
+  - For every NDTM, there is a DTM that can simulate it.
+  - However, the DTM might take much longer to do so.
+- **Rabin & Scott's Result** (1959): Adding non-determinism doesn't allow us to solve problems that we couldn't solve before; it doesn't make the machine more powerful in terms of what problems it can solve.
 
-NP in NPH
-construct a polynomial maping
-make a claim
-prove the claim in both directions
+---
 
-claim G has  HC iff G' has a HP
-proof
-Forward given HC(G) find a hp by construction
+## 3. Complexity Classes: P, NP, NP-Hard, and NP-Complete
 
-bakwards path
-Given a hp in G'
-Find a HC in G
+### What Is Polynomial Time?
 
+- **Polynomial Time**: An algorithm runs in polynomial time if its running time can be expressed as a polynomial function of the size of the input (like \( n^2 \) or \( n^3 \)).
+- **Why It Matters**: Algorithms that run in polynomial time are considered efficient and practical for computation.
 
-Graph Coloring  
-Given a graph, can you color the nodes with ≤ k  
-colors such that the endpoints of every edge  
-are colored differently?  
-Theorem. (k>2)  
-k-Coloring is NP-complete.
+### Class P
 
-Graph coloring k = 2
+- **Definition**: The set of problems that can be solved **quickly** (in polynomial time) by a deterministic Turing Machine (DTM).
+- **Example**: Sorting a list of numbers can be done in polynomial time.
 
-How can we test if a graph has a 2 coloring
+### Class NP
 
-  
--SAT ≤p 3-colorable  
-A truth gadget: T F  
-a ¬aA gadget for each variable:  
-We construct a graph G that will be 3-colorable iff the 3-SAT  
-instance is satisfiable.  
-Graph G consists of the following gadgets.
+- **Definition**: The set of problems for which a solution can be **verified** quickly (in polynomial time) by a deterministic Turing Machine.
+- **Alternative Definition**: Problems that can be solved in polynomial time by a Non-Deterministic Turing Machine (NDTM).
+- **Example**: Sudoku puzzles. While finding a solution may be hard, checking a given solution is easy.
 
-3-SAT ≤p 3-colorable  
-Combining those gadgets together (for three literals)
+### NP-Hard
 
-Sudoku
-n^2xn^2
-Np?
-Np Hard?
+- **Definition**: A problem X is NP-Hard if every problem in NP can be reduced to X in polynomial time.
+- **Implication**: NP-Hard problems are at least as hard as the hardest problems in NP.
 
-g COLORS]
-Sudoku Graph
-Vertex each 
-Edges two verticxes cooected if same row column or within same grid
+### NP-Complete
 
-Don’t be afraid of  
-NP-hard problems.  
-The largest solved TSP an 85,900-vertex route calculated in 2006.  
-The graph corresponds to the design of a customized computer chip  
-created at Bell Laboratories, and the solution exhibits the shortest  
-path for a laser to follow as it sculpts the chip.  
-Many reasonable instances (of practical  
-interest) of problems in class NP can be  
-solved!
+- **Definition**: A problem is NP-Complete if:
+  - It is in NP.
+  - It is NP-Hard.
+- **Significance**: NP-Complete problems are the toughest problems in NP. If we can find a polynomial-time algorithm for one NP-Complete problem, we can solve all NP problems in polynomial time.
+
+---
+
+## 4. Proving a Problem Is NP-Complete
+
+To show that a problem X is NP-Complete, follow these steps:
+
+1. **Show That X Is in NP**:
+   - Provide a way to verify a solution quickly (in polynomial time).
+2. **Choose a Known NP-Complete Problem Y**:
+   - Examples include 3-SAT or Independent Set.
+3. **Reduce Y to X**:
+   - Show how any instance of Y can be transformed into an instance of X in polynomial time.
+4. **Prove the Reduction Works**:
+   - **Forward Direction**: If the original problem Y has a solution, then the transformed problem X also has a solution.
+   - **Backward Direction**: If the transformed problem X has a solution, then the original problem Y also has a solution.
+
+**Note**: The reduction must be done in polynomial time.
+
+---
+
+## 5. Examples of NP-Complete Problems
+
+### A. Independent Set and Vertex Cover
+
+#### Independent Set
+
+- **Definition**: A set of vertices in a graph, no two of which are connected by an edge.
+- **Problem**: Find the largest independent set in a given graph.
+
+#### Vertex Cover
+
+- **Definition**: A set of vertices such that every edge in the graph is connected to at least one vertex in the set.
+- **Problem**: Find the smallest vertex cover in a given graph.
+
+#### Relationship Between Independent Set and Vertex Cover
+
+- **Theorem**: In any graph G, a set of vertices S is an independent set if and only if V \ S (the vertices not in S) is a vertex cover.
+- **Implication**: Solving one of these problems helps solve the other.
+
+#### Proving Vertex Cover Is NP-Complete
+
+1. **Vertex Cover Is in NP**:
+   - Given a set of vertices, we can quickly check if every edge is covered.
+2. **Reduction from Independent Set**:
+   - Since Independent Set is NP-Complete, and we can reduce it to Vertex Cover, Vertex Cover is NP-Complete.
+
+**Example**:
+
+- Suppose we have a graph with 5 vertices and edges connecting some of them.
+- Finding an independent set of size 3 means finding 3 vertices with no edges between them.
+- The complement of those vertices forms a vertex cover.
+
+### B. Hamiltonian Cycle and Hamiltonian Path
+
+#### Hamiltonian Cycle (HC)
+
+- **Definition**: A cycle in a graph that visits every vertex exactly once and returns to the starting point.
+- **Problem**: Determine if such a cycle exists in a given graph.
+
+#### Hamiltonian Path (HP)
+
+- **Definition**: A path that visits every vertex exactly once but does not need to return to the starting point.
+- **Problem**: Determine if such a path exists in a given graph.
+
+#### Proving Hamiltonian Path Is NP-Complete
+
+1. **HP Is in NP**:
+   - Given a path, we can quickly verify if it visits every vertex exactly once.
+2. **Reduction from Hamiltonian Cycle**:
+   - **Idea**: Modify the graph G to G' such that G has an HC if and only if G' has an HP.
+   - **Construction**:
+     - Add a new vertex connected to all vertices in G.
+   - **Proof**:
+     - **Forward**: If G has an HC, then in G', starting from the new vertex, we can traverse the HC without returning.
+     - **Backward**: If G' has an HP, it must include the new vertex, which implies a HC in G.
+
+### C. Graph Coloring
+
+#### What Is Graph Coloring?
+
+- **Definition**: Assigning colors to the vertices of a graph such that no two adjacent vertices share the same color.
+- **Problem**: Can we color a graph using k colors under this rule?
+
+#### k-Coloring Is NP-Complete (for k > 2)
+
+1. **Graph Coloring Is in NP**:
+   - Given a coloring, we can check if it's valid quickly.
+2. **Reduction from 3-SAT to 3-Coloring**:
+   - **Idea**: Build a graph where:
+     - Variables and their negations are represented.
+     - Clauses are represented with specific connections.
+   - **Gadgets**:
+     - **Variable Gadget**: Ensures that a variable and its negation get different colors.
+     - **Clause Gadget**: Ensures that at least one literal in the clause is true.
+   - **Result**: The graph is 3-colorable if and only if the 3-SAT formula is satisfiable.
+
+#### 2-Coloring Is Easy
+
+- **Fact**: Determining if a graph can be colored with 2 colors is solvable in polynomial time.
+- **Method**: Use **Breadth-First Search (BFS)** to check if the graph is bipartite.
+
+### D. Sudoku
+
+#### What Is Sudoku?
+
+- **Definition**: A puzzle where you fill a \( n^2 \times n^2 \) grid so that each row, column, and \( n \times n \) subgrid contains all numbers from 1 to \( n^2 \) without repetition.
+
+#### Is Sudoku NP-Complete?
+
+- **Answer**: Yes, generalized Sudoku is NP-Complete.
+- **Explanation**:
+  - **In NP**: Given a filled grid, we can check if it's a valid solution quickly.
+  - **NP-Hardness**: We can reduce other NP-Complete problems to Sudoku.
+
+#### Modeling Sudoku as a Graph Coloring Problem
+
+- **Vertices**: Each cell in the Sudoku grid.
+- **Edges**: Two cells are connected if they are in the same row, column, or subgrid.
+- **Colors**: The numbers from 1 to \( n^2 \).
+- **Goal**: Color the graph so that no connected vertices share the same color.
+
+---
+
+## 6. Don't Be Afraid of NP-Hard Problems
+
+- **Real-World Solutions**:
+  - Many NP-Hard problems can be solved in practice for reasonably sized inputs.
+  - **Example**: The Traveling Salesman Problem (TSP) has been solved for tens of thousands of cities using clever algorithms and computational power.
+- **Approximation Algorithms**:
+  - For some NP-Hard problems, we can find near-optimal solutions efficiently.
+- **Heuristics and Special Cases**:
+  - Certain instances or variations of NP-Hard problems can be solved efficiently.
+
+---
+
+## Conclusion
+
+Understanding computational complexity helps us recognize the limits of what computers can solve efficiently. While NP-Complete problems are challenging, they are also fascinating and important in computer science. By studying concepts like Turing Machines, P vs. NP, and problem reductions, we gain insights into the nature of computation.
+
+Remember, even though some problems are hard in theory, with smart approaches and modern computing power, we can often tackle them effectively in practice.
+
+---
+
+## Key Terms Glossary
+
+- **Algorithm**: A step-by-step procedure to solve a problem.
+- **Polynomial Time**: An algorithm runs in polynomial time if its running time is \( O(n^k) \) for some constant \( k \), where \( n \) is the input size.
+- **Deterministic**: An algorithm or machine that behaves predictably, without randomness.
+- **Non-Deterministic**: An algorithm or machine that can make arbitrary choices or guesses during computation.
+- **Reduction**: Transforming one problem into another to show that solving the second problem allows us to solve the first.
+- **NP (Nondeterministic Polynomial Time)**: Class of problems where solutions can be verified quickly.
+- **NP-Hard**: Problems at least as hard as the hardest problems in NP.
+- **NP-Complete**: Problems that are both in NP and NP-Hard.
+
+---
+
+## Further Reading and Practice
+
+- **Experiment with Puzzles**:
+  - Solve Sudoku puzzles and think about how they relate to graph coloring.
+- **Explore Algorithms**:
+  - Learn about algorithms for graph traversal like BFS and DFS.
+- **Watch Educational Videos**:
+  - Look for videos explaining P vs. NP in simple terms.
+- **Read About Historical Context**:
+  - Learn more about Alan Turing and his contributions to computer science.
