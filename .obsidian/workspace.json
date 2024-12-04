@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "570/Linear Programming.md",
+                "file": "570/NP Completeness.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linear Programming"
+              "title": "NP Completeness"
             }
           }
         ],
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "570/Linear Programming.md",
+                "file": "570/NP Completeness.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Linear Programming"
+              "title": "Backlinks for NP Completeness"
             }
           },
           {
@@ -231,8 +231,8 @@
   },
   "active": "745f7350dee966b8",
   "lastOpenFiles": [
-    "570/Approximation Algorithms.md",
     "570/Linear Programming.md",
+    "570/Approximation Algorithms.md",
     "570/NP Completeness.md",
     "570/Max Flow Pt2.md",
     "570/Max Flow.md",
