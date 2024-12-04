@@ -211,3 +211,22 @@ Independent Set is NP Complete
 Contain set of size k, at laeast k
 
 Is it in NP?
+Need to show we can verify sa solution in polynomial time
+Given a set of vertices we can count them and verify that any two of them are not joind by an edge
+
+Is it in NP hard
+?
+
+We need to pick Y such that y <p IOndSet for Y <= NP
+Reduce from 3 SAT??
+What is 3 sat
+
+3sat is a sat where each claue has at most 3 literals
+
+We construct a graph G that will have an independent set of size k  
+iff the 3-SAT instance with k clauses is satisfiable.  
+For each clause (X ⋁ Y ⋁ Z) we will be using a special gadget:  
+Y  
+Next, we need to connect gadgets.  
+(X ⋁ Y ⋁ Z) ⋀ (X ⋁ ¬Y ⋁ Z) ⋀ (¬X ⋁ Y ⋁ ¬Z) ⋀ (¬X ⋁ ¬Y)  
+As an example, consider the following instance:
