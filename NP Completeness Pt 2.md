@@ -40,3 +40,79 @@ decision
 problems  
 NPC problems can be solved by a non-deterministic TM in polynomial  
 time.
+
+
+NP-Completeness Proof Method  
+To show that X is NP-Complete:  
+1) Show that X is in NP  
+2) Pick a problem Y, known to be an NP-Complete  
+3) Prove Y ≤p X (reduce Y to X)  
+In lecture 11 we have proved that Independent Set  
+is NP-Complete by reduction from 3-SAT (3SAT ≤p IndSet)  
+Reduction from 3SAT to IndSet consists of three parts:  
+• we transform an arbitrary CNF formula into a special graph G and a  
+specific integer k, in polynomial time.  
+• we transform an arbitrary satisfying assignment for 3SAT into an  
+independent set in G of size k.  
+• we transform an arbitrary independent set (in G) of size k into a  
+satisfying assignment for 3SAT.
+
+Vertex Cover  
+Given G=(V,E), find the smallest S⊂V s.t. every  
+edge is incident to vertices in S.  
+The minimum vertex cover problem, MinVC, asks  
+for the size of the smallest vertex cover in a  
+given graph.
+
+Decision version
+Given f and k, does G contain a vc of size vc <= k
+
+Theorem for a graph G Ve S is an independent set if and only if vs is a vertex cover
+
+Forward Proof
+Given S is an IS
+
+
+x in IS then y not in Is if follows and y is in VC
+if y in Is then x not in Is if follows and x in vc
+x y both not in IS then x y in VC
+
+Backwards proof
+Given a vc
+Pick for all x y s.t x not in VC y in VC
+There exists edge x, y, does not proof by contradiction
+
+it follows x, y in IS
+
+
+Min Vertex Cover in NP-Hard  
+Claim: a graph G=(V,E) has an independent set of size at least k if and  
+only if G has a vertex cover of size at most V-k.  
+MaxIndSet ≤p MinVC  
+Ind. Set ≤p Vertex Cover  
+Vertex Cover in NP-Complete  
+By the previous theorem.  
+By the previous theorem.
+
+Hamiltonian Cycle Problem  
+A Hamiltonian cycle (HC) in a graph is a cycle that  
+visits each vertex exactly once.  
+Problem Statement:  
+Given a directed or undirected graph G = (V,E). Find if  
+the graph contains a Hamiltonian cycle.  
+We can prove it that HC problem is NP-complete by reduction from  
+SAT, but we won’t.
+
+ssuming that finding a Hamiltonian Cycle (HC) in a graph is NP-  
+complete, prove that finding a Hamiltonian Path is also NP-  
+complete. HP is a path that visits each vertex exactly once and  
+isn’t required to return to its starting point.
+
+
+HP in NP verify in polynomial time
+
+NP in NPH
+construct a polynomial maping
+make a claim
+prove the claim in both directions
+
