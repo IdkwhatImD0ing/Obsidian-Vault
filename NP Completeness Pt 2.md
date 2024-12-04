@@ -146,3 +146,23 @@ Graph G consists of the following gadgets.
 
 3-SAT ≤p 3-colorable  
 Combining those gadgets together (for three literals)
+
+Sudoku
+n^2xn^2
+Np?
+Np Hard?
+
+g COLORS]
+Sudoku Graph
+Vertex each 
+Edges two verticxes cooected if same row column or within same grid
+
+Don’t be afraid of  
+NP-hard problems.  
+The largest solved TSP an 85,900-vertex route calculated in 2006.  
+The graph corresponds to the design of a customized computer chip  
+created at Bell Laboratories, and the solution exhibits the shortest  
+path for a laser to follow as it sculpts the chip.  
+Many reasonable instances (of practical  
+interest) of problems in class NP can be  
+solved!
