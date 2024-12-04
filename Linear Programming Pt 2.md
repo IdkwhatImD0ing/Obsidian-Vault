@@ -230,3 +230,49 @@ Y
 Next, we need to connect gadgets.  
 (X ⋁ Y ⋁ Z) ⋀ (X ⋁ ¬Y ⋁ Z) ⋀ (¬X ⋁ Y ⋁ ¬Z) ⋀ (¬X ⋁ ¬Y)  
 As an example, consider the following instance:
+
+The confusing point is that the reduction Y ≤p X only “works one way”,  
+but the correctness proof needs to “work both ways”.  
+The correctness proofs are not actually symmetric.  
+The proof needs to handle arbitrary instances of Y, but only needs to  
+handle the special instances of X produced by the reduction.  
+This asymmetry is the key to understanding reductions
+
+Reduction from 3SAT to IndSet consists of three parts:  
+• we transform an arbitrary CNF formula into a special graph G and a  
+specific integer k, in polynomial time.  
+• we transform an arbitrary satisfying assignment for 3SAT into an  
+independent set in G of size k.  
+• we transform an arbitrary independent set (in G) of size k into a  
+satisfying assignment for 3SAT.
+
+he General Pattern Y ≤p X  
+1. Describe a polynomial-time algorithm to transform an  
+arbitrary instance of Y into a special instance of X.  
+2. Prove that if an instance of Y is True, then an instance of X  
+is True.  
+3. Prove that if an instance of X is True, then an instance of Y  
+is True. (This part causes the most trouble.)
+
+
+Clique  
+A clique is another name for a complete graph,  
+that is, a graph where every pair of vertices is  
+connected by an edge.  
+The MaxClique problem asks for the number of  
+vertices in its largest complete subgraph in a given  
+graph  
+We can prove that MaxClique is NP-  
+hard using the following easy  
+reduction from IndSet.  
+MaxIndSet ≤p MaxClique
+
+Any graph G=(V, E) has a complement graph G’=(V, E’), where  
+edge (u, v)∈E’ if and only if (u, v)∉E. In other words, G∪G’ is a  
+complete graph.  
+Consider the largest  
+Independent Set in G.  
+Consider the largest Clique  
+in G’.  
+The largest independent in G has the same vertices (and thus the  
+same size) as the largest clique in the complement of G.
