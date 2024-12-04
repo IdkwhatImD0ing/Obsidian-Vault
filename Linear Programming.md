@@ -81,4 +81,9 @@ The algorithm starts by finding a vertex of the polytope and then moving to a ne
 
 Does not run in polynomial time
 
+1974 Kachian LP can be done in polynomial time called Ellipsoid Algorithm, slow in practice
+
+K1984 karmarkal faster aclled interior poinMoevs inside the poly tops while simplex only moves on outer faces of polytops
+
+
 
