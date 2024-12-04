@@ -116,3 +116,33 @@ construct a polynomial maping
 make a claim
 prove the claim in both directions
 
+claim G has  HC iff G' has a HP
+proof
+Forward given HC(G) find a hp by construction
+
+bakwards path
+Given a hp in G'
+Find a HC in G
+
+
+Graph Coloring  
+Given a graph, can you color the nodes with ≤ k  
+colors such that the endpoints of every edge  
+are colored differently?  
+Theorem. (k>2)  
+k-Coloring is NP-complete.
+
+Graph coloring k = 2
+
+How can we test if a graph has a 2 coloring
+
+  
+-SAT ≤p 3-colorable  
+A truth gadget: T F  
+a ¬aA gadget for each variable:  
+We construct a graph G that will be 3-colorable iff the 3-SAT  
+instance is satisfiable.  
+Graph G consists of the following gadgets.
+
+3-SAT ≤p 3-colorable  
+Combining those gadgets together (for three literals)
