@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NP Completeness.md",
+                "file": "570/NP Completeness.md",
                 "mode": "source",
                 "source": false
               },
@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NP Completeness Pt 2.md",
+                "file": "570/NP Completeness Pt 2.md",
                 "mode": "source",
                 "source": false
               },
@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Approximation Algorithms.md",
+                "file": "570/Approximation Algorithms.md",
                 "mode": "source",
                 "source": false
               },
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Approximation Algorithms.md",
+                "file": "570/Approximation Algorithms.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Approximation Algorithms.md",
+                "file": "570/Approximation Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Approximation Algorithms.md"
+                "file": "570/Approximation Algorithms.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Approximation Algorithms"
@@ -216,7 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 301.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,9 +231,9 @@
   },
   "active": "745f7350dee966b8",
   "lastOpenFiles": [
-    "NP Completeness Pt 2.md",
-    "Approximation Algorithms.md",
-    "NP Completeness.md",
+    "570/NP Completeness Pt 2.md",
+    "570/Approximation Algorithms.md",
+    "570/NP Completeness.md",
     "570/Linear Programming.md",
     "570/Max Flow.md",
     "570/Max Flow Pt2.md",
