@@ -159,3 +159,55 @@ Y X
 Transf.  
 yes  
 no
+
+Boolean Satisfiability Problem (SAT)  
+A propositional logic formula is built from variables, operators AND  
+(conjunction, ∧), OR (disjunction, ∨), NOT (negation, ¬), and parentheses:  
+A formula is said to be satisfiable if it can be made TRUE by  
+assigning appropriate logical values (TRUE, FALSE) to its variables.  
+(X1 ∨ ¬X3) ∧ (X1 ∨ ¬X2 ∨ X4 ∨ X5) ∧ ...  
+A formula is in conjunctive normal form (CNF) if it is a conjunction  
+of clauses.  
+A literal is a variable or its negation.  
+A clause is a disjunction of literals.
+
+CNF SAT is NP-complete.
+
+Independent set
+Given a graph, we say that a subset of vertices is  
+“independent” if no two of them are joined by an  
+edge.  
+2  
+4  
+1  
+53  
+76  
+The maximum independent set problem,  
+MaxIndSet, asks for the size of the largest  
+independent set in a given graph.
+
+The maximum independent set problem
+MaxIndSet is the size of the largest indedpendent set in a given graoh
+
+oPTIMIZATION vERSON
+mAXiIndeSEt is a optimization prloblem np-hard
+
+Deicion version
+Independentset of size k, is NPComplete?
+
+Optimization vs. Decision Problems
+
+
+f one can solve an optimization problem (in polynomial time), then  
+one can answer the decision version (in polynomial time)  
+Conversely, by doing binary search on the bound b, one can  
+transform a polynomial time answer to a decision version into a  
+polynomial time algorithm for the corresponding optimization  
+problem  
+In that sense, these are essentially equivalent.  
+However, they belong to two different complexity classes.
+
+Independent Set is NP Complete
+Contain set of size k, at laeast k
+
+Is it in NP?
