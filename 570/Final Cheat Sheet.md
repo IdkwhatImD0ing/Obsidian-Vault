@@ -13,7 +13,8 @@
 - Represent constraints as capacities on edges.
 - Find max flow using, e.g., Ford-Fulkerson or Edmond-Karp.
 - Max-flow = feasible solution to original problem.
-    - **Forward Direction:** Given a known solution, construct a flow respecting capacities.
+    
+**Forward Direction:** Given a known solution, construct a flow respecting capacities.
     - **Backward Direction:** Given a max flow, interpret it as a valid solution.
 
 **Cheat Code / Checklist for Linear Programming Problems**
