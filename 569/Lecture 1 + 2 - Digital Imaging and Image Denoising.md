@@ -1,129 +1,114 @@
-Digital images
-1,1 top left
-RGB 8 bits per pel
-luminance is brightness, correlated with freen
-chrominance, cb and cr
-gray scale images, uses the luminance channle of a color image
-8 bits per pel black gray and white
+# Digital Images
+- **Pixel Coordinates:**
+  - (1,1) is at the top left.
+- **Color Representation:**
+  - RGB model with 8 bits per pixel.
+- **Luminance:**
+  - Represents brightness.
+  - Often derived from the green channel.
+- **Chrominance:**
+  - Contains color difference information (Cb and Cr channels).
+- **Grayscale Images:**
+  - Use the luminance channel.
+  - 8 bits per pixel with values from 0 (black) to 255 (white).
 
-Image signal processors (ISP) transform camera sensor  
-data into images via several digital image processing  
-operations:  
-n Demosaicing  
-n Histogram Equalization  
-n Intensity & Contrast Adjustment  
-n Smoothing & Sharpening  
-n 3 A’s  
-• Auto Exposure (AE)  
-• Auto Focus (AF)  
-• Auto White Balancing (AWB)  
-1/12/25
+# Image Signal Processors (ISP)
+- **Purpose:**
+  - Convert camera sensor data into processed images.
+- **Key Operations:**
+  - **Demosaicing**
+  - **Histogram Equalization**
+  - **Intensity & Contrast Adjustment**
+  - **Smoothing & Sharpening**
+  - **3 A’s:**
+    - Auto Exposure (AE)
+    - Auto Focus (AF)
+    - Auto White Balancing (AWB)
 
-What is basic demosaicing?
-Its how to reconstruct missing color values at a particular positions
-Simple solution is bilinear interpolation
+# Demosaicing
+- **Basic Demosaicing:**
+  - Reconstructs missing color values at sensor positions.
+  - **Simple Method:** Bilinear interpolation.
+    - For red/blue: Use horizontal then vertical interpolation.
+    - For green: Use 4 neighboring pixels.
+- **Advanced Demosaicing (MHC - Malvar, He, Cutler):**
+  - Uses correct terms and a 5-point Laplacian for refinement.
+  - Example: Estimating the green component at a red pixel with better accuracy.
 
-for red blue its horizontal followed yby vertical interpoliation, green is 4 side
+# Contrast Enhancement & Histograms
+- **Contrast in 8-Bit Grayscale Images:**
+  - Pixel values range from 0 (black) to 255 (white).
+  - **Low Contrast:** Pixel values are clustered together.
+  - **High Contrast:** Pixel values are widely spread.
+- **Image Histograms:**
+  - **Low Brightness:** Most pixels near 0.
+  - **High Brightness:** Most pixels near 255.
+- **Histogram Equalization:**
+  - Spreads out pixel values to enhance contrast.
+  - Can be applied to color histograms for improved color representation.
 
-ADvanced Demoisaicing MHC
-malvar he cutler demosaicing
+# Auto Exposure, Auto Focus, & Auto White Balancing
+- **Auto Exposure (AE):**
+  - Adjusts image brightness for correct exposure.
+- **Auto Focus (AF):**
+  - Uses autofocus points to determine optimal focus.
+- **Auto White Balancing (AWB):**
+  - Corrects color casts.
+  - **Algorithms:**
+    - Max RGB
+    - Gray World
+    - Advanced methods using gamut constraints and neural networks.
 
-To estimate a green component ad a red pixel location, we use corerct terms and 5 point loaplacian red channel. UExplain this in a more easy to undersatnd way
+# Image Filters
+- **Definition:**
+  - An n×n array (kernel) where each number is a weight coefficient applied to covered pixels.
+- **Examples:**
+  - **Low Pass Filters:** Smooth image by reducing high-frequency noise.
+  - **High Pass Filters:** Enhance edges.
+  - **Edge Sharpening:** Emphasizes details.
 
-Contrast Enhancement
-8 bit gray scale images
-Gray Scales 0, 1... 255
-0 is black darkest and 255 is white brightest
+# Image Denoising
+- **Noise Types:**
+  - **Additive Noise:**
+    - Additive White Gaussian Noise (AWGN): White and Gaussian in nature.
+  - **Impulse Noise (Salt and Pepper):**
+    - Salt (white): Caused by sensor saturation.
+    - Pepper (black): Caused by dead sensor pixels.
+  - **Mixed Noise:** Combination of both types.
+  
+- **Denoising Techniques:**
+  - **Salt & Pepper Removal:**
+    - Use outlier detection.
+    - **Median Filtering:** Rank-ordering pixel values and selecting the median.
+  - **AWGN Removal:**
+    - **Gaussian Smoothing:**
+      - Applies a Gaussian weighted low pass filter.
+      - Reduces high-frequency noise (with potential blurring of edges).
+    - **Bilateral Filtering:**
+      - Considers both spatial and intensity distances.
+    - **Non-Local Means (NLM) Algorithm:**
+      - Denoises by averaging similar patches across the image.
+      - Basic model: _x = s + n_ (noisy signal = original signal + noise).
+    - **Block Matching 3D (BM3D):**
+      - **Process:**
+        - Find similar blocks to a reference block.
+        - Stack them into a 3D array.
+        - Perform collaborative filtering.
+      - **Collaborative Filtering Steps:**
+        - Hard Thresholding.
+        - Wiener Filtering.
+      - Note: Steps 1 and 2 differ in their filtering approach.
 
-IMage histogram
-low brightness, all pixesl near 0
-high brighness all pixels near 255
-
-low contrasct, spread is low
-high contrast, spread is high
-
-HIstogram equilization is  spreading out the pixel valuesmakes it more high contrast
-color hisogram equiliation also spread outs the values
-, more correct colors
-
-Auto exposure, makes the exposure look correct
-autofocus, autofocus points are what use to determine the camera will be focusing the image
-
-color correctiong, auto white balancing
-many algorihtms, max rgb, grey world
-
-advanced has gamut constraint, neural network etc
-
-Image Filters
-Image filter is a nxn array
-Earch number in the aray represents a weight coefficient for each pixel convered by the array
-
-examples are low pass and high pass
-
-Another exampl e is sdge sharpening
-
-Image Denoising
-
-Two noise types
-Additive nOise
-aDDITIVE WHITE GAUSSIAN NOISE
-wHITE AND GAUSSIAN
-
-IMpulse Noise (peper/salt noise)
-white is salt, sensor saturation
-black is pepper noise, dead sensor
-
-mixed noise, is both
-
-removal of salt and pepper is using outlier decetion, then removing
-
-median filtering, median rank order of the samples from smallest ot largest and pick the middle one
-
-removal of awgn
-
-Gaussian Smothing
-Basic Denoising Idea
-Lowpass filters
-Most iomages contents are low frequency
-Noise components are high frequency
-Use low pass filters to supress noise
-edges are high frequency and thus blurred side effect
-Gaussian weighted low pass filter
-
-bilaterial filtering
-gaussian waiting according to spatial and intensity distance
-
-non local means algorithm
-denoising with non local mean
-classical problem in image and video processing
-x = noising signal
-s = original
-n = noise
-
-block matching 3d
-find blocks that are similar to the refence one, block matching and stack them together form a 3d array
-perform collaborative friltering of the group and return the obtained 2d estimates of all grouped blocks to their original locations
-
-
-difference between steos 1 ad 2
-collaborative hard thresholding and collaborative wiener filterinmg
-
-
-
-
-Adaptive noon local means algorithm
-adaptive nl mean ss algorithm
-adjust denoising parameter based on local content. enhance the similarity matching processin order to fully exploit self similarity existing with an image
-
-block classification
-determine block type of each local point so that different approach can be selectively appledito each block type
-
-aadaptive block matching
-adjust denoising parameter baed on bloick type and enhance the similartify mathcing process
-
-dfominant orientation alighment
-rely on a set of rotated blocks that have their dominna torientation aligned well with that of the target block
-
-adaptive matching window
-adaptively adjust the size of matching window so that it can capture the local structure for better matching
-
+# Advanced Denoising Techniques
+- **Adaptive Non-Local Means Algorithm:**
+  - Adjusts denoising parameters based on local image content.
+  - Enhances the similarity matching process.
+- **Block Classification:**
+  - Classifies local blocks to apply selective denoising approaches.
+- **Adaptive Block Matching:**
+  - Adjusts denoising parameters based on block type.
+  - Improves similarity matching accuracy.
+- **Dominant Orientation Alignment:**
+  - Aligns rotated blocks with the dominant orientation of the target block.
+- **Adaptive Matching Window:**
+  - Adjusts the size of the matching window to better capture local structures.
