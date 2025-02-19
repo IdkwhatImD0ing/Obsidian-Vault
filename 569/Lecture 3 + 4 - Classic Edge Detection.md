@@ -16,3 +16,8 @@ classif edge dection methods
 canney edge dection from 1986
 
 1st order derivative uses 2d calculus
+Differencing filoters often amplify noise
+TO supres noise we use low pass filtering and 1st order derivative image filter, compound filter
+
+2nd order derivatives uses 2nd order derivatives
+
