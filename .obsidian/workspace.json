@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Lecture 1 + 2 - Digital Imaging.md",
+                "file": "569/Lecture 1 + 2 - Digital Imaging and Image Denoising.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 1 + 2 - Digital Imaging"
+              "title": "Lecture 1 + 2 - Digital Imaging and Image Denoising"
             }
           }
         ],
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Lecture 1 + 2 - Digital Imaging.md",
+                "file": "569/Lecture 1 + 2 - Digital Imaging and Image Denoising.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture 1 + 2 - Digital Imaging"
+              "title": "Backlinks for Lecture 1 + 2 - Digital Imaging and Image Denoising"
             }
           },
           {
@@ -261,7 +261,7 @@
   "active": "b05b48c3550c8cee",
   "lastOpenFiles": [
     "570/Final Cheat Sheet.md",
-    "569/Lecture 1 + 2 - Digital Imaging.md",
+    "569/Lecture 1 + 2 - Digital Imaging and Image Denoising.md",
     "569",
     "570/Max Flow Pt2.md",
     "570/Max Flow.md",

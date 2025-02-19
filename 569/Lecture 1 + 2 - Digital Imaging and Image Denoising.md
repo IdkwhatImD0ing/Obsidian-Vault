@@ -42,3 +42,22 @@ high brighness all pixels near 255
 low contrasct, spread is low
 high contrast, spread is high
 
+HIstogram equilization is  spreading out the pixel valuesmakes it more high contrast
+color hisogram equiliation also spread outs the values
+, more correct colors
+
+Auto exposure, makes the exposure look correct
+autofocus, autofocus points are what use to determine the camera will be focusing the image
+
+color correctiong, auto white balancing
+many algorihtms, max rgb, grey world
+
+advanced has gamut constraint, neural network etc
+
+Image Filters
+Image filter is a nxn array
+Earch number in the aray represents a weight coefficient for each pixel convered by the array
+
+examples are low pass and high pass
+
+Another exampl e is sdge sharpening
