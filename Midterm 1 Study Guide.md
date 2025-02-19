@@ -99,4 +99,110 @@ The **Canny edge detector** is designed to extract clean and well-localized edge
 - **Overall Accuracy:**  
     Canny’s multi-stage process (smoothing, gradient computation, non-maximum suppression, and hysteresis) is designed to optimize both the detection of true edges and the suppression of spurious responses, leading to cleaner, more continuous, and well-defined edges compared to the simpler gradient-based approach of Sobel.
 
-HEre is an example on how to perform a sobel gradient operator
+HEre is an example on how to perform a sobel gradient operator:
+
+# Computation of the Sobel Gradient
+
+Given the 5×5 image:
+$$
+\begin{array}{ccccc}
+11 & 19 & 17 & 1  & 22 \\
+2  & 2  & 7  & 4  & 23 \\
+7  & 8  & 6  & 12 & 7  \\
+5  & 10 & 22 & 10 & 10 \\
+27 & 12 & 10 & 17 & 12 \\
+\end{array}
+$$
+
+The central pixel is at row 3, column 3 (with value 6). The corresponding 3×3 neighborhood (rows 2–4, columns 2–4) is:
+$$
+\begin{array}{ccc}
+2 & 7 & 4 \\
+8 & 6 & 12 \\
+10 & 22 & 10 \\
+\end{array}
+$$
+
+## Sobel Kernels
+
+For the x-direction (horizontal gradient), the Sobel kernel is:
+$$
+G_x = 
+\begin{bmatrix}
+-1 & 0 & +1 \\
+-2 & 0 & +2 \\
+-1 & 0 & +1 \\
+\end{bmatrix}
+$$
+
+For the y-direction (vertical gradient), the Sobel kernel is:
+$$
+G_y = 
+\begin{bmatrix}
+-1 & -2 & -1 \\
+0  &  0 &  0 \\
++1 & +2 & +1 \\
+\end{bmatrix}
+$$
+
+## Step 1: Compute $G_x$
+
+Multiply the Sobel $G_x$ kernel element-wise with the 3×3 patch:
+$$
+\begin{array}{ccc}
+-1\cdot2 & 0\cdot7 & +1\cdot4 \\
+-2\cdot8 & 0\cdot6 & +2\cdot12 \\
+-1\cdot10 & 0\cdot22 & +1\cdot10 \\
+\end{array}
+$$
+
+Calculate the sums row by row:
+- **First row:** $-1\cdot2 + 0\cdot7 + 1\cdot4 = -2 + 0 + 4 = 2$
+- **Second row:** $-2\cdot8 + 0\cdot6 + 2\cdot12 = -16 + 0 + 24 = 8$
+- **Third row:** $-1\cdot10 + 0\cdot22 + 1\cdot10 = -10 + 0 + 10 = 0$
+
+Thus,
+$$
+G_x = 2 + 8 + 0 = 10.
+$$
+
+## Step 2: Compute $G_y$
+
+Multiply the Sobel $G_y$ kernel element-wise with the 3×3 patch:
+$$
+\begin{array}{ccc}
+-1\cdot2 & -2\cdot7 & -1\cdot4 \\
+0\cdot8  &  0\cdot6 &  0\cdot12 \\
++1\cdot10 & +2\cdot22 & +1\cdot10 \\
+\end{array}
+$$
+
+Calculate the sums row by row:
+- **First row:** $-1\cdot2 + (-2)\cdot7 + (-1)\cdot4 = -2 - 14 - 4 = -20$
+- **Second row:** $0 + 0 + 0 = 0$
+- **Third row:** $1\cdot10 + 2\cdot22 + 1\cdot10 = 10 + 44 + 10 = 64$
+
+Thus,
+$$
+G_y = -20 + 0 + 64 = 44.
+$$
+
+## Step 3: Compute the Gradient Magnitude
+
+The gradient magnitude is given by:
+$$
+|G| = \sqrt{G_x^2 + G_y^2} = \sqrt{10^2 + 44^2} = \sqrt{100 + 1936} = \sqrt{2036}.
+$$
+
+Alternatively, this can be written as:
+$$
+\sqrt{2036} = 2\sqrt{509}.
+$$
+
+## Final Answer
+
+- **Gradient in x-direction:** $G_x = 10$
+- **Gradient in y-direction:** $G_y = 44$
+- **Gradient magnitude:** $|G| = \sqrt{2036}$ (or equivalently, $2\sqrt{509}$)
+
+
