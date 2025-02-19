@@ -62,5 +62,66 @@ cyan yellow
 
 applications are cry phosphors and multiple projects aimed at a screen
 
+subtractive color mixing
+employed with ppaints and pigments
+primary colors
+yellow
+white light subtracts blue
+magenta white light substracts green
+cyan, white light subtracts red
+all lights subtracted, = black
+
+applications
+photographic film, paint and crayons
+
+cym is used for prnting
+cymk adds pure black, richer black and less ink consumption
+conversion from rgb model is simple
+to produce more colors tricks like half toning and dithering must be used
 
 
+color image halftoning
+converts 24gpp to 8 options
+color cartridge
+cyan 0/1 = 1 dot
+magenta, yellow = same
+
+color digital halftoning is converting from rgb to cmy color space
+digital halftoning, quality does not look so good
+why?
+
+minimal brightness variation criterion
+Algorithm  
+• Find the corresponding tetrahedral volume for a given pixel  
+• Quantize its color to that of its nearest corner  
+• Diffuse the error to its neighboring pixels in C, M, Y channels  
+
+
+DBS is another algorithm
+
+
+Image Geometrical Manipulation  
+and Warping
+
+Introduction  
+• Geometrical Manipulation  
+• Translation  
+• Scaling (zoom-in and zoom-out)  
+• Rotation  
+• Affine transformation  
+• Advanced Manipulation  
+• Image warping  
+• 3D object warping  
+• Computer graphic rendering (from 3D world coordinates to 2D image  
+coordinates)  
+Applications
+Image registration
+image warping
+image coordinates vs cartesian coordinates
+start with 1 at top right
+transformation between image and cartesian coordinates simple
+nverse Address Mapping  
+• Render the output image (in integer pixel locations) by tracing back to  
+the corresponding input pixel locations  
+• The input pixel locations can be fractional numbers  
+• Use the interpolation technique to generate the corresponding values
