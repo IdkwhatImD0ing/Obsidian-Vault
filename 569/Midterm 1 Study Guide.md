@@ -219,3 +219,26 @@ where $G$ is a Gaussian kernel. Then you apply the Sobel operator on $I_s$ inste
 The edge map that shows thin, one-pixel-wide, well-localized edges is the one produced with non-maximum suppression. In contrast, the map without NMS will show thicker, more blurred edge responses.
 
 The reason for using NMS is to refine the edge detection by retaining only the local maximum gradient values along the gradient direction. This process suppresses adjacent pixels with lower gradient magnitudes, thereby producing a thinner, more precise edge map and reducing the impact of noise.
+
+
+1. Sobel edge detector with thresholding  
+     • Appearance: The edges tend to be somewhat thick and rough. Because this method simply thresholds the gradient magnitudes (without any edge thinning or hysteresis), the detected edges are less precisely localized and may include some spurious responses.  
+     • Match: This is the edge map that shows relatively noisy, unrefined edges.
+    
+2. Canny edge detector  
+     • Appearance: The Canny detector produces very thin (often one‐pixel wide), well‐localized, and continuous edges. The double thresholding and edge tracking by hysteresis remove weak, isolated responses while preserving true edges.  
+     • Match: This is the edge map where the edges are crisp, continuous, and well separated from the background.
+    
+3. Structured edge detector with non-maximum suppression followed by thresholding  
+     • Appearance: Similar to Canny, this method produces thin, well-localized edges. However, because it is a learned method, the edges often align more accurately with semantically meaningful boundaries and may show less noise than the traditional Canny.  
+     • Match: This edge map looks very clean and crisp with edges following the object boundaries accurately.
+    
+4. Structured edge detector without non-maximum suppression followed by thresholding  
+     • Appearance: Without the non-maximum suppression step, the edges appear thicker and more diffuse. The responses are not thinned out, so you see broader, less well-localized bands rather than sharp lines.  
+     • Match: This is the edge map with broad, fuzzy edge responses.
+    
+
+Digital HalfToning Section
+
+
+
