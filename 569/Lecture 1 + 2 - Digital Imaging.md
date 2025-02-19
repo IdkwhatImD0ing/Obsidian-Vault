@@ -29,3 +29,16 @@ ADvanced Demoisaicing MHC
 malvar he cutler demosaicing
 
 To estimate a green component ad a red pixel location, we use corerct terms and 5 point loaplacian red channel. UExplain this in a more easy to undersatnd way
+
+Contrast Enhancement
+8 bit gray scale images
+Gray Scales 0, 1... 255
+0 is black darkest and 255 is white brightest
+
+IMage histogram
+low brightness, all pixesl near 0
+high brighness all pixels near 255
+
+low contrasct, spread is low
+high contrast, spread is high
+
