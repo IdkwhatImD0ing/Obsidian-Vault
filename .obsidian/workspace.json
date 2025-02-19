@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
+                "file": "569/Midterm 1 Study Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3 + 4 - Classic Edge Detection + Learning Based"
+              "title": "Midterm 1 Study Guide"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Lecture 5 + 6 - Digital Halftoning and Image Warping"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
+                "file": "569/Midterm 1 Study Guide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture 5 + 6 - Digital Halftoning and Image Warping"
+              "title": "Backlinks for Midterm 1 Study Guide"
             }
           },
           {
@@ -188,13 +187,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e06cf13b6552bdf6",
+  "active": "9399c028d3e618d5",
   "lastOpenFiles": [
+    "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
+    "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
     "569/Lecture 7 + 8 -  3d World to 2d, Morphological Image.md",
     "569/Midterm 1 Study Guide.md",
-    "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
     "569/Lecture 9 - Texture Analysis Classification and Segmentation.md",
-    "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
     "569/Lecture 1 + 2 - Digital Imaging and Image Denoising.md",
     "Artificial Intelligence/Adversarial Search and Game Playing.md",
     "Fun/Convolutional Neural Networks.md",
