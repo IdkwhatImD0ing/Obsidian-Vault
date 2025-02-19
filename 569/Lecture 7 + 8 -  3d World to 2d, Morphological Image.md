@@ -78,3 +78,15 @@ Advanced Morphological Filters
 One-Stage Filter Design  
 • If we adopt the single-stage hit-or-miss filter solution, the filter size  
 has to be of 5x5=25
+
+Image-Set-Based Morphology
+Reflection, union and intersection
+
+Qualitative Description of Opening and  
+Closing  
+• Opening  
+• Smooth the contour of an object, break narrow isthmuses and eliminate thin  
+protrusions  
+• Closing  
+• Fuse narrow breaks and long thin gulfs, eliminate small holes and fill gaps in  
+the contours
