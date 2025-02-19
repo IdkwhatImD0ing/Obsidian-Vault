@@ -100,4 +100,30 @@ x = noising signal
 s = original
 n = noise
 
+block matching 3d
+find blocks that are similar to the refence one, block matching and stack them together form a 3d array
+perform collaborative friltering of the group and return the obtained 2d estimates of all grouped blocks to their original locations
+
+
+difference between steos 1 ad 2
+collaborative hard thresholding and collaborative wiener filterinmg
+
+
+
+
+Adaptive noon local means algorithm
+adaptive nl mean ss algorithm
+adjust denoising parameter based on local content. enhance the similarity matching processin order to fully exploit self similarity existing with an image
+
+block classification
+determine block type of each local point so that different approach can be selectively appledito each block type
+
+aadaptive block matching
+adjust denoising parameter baed on bloick type and enhance the similartify mathcing process
+
+dfominant orientation alighment
+rely on a set of rotated blocks that have their dominna torientation aligned well with that of the target block
+
+adaptive matching window
+adaptively adjust the size of matching window so that it can capture the local structure for better matching
 
