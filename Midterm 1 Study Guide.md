@@ -13,3 +13,6 @@ Demosaicing Techniques
 - **How It Works:**  
   To estimate the green component at a red pixel location, the algorithm not only uses neighboring green values but also applies a correction computed from the red channel using a 5-point Laplacian.  
   - **Simplified Explanation:** Think of a red pixel whose missing green value needs to be estimated. Instead of merely averaging nearby green pixels, the algorithm also examines the surrounding red pixels to gauge local changes (using a Laplacian filter) and adjusts the green estimate accordingly.
+
+Expand on Nln Local Means denoising
+Also clahe denoising
