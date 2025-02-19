@@ -98,3 +98,5 @@ The **Canny edge detector** is designed to extract clean and well-localized edge
     
 - **Overall Accuracy:**  
     Canny’s multi-stage process (smoothing, gradient computation, non-maximum suppression, and hysteresis) is designed to optimize both the detection of true edges and the suppression of spurious responses, leading to cleaner, more continuous, and well-defined edges compared to the simpler gradient-based approach of Sobel.
+
+HEre is an example on how to perform a sobel gradient operator
