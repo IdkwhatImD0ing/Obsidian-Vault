@@ -49,3 +49,22 @@ In bilateral filtering, each pixel’s new value is computed as a weighted avera
 - **oc** determines how much difference in intensity or color is tolerated before a neighbor’s contribution is significantly downweighted.
 
 Explain the differences between histogram equalization for bucket filling and transfer functio nbased method
+
+
+Transfer functions:
+A **transfer function** in image processing is a mapping that specifies how each input pixel intensity is transformed into an output intensity. You can think of it as a function s=T(r)s = T(r)s=T(r), where rrr is the original intensity and sss is the new intensity after processing.
+
+### How the Graph Affects the Result Image
+
+The graph of the transfer function is plotted with the input intensity (usually on the horizontal axis) and the output intensity (on the vertical axis). The shape of this graph tells you exactly how intensities are remapped:
+
+- **Identity Mapping:**  
+    A straight diagonal line from the bottom left (0,0) to the top right (255,255) indicates that each intensity is mapped to itself. The output image will be identical to the input image—no change in brightness or contrast.
+    
+- **Contrast Stretching:**  
+    If the graph is steeper than the identity line in certain regions, it amplifies differences in those intensity ranges, thus increasing contrast.
+    
+- **Compression:**  
+    A graph that is less steep compresses the range of intensities, reducing contrast.
+
+Edge Detection
