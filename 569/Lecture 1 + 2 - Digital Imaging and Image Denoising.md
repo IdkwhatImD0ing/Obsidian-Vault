@@ -81,3 +81,23 @@ median filtering, median rank order of the samples from smallest ot largest and 
 
 removal of awgn
 
+Gaussian Smothing
+Basic Denoising Idea
+Lowpass filters
+Most iomages contents are low frequency
+Noise components are high frequency
+Use low pass filters to supress noise
+edges are high frequency and thus blurred side effect
+Gaussian weighted low pass filter
+
+bilaterial filtering
+gaussian waiting according to spatial and intensity distance
+
+non local means algorithm
+denoising with non local mean
+classical problem in image and video processing
+x = noising signal
+s = original
+n = noise
+
+
