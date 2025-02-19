@@ -115,4 +115,68 @@ Canny Edge Detector
 Learning BAsed
 Ground truth driven model
 Descriminative model
-Labe
+Labels form human sketch
+mimic human perception
+
+extravcted from patch
+edge confidence map
+
+Probability of Boundary (Pb) and  
+Its Two Variants (MS-Pb and gPb)  
+
+PB is learning based on local features
+brightness gradient
+texture gradient
+and color gradient
+
+Color: a, b  
+• Brightness: L  
+• Texture: textons (Convolve with 17  
+filters)
+
+Probability-of-Boundary (Pb)  
+• Oriented gradient of histogram  
+Ø Put disks with different scales (r) and orientations (θ)  
+Ø Calculate the histogram difference between two half disks
+
+MS PB
+is multiscale probability of boundary
+uses sacll smale and large scale outputs
+
+
+gPb is gloval probvability of boundary
+uses spectral clustering to obtain global information
+
+sketch token and structure edge
+
+next is machine learning based
+from 2013 is random forest patch prediction
+Why use Random Forest?  
+• Random Forest: Combination of decision trees  
+Ø Low computation cost, High ability to select effective features  
+Ø Not sensitive to the feature normalization  
+Ø Sufficient diversity of trees could avoid the overfit problem
+
+Random Forest Approach  
+• Two recent works: Sketch Token, Structured Edge  
+• Assumption: Edge has structure
+SKetch Token vs Structured Edge explain a bit more pelase
+
+
+Structured Edge (SE)  
+• Advantage  
+Ø Very Fast computation  
+Ø More accurate than Sketch Token (ST)
+
+onclusion and Future Work  
+• Local learning-based contour detector has been well  
+developed  
+• Global information is required to obtain more accurate  
+result  
+• Intrinsic evaluation problems exist in this field  
+• Future Directions  
+Ø Find more discriminative features  
+Ø Involve global information to refine the contour map  
+Ø Propose a generative model just like Human Vision  
+Ø Produce results that are suitable for downstream applications  
+1/22/25 61
