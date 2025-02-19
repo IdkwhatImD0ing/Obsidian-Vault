@@ -17,8 +17,33 @@ z`Demosaicing Techniques
 
 
 Denoising
-Compare median and gaussian denoising
+Compare median and gaussian denoising, and bilateral filter
 Expand on Nln Local Means denoising
 Also clahe denoising
 
 Also mention PSNR and its formula
+
+In bilateral filtering, each pixel’s new value is computed as a weighted average of its neighbors, where the weight is the product of two Gaussian functions—one that depends on spatial distance and one that depends on intensity (or color) difference. The key parameters that control this behavior are:
+
+1. **Filter Size:**
+    
+    - This is the size of the window (or kernel) over which the bilateral filter is applied.
+    - **Effect:** A larger filter size means that more neighboring pixels are considered during filtering. This can result in more smoothing overall, but it also increases computational cost. If the filter size is too small relative to the spatial Gaussian (os), you might not capture the full extent of the intended spatial smoothing.
+2. **os (Spatial Sigma):**
+    
+    - This parameter (often denoted as σₛ) controls the spatial component of the Gaussian weight.
+    - **Effect:**
+        - A **larger os** causes the spatial Gaussian to fall off more slowly with distance, meaning that pixels further away from the center will still have a significant influence. This can lead to a smoother output over a broader region.
+        - A **smaller os** means that only pixels very near the center contribute significantly, preserving more fine spatial details.
+3. **oc (Range or Color Sigma):**
+    
+    - This parameter (often denoted as σᵣ or σ_color) controls the range (or intensity/color) component of the Gaussian weight.
+    - **Effect:**
+        - A **larger oc** makes the filter less sensitive to intensity differences, so even pixels with different brightness or color can contribute to the average. This typically results in stronger smoothing, even across edges, which can diminish edge sharpness.
+        - A **smaller oc** makes the filter very selective about which pixels are considered similar in intensity. This preserves edges because only pixels with very similar values contribute, but it may also leave some noise unsmoothed within homogeneous regions.
+
+**Summary:**
+
+- **Filter size** determines how many pixels are considered.
+- **os** controls how the spatial distance between pixels affects their contribution.
+- **oc** determines how much difference in intensity or color is tolerated before a neighbor’s contribution is significantly downweighted.
