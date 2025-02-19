@@ -56,10 +56,10 @@ An ISP transforms raw camera sensor data into a viewable image using several dig
 
 ## Contrast Enhancement in Grayscale Images
 - **8-bit Grayscale Range:**  
-  Pixel values range from $$0$$ (black) to $$255$$ (white).
+  Pixel values range from $0$ (black) to $255$ (white).
 - **Image Histogram:**  
-  - **Low Brightness:** Most pixels are near $$0$$.  
-  - **High Brightness:** Most pixels are near $$255$$.  
+  - **Low Brightness:** Most pixels are near $0$.  
+  - **High Brightness:** Most pixels are near $255$.  
   - **Low Contrast:** Pixel values are concentrated in a narrow range.  
   - **High Contrast:** Pixel values are spread out over a wide range.
 
@@ -114,7 +114,7 @@ An ISP transforms raw camera sensor data into a viewable image using several dig
   Outlier detection and removal, commonly using **median filtering**.
 - **Median Filtering:**  
   Sorts the neighboring pixel values and replaces the center pixel with the median value.  
-  - **Example:** In a $$3 \times 3$$ window with values $$[12, 15, 14, 16, 200, 15, 13, 14, 15]$$ (with $$200$$ being an outlier), the median value (15) replaces the central pixel.
+  - **Example:** In a $$3 \times 3$$ window with values $$[12, 15, 14, 16, 200, 15, 13, 14, 15]$$ (with $200$ being an outlier), the median value (15) replaces the central pixel.
 
 ### Additive White Gaussian Noise
 - **Gaussian Smoothing:**
@@ -135,7 +135,7 @@ An ISP transforms raw camera sensor data into a viewable image using several dig
   Instead of solely using a local neighborhood, NLM denoises by averaging pixels with similar patterns found throughout the image.
 - **Mathematical Representation:**  
   $$ x = s + n $$  
-  where $x$ is the noisy signal, $s$ is the original image, and $$n$$ is the noise.
+  where $x$ is the noisy signal, $s$ is the original image, and $n$ is the noise.
 - **Example:**  
   For a given pixel in a textured area, similar patterns might be found in other parts of the image. NLM assigns weights to these pixels based on similarity and averages them to reduce noise.
 
