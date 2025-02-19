@@ -102,7 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 445.5
   },
   "right": {
     "id": "10dd7bb196dfaa68",
@@ -191,8 +191,8 @@
   "active": "e06cf13b6552bdf6",
   "lastOpenFiles": [
     "569/Lecture 1 + 2 - Digital Imaging and Image Denoising.md",
-    "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
     "Midterm 1 Study Guide.md",
+    "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
     "569/Lecture 9 - Texture Analysis Classification and Segmentation.md",
     "569/Lecture 7 + 8 -  3d World to 2d, Morphological Image.md",
     "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
