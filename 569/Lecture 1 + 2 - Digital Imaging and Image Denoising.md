@@ -61,3 +61,23 @@ Earch number in the aray represents a weight coefficient for each pixel convered
 examples are low pass and high pass
 
 Another exampl e is sdge sharpening
+
+Image Denoising
+
+Two noise types
+Additive nOise
+aDDITIVE WHITE GAUSSIAN NOISE
+wHITE AND GAUSSIAN
+
+IMpulse Noise (peper/salt noise)
+white is salt, sensor saturation
+black is pepper noise, dead sensor
+
+mixed noise, is both
+
+removal of salt and pepper is using outlier decetion, then removing
+
+median filtering, median rank order of the samples from smallest ot largest and pick the middle one
+
+removal of awgn
+
