@@ -48,9 +48,9 @@ Image processing can be broadly divided into two main branches:
 - **Evaluation Metrics:**  
     Commonly, ground truth segmentations are used for evaluation.
     - **Precision:**  
-        P=True PositivesTrue Positives+False PositivesP = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}
+        $$P=\frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}$$
     - **Recall:**  
-        R=True PositivesTrue Positives+False NegativesR = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}
+        $$R=\frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}$$
     - **F-Measure (F1 Score):** The harmonic mean of precision and recall.
     - **Average Precision (AP):** The area under the precision-recall curve.
 - **Example:**  

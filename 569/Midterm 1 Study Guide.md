@@ -215,3 +215,7 @@ I_s = I * G,
 $$
 where $G$ is a Gaussian kernel. Then you apply the Sobel operator on $I_s$ instead of $I$. This extra step helps in producing a cleaner and more reliable edge map.
 
+
+The edge map that shows thin, one-pixel-wide, well-localized edges is the one produced with non-maximum suppression. In contrast, the map without NMS will show thicker, more blurred edge responses.
+
+The reason for using NMS is to refine the edge detection by retaining only the local maximum gradient values along the gradient direction. This process suppresses adjacent pixels with lower gradient magnitudes, thereby producing a thinner, more precise edge map and reducing the impact of noise.
