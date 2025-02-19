@@ -67,4 +67,49 @@ centroid and select the class that gives the minimum distance
 • Euclidean distance?  
 • This is fine if the variance of each dimension is normalized to unity  
 • Otherwise, we should consider Mahalanobis distance  
-2/9/25 44
+
+
+Unsupervised Classifier – K-means Clustering (1)  
+• Objective:  
+• Cluster N feature vectors of dimension D, denoted by R D, into K clusters to  
+minimize the total distortion between each feature vector and its associated  
+cluster centroid  
+• Initialization (m=0)  
+• Select K feature vectors as the initial set of cluster centroids, called a  
+codebook  
+• Generalized Lloyd Iteration (m=0,1,...)  
+• Given codebook C m = { y i, i = 1, ..., K } obtained from the m th iteration, find a  
+new optimal partitioning of space R D using the nearest-neighbor condition to  
+form the nearest-neighbor cells R i = { x: d(x,y i) < d(x,y j), j ¹ i
+
+Comments on K-means Clustering  
+• Non-convex optimization  
+• There are multiple local minima  
+• The converged solution is dependent on the initial centroid choice  
+• The choice of the optimal K value is a problem  
+What is the optimal K value?  
+
+Supervised Distance-based Classifier (1)  
+• Nearest Neighbor Classifier  
+• Intra-cluster variation is smaller than inter-cluster variation  
+• Compute the centroid of each cluster  
+• Choose the class that has the smallest test sample-to-centroid distance
+
+Differences  
+• Texture classification is usually treated as a supervised learning  
+problem  
+• Offer exemplar texture images from several texture types (e.g. texture type A,  
+texture type B, texture type C, etc.)  
+• Given test image X, please find its texture type  
+• Texture segmentation is typically treated as an unsupervised learning  
+problem  
+• One texture mosaic image that contains multiple texture types
+
+Texture Classification  
+• Choose the window size to be the same as the image size  
+• Namely, take the average of feature vectors at all pixel locations  
+• Suppose that there are C texture classes, where each class has Nc  
+training images  
+• Find the feature vector of each training image  
+• Average the feature vectors of training images  
+• Centroid of each class
