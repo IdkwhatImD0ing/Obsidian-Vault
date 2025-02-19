@@ -18,4 +18,49 @@ darker region to densor black pixels per area
 white is sparse black pixels
 2 method
 dithering and error diffusion
+what is ditering?
+why is noise needed?
+
+noise = random variable
+diterhing via additive white noise and blue noise
+
+practical dfithering algo
+instead of using additive noise, use adaptive threadholding
+normalize input dynamic range
+threadhold matrix
+shortcomings of dithering
+texture like visual pattersn
+
+so what is error diffusion?
+in 1995
+feedback to neighboring pixels
+error diffusion mask
+
+
+next
+basic color science
+color mixing
+get more colors based on the primary colors
+additive color mixing
+rgb
+subtractive color mixing
+cmy
+
+
+additive color mixing
+additive mixture
+overlap spotilights in dark rooms
+primary colors
+red
+green blue
+red is longest wavelength
+blue is shortest wavelength
+secondary colors
+magenta
+cyan yellow
+
+
+applications are cry phosphors and multiple projects aimed at a screen
+
+
 
