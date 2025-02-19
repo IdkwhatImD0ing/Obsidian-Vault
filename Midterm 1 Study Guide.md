@@ -69,6 +69,8 @@ The graph of the transfer function is plotted with the input intensity (usually 
 
 Edge Detection
 DEfine canny and sobel edge detectin, how do I calculate sobel?
+also explain the double threshold, and why its needed
+
 The **Canny edge detector** is designed to extract clean and well-localized edges from an image, and its major steps are as follows:
 
 1. **Noise Reduction:**  
@@ -205,4 +207,11 @@ $$
 - **Gradient in y-direction:** $G_y = 44$
 - **Gradient magnitude:** $|G| = \sqrt{2036}$ (or equivalently, $2\sqrt{509}$)
 
+One drawback of the Sobel edge detector is that it is very sensitive to noise, which can result in false or spurious edges. One way to improve this drawback is to apply a Gaussian smoothing filter to the image **before** computing the Sobel gradient. 
+
+By pre-smoothing the image, you reduce high-frequency noise that might otherwise be mistaken for an edge. In mathematical terms, if you denote the original image by $I$, you first compute a smoothed image
+$$
+I_s = I * G,
+$$
+where $G$ is a Gaussian kernel. Then you apply the Sobel operator on $I_s$ instead of $I$. This extra step helps in producing a cleaner and more reliable edge map.
 
