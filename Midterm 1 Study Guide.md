@@ -47,3 +47,5 @@ In bilateral filtering, each pixel’s new value is computed as a weighted avera
 - **Filter size** determines how many pixels are considered.
 - **os** controls how the spatial distance between pixels affects their contribution.
 - **oc** determines how much difference in intensity or color is tolerated before a neighbor’s contribution is significantly downweighted.
+
+Explain the differences between histogram equalization for bucket filling and transfer functio nbased method
