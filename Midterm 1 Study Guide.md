@@ -68,3 +68,33 @@ The graph of the transfer function is plotted with the input intensity (usually 
     A graph that is less steep compresses the range of intensities, reducing contrast.
 
 Edge Detection
+DEfine canny and sobel edge detectin, how do I calculate sobel?
+The **Canny edge detector** is designed to extract clean and well-localized edges from an image, and its major steps are as follows:
+
+1. **Noise Reduction:**  
+    A Gaussian filter is applied to the image to smooth out noise. This step is crucial because noise can lead to false edge detection.
+    
+2. **Gradient Computation:**  
+    The smoothed image is then filtered with gradient operators (often similar to Sobel operators) to compute the gradient magnitude and direction at each pixel. This tells you how strong an edge is and its orientation.
+    
+3. **Non-Maximum Suppression:**  
+    This step thins out the edges by keeping only the local maxima in the gradient direction. In other words, if a pixel’s gradient magnitude is not the highest compared to its neighbors along the gradient direction, it is suppressed (set to zero).
+    
+4. **Double Thresholding:**  
+    Two thresholds (a high and a low) are applied to classify pixels as strong, weak, or non-relevant edges. Strong edges are those above the high threshold, and weak edges are those between the high and low thresholds.
+    
+5. **Edge Tracking by Hysteresis:**  
+    Finally, weak edge pixels are considered true edges only if they are connected to strong edge pixels. This helps in preserving real edges while discarding isolated noise responses.
+### Why Canny Performs Better than the Sobel Edge Detector
+
+- **Noise Reduction:**  
+    Canny begins with Gaussian smoothing, which significantly reduces the effect of noise. In contrast, the Sobel operator is applied directly to the image without any pre-smoothing, making it more susceptible to noise.
+    
+- **Edge Localization:**  
+    Through non-maximum suppression, Canny precisely localizes edges by thinning them to one-pixel-wide lines. The Sobel detector, on the other hand, produces thicker edges that may not be as well localized.
+    
+- **Robust Thresholding:**  
+    The double thresholding and edge tracking by hysteresis in Canny help to distinguish between strong and weak edges, ensuring that true edges are preserved while noise-induced edges are discarded. Sobel typically uses a single threshold, which may result in either missing weak edges or including too much noise.
+    
+- **Overall Accuracy:**  
+    Canny’s multi-stage process (smoothing, gradient computation, non-maximum suppression, and hysteresis) is designed to optimize both the detection of true edges and the suppression of spurious responses, leading to cleaner, more continuous, and well-defined edges compared to the simpler gradient-based approach of Sobel.
