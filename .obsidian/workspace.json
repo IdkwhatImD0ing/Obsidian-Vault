@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Lecture 3 + 4 - Classic Edge Detection.md",
+                "file": "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3 + 4 - Classic Edge Detection"
+              "title": "Lecture 3 + 4 - Classic Edge Detection + Learning Based"
             }
           },
           {
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Lecture 3 + 4 - Classic Edge Detection.md",
+                "file": "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture 3 + 4 - Classic Edge Detection"
+              "title": "Backlinks for Lecture 3 + 4 - Classic Edge Detection + Learning Based"
             }
           },
           {
@@ -277,7 +277,7 @@
     "textgenerator/prompts/default/getTags.md",
     "textgenerator/prompts/default/getParagraph.md",
     "textgenerator/prompts/default/getEmailNeg.md",
-    "569/Lecture 3 + 4 - Classic Edge Detection.md",
+    "569/Lecture 3 + 4 - Classic Edge Detection + Learning Based.md",
     "570/NP Completeness Pt 2.md",
     "570/Max Flow Pt2.md",
     "570/Final Cheat Sheet.md",
