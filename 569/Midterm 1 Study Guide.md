@@ -326,3 +326,52 @@ T(x,y) = \frac{I_n(x,y) + 0.5}{N^2} \times 255,
 $$
 
 we ensure that the threshold values are scaled appropriately for an 8-bit image, and the dithering process produces the intended binary image that approximates different gray levels.
+
+Below is a description of what you would expect each method’s output to look like on the Tower image and how to match them with the given results (A)–(E).
+
+---
+
+**(1) Fixed Thresholding**
+
+- **Expected Appearance:**  
+  A binary image produced by applying one constant threshold (e.g., 128) to all pixels.  
+  - Large, uniform regions appear either completely black or completely white.  
+  - There are abrupt transitions with little to no detail preserved in regions where the intensity is close to the threshold.  
+  - The result is “blocky” and tends to lose subtle tonal variations.
+
+---
+
+**(2) Random Thresholding**
+
+- **Expected Appearance:**  
+  The threshold is perturbed randomly for each pixel or region.  
+  - This produces a halftone that is noisy and grainy because the randomness breaks up the smooth transitions.  
+  - While it may reduce the obvious contouring artifacts seen in fixed thresholding, the randomness introduces speckle noise into the image.
+
+---
+
+**(3) Stucki Error Diffusion with Serpentine Scanning**
+
+- **Expected Appearance:**  
+  Error diffusion methods distribute the quantization error to neighboring pixels, and using a scheme like Stucki’s with serpentine scanning generally yields high-quality halftones.  
+  - The output shows fine detail and smooth tonal transitions.  
+  - Edges and textures are well preserved, with a “natural” appearance.  
+  - Some slight directional artifacts might appear due to the serpentine scan order, but overall the image is high quality.
+
+---
+
+**(4) Dithering with Bayer’s Matrix $I_2$**
+
+- **Expected Appearance:**  
+  A Bayer dithering method using a very small (2×2) threshold matrix produces a strongly periodic pattern.  
+  - You will see a coarse, repeating pattern (a checkerboard‐like or other very small dot pattern) that is easily visible.  
+  - The halftone effect is achieved, but the fine periodic structure is very noticeable.
+
+---
+
+**(5) Dithering with Bayer’s Matrix $I_{32}$**
+
+- **Expected Appearance:**  
+  Using a much larger Bayer matrix (32×32) for dithering results in a threshold pattern that is spread over a larger area.  
+  - The repeating structure is “smeared out” over a larger region, making the periodic artifacts much less obvious.  
+  - The halftone appears smoother and more visually pleasing, with a more gradual dot density variation.
