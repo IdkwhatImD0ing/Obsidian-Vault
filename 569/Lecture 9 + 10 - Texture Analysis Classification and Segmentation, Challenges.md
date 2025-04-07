@@ -160,3 +160,55 @@
 - **Distance Metrics** such as Euclidean and Mahalanobis distances are key in comparing feature vectors for classification.
 
 These concepts and techniques form the foundation for analyzing and classifying textures in various computer vision applications.
+
+
+Why is image segementation so difficult?
+Good number of segments
+3d information to segment, computers only have 2d
+Semantics can be used for humans, but computers weak at semantic understanding
+
+Several Ideas  
+• Contour detection (contour serves as a separator)  
+• Active contour  
+• Region growing  
+• Watershed  
+• Graph-based  
+• Pixels are nodes, their similarity is defined by an edge value  
+• Very similar -> small edge value  
+• Very different -> large edge value  
+• How to define similarities? mostly related to color (could be others)  
+• Superpixel methods  
+2/24/25 8
+Superpixel Methods  
+• Superpixel algorithms group pixels into perceptually meaningful  
+regions while respecting potential object contours, and thereby can  
+replace the rigid pixel grid structure  
+• Due to the reduced complexity, superpixels were popular for various  
+unsupervised computer vision applications  
+• Examples: multiclass object segmentation, depth estimation, human pose  
+estimation, and object localization.
+
+
+Superpixel Methods  
+• Superpixel algorithms group pixels into perceptually meaningful  
+regions while respecting potential object contours, and thereby can  
+replace the rigid pixel grid structure  
+• Due to the reduced complexity, superpixels were popular for various  
+unsupervised computer vision applications  
+• Examples: multiclass object segmentation, depth estimation, human pose  
+estimation, and object localization.
+
+Simple Linear Iterative Clustering (SLIC)  
+• Cluster pixels in the five-dimensional color and pixel coordinate space  
+(e.g., r,g,b,x,y)  
+• Initialization  
+• Begin with a collection of K cluster centers initialized at an equally sampled regular  
+grid on the image of N pixels  
+• For each cluster, you define for a localized window 2S x 2S centered at the cluster  
+center, where S=N/K−−−−√ is the roughly the space between the seed cluster centers  
+• Iteration  
+• Check whether the pixel within the 2S x 2S local window should be assigned to the  
+cluster center or not (by comparing the distance in 5D space to the cluster center)  
+• Once you loop through all the clusters, you can update the cluster center by  
+averaging over the cluster members. Iterate the pixel-to-cluster assignment process  
+till convergence or maximum iterations reached
