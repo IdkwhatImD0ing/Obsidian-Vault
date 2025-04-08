@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Lecture 11 + 12 - Sift, Bag of Words.md",
+                "file": "569/Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 11 + 12 - Sift, Bag of Words"
+              "title": "Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges"
             }
           }
         ],
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Lecture 11 + 12 - Sift, Bag of Words.md",
+                "file": "569/Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Lecture 11 + 12 - Sift, Bag of Words"
+              "title": "Backlinks for Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges"
             }
           },
           {
@@ -191,8 +191,8 @@
   },
   "active": "9dd26b5d452efec5",
   "lastOpenFiles": [
-    "569/Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges.md",
     "569/Lecture 11 + 12 - Sift, Bag of Words.md",
+    "569/Lecture 9 + 10 - Texture Analysis Classification and Segmentation, Challenges.md",
     "569/Lecture 7 + 8 -  3d World to 2d, Morphological Image.md",
     "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
     "569/Midterm 1 Study Guide.md",
