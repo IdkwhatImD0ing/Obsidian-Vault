@@ -103,3 +103,67 @@ descriptor
 robustness against illumination changes,  
 rotation, etc  
 212/24/25
+
+Descriptor has 3 dimensions (x,y,θ)  
+Position and orientation of each gradient sample  
+rotated relative to keypoint orientation
+
+Best results achieved with 4x4x8 = 128  
+descriptor size  
+Normalize to unit length  
+– Reduces effect of illumination change  
+Cap each element to 0.2, normalize again  
+– Reduces non-linear illumination changes  
+– 0.2 determined experimentally
+
+
+Object Detection  
+Create a database  
+of keypoints from  
+training images  
+Match keypoints to  
+a database  
+– Nearest neighbor  
+search  
+242/24/25
+
+What is PCA-sift?
+
+Different descriptor (same keypoints)  
+Apply PCA to the gradient patch  
+Descriptor size is 20 (instead of 128)  
+More robust, faster  
+
+
+Bag of Words
+An object can be transformed into a Bag of "Words"
+
+Like tags
+earning  
+feature detection  
+& representation  
+codewords dictionary  
+image representation  
+category models  
+(and/or) classifiers  
+recognition  
+category decision
+
+Step 1
+Feature Detection and representation
+Feature detection can be done with sliding window, or regular grida or interest point detector
+Other methods  
+– Random sampling (Ullman et al. 2002)  
+– Segmentation based patches  
+• Barnard et al. 2003, Russell et al 2006, etc.)  
+2/24/25 10
+
+Feature Representation  
+Visual words, aka textons, aka keypoints:  
+K-means clustered pieces of the image  
+• Various Representations:  
+– Filter bank responses  
+– Image Patches  
+– SIFT descriptors  
+All encode more-or-less the same thing...
+
