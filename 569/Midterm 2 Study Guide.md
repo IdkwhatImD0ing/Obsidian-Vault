@@ -492,4 +492,3 @@ Since Centroid A has more counts, the testing image is classified as **Class II*
   LoG and DoG are used for detecting edges. DoG is computationally efficient and approximates LoG, making it popular in practical applications.
 
 These detailed notes combine theory, formulas, examples, and step-by-step procedures to serve as a complete study guide for your midterm preparation in image processing and texture analysis.
-```

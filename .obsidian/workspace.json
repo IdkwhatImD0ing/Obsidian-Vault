@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Midterm 2 Study Guide.md",
+                "file": "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Midterm 2 Study Guide"
+              "title": "Lecture 5 + 6 - Digital Halftoning and Image Warping"
             }
           }
         ],
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Midterm 2 Study Guide.md",
+                "file": "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Midterm 2 Study Guide"
+              "title": "Backlinks for Lecture 5 + 6 - Digital Halftoning and Image Warping"
             }
           },
           {
@@ -193,13 +193,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "570/Max Flow Pt2.md"
+                "file": "569/Lecture 5 + 6 - Digital Halftoning and Image Warping.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Max Flow Pt2"
+              "title": "Outline of Lecture 5 + 6 - Digital Halftoning and Image Warping"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -219,8 +223,8 @@
   },
   "active": "367098c9b21da41e",
   "lastOpenFiles": [
-    "569/Midterm 2 Discussion Study Guide.md",
     "569/Midterm 2 Study Guide.md",
+    "569/Midterm 2 Discussion Study Guide.md",
     "561/Midterm 2 Study.md",
     "570/Max Flow.md",
     "Untitled.canvas",
