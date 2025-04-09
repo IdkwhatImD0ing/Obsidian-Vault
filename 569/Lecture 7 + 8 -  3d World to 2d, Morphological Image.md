@@ -3,7 +3,7 @@
 ### 1.1 Types of Cameras
 
 - **Pinhole Camera (Early Pinhole Camera)**
-  - **Concept:** A simple camera model where light enters a dark box through a tiny hole.
+- **Concept:** A simple camera model where light enters a dark box through a tiny hole.
   - **Mechanism:** Light from a scene passes through the pinhole and projects an inverted image on the wall opposite the hole.
   - **Example:** Imagine a room that is completely dark except for a tiny hole. The scene outside the room is projected upside down onto the wall inside.
 
