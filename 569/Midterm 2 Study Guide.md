@@ -1,3 +1,222 @@
+# Comprehensive Lecture Notes on Geometric Transformations, Texture Filtering, and Classification
+
+These notes summarize key concepts and techniques in image processing—from geometric transformations and interpolation methods to texture filtering with Laws’ masks and image classification using K-means with SSIFT. Every detail from the provided notes is included, with added explanations and examples to help reinforce the concepts.
+
+---
+
+## 1. 2D Transformation Matrices and Homogeneous Coordinates
+
+### 1.1 Linear vs. Affine Transformations
+
+- **Pure Linear Transformations:**  
+  In linear algebra, operations such as **rotation** or **scaling** are represented by a **2×2 matrix**. However, these do not handle translations.
+
+- **Need for Homogeneous Coordinates:**  
+  In image processing, translations are crucial. To combine translations with other linear operations (rotation, scaling), we use homogeneous coordinates by representing each 2D point $(x, y)$ as a three-element column vector:
+  
+  $$ \begin{pmatrix} x \\ y \\ 1 \end{pmatrix} $$
+  
+  Consequently, transformation matrices become **3×3 matrices** that can integrate translation.
+
+### 1.2 Translation Matrix Example
+
+A translation by $(t_x, t_y)$ is given by:
+
+$$
+T(t_x,t_y)=
+\begin{pmatrix}
+1 & 0 & t_x \\
+0 & 1 & t_y \\
+0 & 0 & 1
+\end{pmatrix}.
+$$
+
+*Example:* Translating 20 pixels to the right:
+
+$$
+T_{\text{right}}(20)=
+\begin{pmatrix}
+1 & 0 & 20 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+$$
+
+---
+
+## 2. Reverse Mapping & Bilinear Interpolation
+
+### 2.1 Reverse Mapping
+
+**Forward Mapping vs. Reverse Mapping:**
+
+- **Forward Mapping:**  
+  Maps each input pixel to an output position using the transformation matrix.  
+  *Issue:* May leave gaps (holes) in the output when multiple input pixels map irregularly to output positions.
+
+- **Reverse Mapping:**  
+  For every output pixel, the corresponding input pixel is computed using the inverse of the transformation matrix.  
+  *Advantage:* Ensures every output pixel is assigned a value (or an interpolated value) and avoids holes.
+
+**When to Use:**  
+- Any case where the transformation results in non-integer coordinates (e.g., rotations, scalings, fractional translations).
+- Composite transformations that combine translations with rotations or scaling.
+
+### 2.2 Bilinear Interpolation
+
+When reverse mapping produces **non-integer source coordinates** (e.g., $(23.4,\,45.7)$), pixel intensity must be estimated since image pixels are defined at integer locations.
+
+**Steps for Bilinear Interpolation:**
+
+1. **Identify Four Nearest Neighbors:**  
+   For a computed coordinate $(x', y')$, let:
+   
+   $$ x_1 = \lfloor x' \rfloor,\quad x_2 = \lceil x' \rceil,\quad y_1 = \lfloor y' \rfloor,\quad y_2 = \lceil y' \rceil. $$
+
+2. **Compute Distance Weights:**  
+   Determine weights based on the fractional distances from the computed point to these neighbors.
+
+3. **Interpolate:**  
+   - First along the $x$-direction at rows $y_1$ and $y_2$.
+   - Then, combine these two results by interpolating along the $y$-direction.
+
+**Example:**  
+For a point $(x', y')=(20.5, 15.3)$, determine the surrounding integer grid and calculate weighted averages to obtain a smooth intensity value.
+
+---
+
+## 3. Example Transformation Matrices
+
+### 3.1 Translation Matrices
+
+Assume a translation of 20 pixels in various directions.
+
+- **Right Translation (20 pixels):**
+
+  $$
+  T_{\text{right}}(20)=
+  \begin{pmatrix}
+  1 & 0 & 20 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+- **Left Translation (20 pixels):**
+
+  $$
+  T_{\text{left}}(20)=
+  \begin{pmatrix}
+  1 & 0 & -20 \\
+  0 & 1 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+- **Down Translation (20 pixels):**
+
+  $$
+  T_{\text{down}}(20)=
+  \begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & 20 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+- **Up Translation (20 pixels):**
+
+  $$
+  T_{\text{up}}(20)=
+  \begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 1 & -20 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+### 3.2 Rotation Matrices
+
+For a 30° rotation:
+
+- **Counterclockwise Rotation (30°):**
+
+  $$
+  R_{CCW}(30^\circ)=
+  \begin{pmatrix}
+  \cos30^\circ & -\sin30^\circ & 0 \\
+  \sin30^\circ & \cos30^\circ & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}
+  \approx
+  \begin{pmatrix}
+  0.866 & -0.5 & 0 \\
+  0.5 & 0.866 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+- **Clockwise Rotation (30°):**
+
+  $$
+  R_{CW}(30^\circ)=
+  \begin{pmatrix}
+  \cos(-30^\circ) & -\sin(-30^\circ) & 0 \\
+  \sin(-30^\circ) & \cos(-30^\circ) & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}
+  \approx
+  \begin{pmatrix}
+  0.866 & 0.5 & 0 \\
+  -0.5 & 0.866 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+### 3.3 Scaling (Zoom)
+
+- **Zoom In (Scale Factor 1.5):**
+
+  $$
+  S_{\text{zoom in}}(1.5)=
+  \begin{pmatrix}
+  1.5 & 0 & 0 \\
+  0 & 1.5 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+- **Zoom Out (Scale Factor 0.75):**
+
+  $$
+  S_{\text{zoom out}}(0.75)=
+  \begin{pmatrix}
+  0.75 & 0 & 0 \\
+  0 & 0.75 & 0 \\
+  0 & 0 & 1
+  \end{pmatrix}.
+  $$
+
+---
+
+## 4. Morphological Filters: Shrinking, Thinning, and Skeletonizing
+
+### 4.1 Shrinking
+
+- **Definition:**  
+  Also known as “ultimate erosion,” the process iteratively removes boundary pixels from a binary object while preserving connectivity.  
+- **Result:**  
+  Each connected object is reduced to a single pixel—ideally the one closest to its centroid.
+
+*Visualization Example:*
+
+```
+
+· · ·  
+· ● ·  
+· · ·
+
+```
 
 ### 4.2 Thinning
 
@@ -273,3 +492,4 @@ Since Centroid A has more counts, the testing image is classified as **Class II*
   LoG and DoG are used for detecting edges. DoG is computationally efficient and approximates LoG, making it popular in practical applications.
 
 These detailed notes combine theory, formulas, examples, and step-by-step procedures to serve as a complete study guide for your midterm preparation in image processing and texture analysis.
+```

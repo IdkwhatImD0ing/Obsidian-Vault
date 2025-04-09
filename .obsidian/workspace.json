@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "569/Midterm 2 Discussion Study Guide.md",
+                "file": "569/Midterm 2 Study Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Midterm 2 Discussion Study Guide"
+              "title": "Midterm 2 Study Guide"
             }
           }
         ],
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "569/Midterm 2 Discussion Study Guide.md",
+                "file": "569/Midterm 2 Study Guide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Midterm 2 Discussion Study Guide"
+              "title": "Backlinks for Midterm 2 Study Guide"
             }
           },
           {
@@ -219,8 +219,8 @@
   },
   "active": "367098c9b21da41e",
   "lastOpenFiles": [
-    "569/Midterm 2 Study Guide.md",
     "569/Midterm 2 Discussion Study Guide.md",
+    "569/Midterm 2 Study Guide.md",
     "561/Midterm 2 Study.md",
     "570/Max Flow.md",
     "Untitled.canvas",
