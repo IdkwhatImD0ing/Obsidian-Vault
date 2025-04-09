@@ -607,6 +607,220 @@ There are five basic 1D kernels. Their definitions, roles, and filtering types a
         - A preprocessing step that normalizes illumination, letting the filters focus on texture patterns.
             
 
+## A. K-Means Clustering with SSIFT
+
+### **1. Problem Setup**
+
+- **SSIFT Feature Vectors:**
+    
+    - Image 1 key-points: [0,0], [0,0.5], [0.5,0]
+        
+    - Image 2 key-points: [1,0], [1,1]
+        
+- **Initial Centroids (for 2 clusters):**
+    
+    - Centroid A: [0.25, 0.25]
+        
+    - Centroid B: [0.75, 0.75]
+        
+- **Distance Measure:** Use the squared Euclidean distance:
+    
+    Distance2=(x1−x2)2+(y1−y2)2\text{Distance}^2 = (x_1 - x_2)^2 + (y_1 - y_2)^2
+- **Rule:** If a key-point is equally distant from both centroids, disregard it.
+    
+
 ---
 
-These comprehensive notes now include the definitions of low-pass and high-pass filters with the corresponding kernel labels, all example questions with their explanations, and omit the SIFT section as requested. Happy studying!
+### **2. Step-by-Step K-Means Process**
+
+#### **Step 1: Initial Assignment**
+
+1. **Compute Distances:**
+    
+    - For each key-point, calculate the squared distance to Centroid A and Centroid B.
+        
+2. **Assign Key-points:**
+    
+    - **Example:**
+        
+        - Key-point [0,0]:
+            
+            - Distance to A: (0−0.25)2+(0−0.25)2=0.125(0-0.25)^2+(0-0.25)^2 = 0.125
+                
+            - Distance to B: (0−0.75)2+(0−0.75)2=1.125(0-0.75)^2+(0-0.75)^2 = 1.125
+                
+            - → **Assign to Centroid A.**
+                
+        - Repeat for all key-points.
+            
+    - **Outcome:**
+        
+        - Centroid A gets [0,0], [0,0.5], [0.5,0].
+            
+        - Centroid B gets [1,1].
+            
+        - [1,0] is disregarded if distances are equal.
+            
+
+#### **Step 2: Update Centroids and Reassign**
+
+1. **Recalculate New Centroids:**
+    
+    - **New Centroid A:** Average of key-points assigned to A
+        
+        - Example: Average of [0,0], [0,0.5], [0.5,0]
+            
+            [0+0+0.53,0+0.5+03]≈[0.1667,  0.1667][\frac{0+0+0.5}{3}, \frac{0+0.5+0}{3}] \approx [0.1667,\; 0.1667]
+    - **New Centroid B:** With just [1,1], it remains [1,1].
+        
+2. **Recompute Distances with New Centroids:**
+    
+    - Assign all key-points (including previously disregarded ones) to the closest new centroid.
+        
+    - **Example:**
+        
+        - Calculate distance for [1,0] to both new centroids.
+            
+    - **Outcome:**
+        
+        - Updated assignments might change (e.g., [1,0] might now belong to A).
+            
+3. **Final Centroid Update (Final Step):**
+    
+    - Recompute centroids based on the final assignments.
+        
+    - **Final Centroid A:** Average of [0,0], [0,0.5], [0.5,0], [1,0] → [0.375, 0.125].
+        
+    - **Final Centroid B:** Remains [1,1] (only one point).
+        
+
+---
+
+### **3. Testing Image Classification**
+
+- **Testing Image SSIFT Key-points:**  
+    [0.5,0.5][0.5, 0.5], [0,0.25][0, 0.25], [1,1.5][1, 1.5]
+    
+
+#### **Assignment Process for Testing Image**
+
+1. **Compute Distances with Final Centroids:**
+    
+    - For each testing key-point, calculate the squared distance to Final Centroid A ([0.375, 0.125]) and Final Centroid B ([1,1]).
+        
+    - **Example:**
+        
+        - [0.5, 0.5]:
+            
+            - Distance to A ≈ 0.15625
+                
+            - Distance to B ≈ 0.5
+                
+            - **Assigned to A.**
+                
+2. **Build Histogram of Counts:**
+    
+    - Count how many key-points fall into each cluster.
+        
+    - **Outcome:**
+        
+        - Centroid A: 2 key-points
+            
+        - Centroid B: 1 key-point
+            
+
+#### **Classification Rule**
+
+- **Rule:**
+    
+    - If an image has **more counts for Centroid B** → **Class I**
+        
+    - Otherwise → **Class II**
+        
+- **Final Decision:**
+    
+    - Since Centroid A has more counts (2 vs. 1), **the testing image is classified as Class II.**
+        
+
+---
+
+## B. Simple Explanation of LoG and DoG
+
+### **Laplacian of Gaussian (LoG)**
+
+- **What It Does:**
+    
+    - **Blurs the image:** Removes noise or small details.
+        
+    - **Highlights changes:** Detects areas where brightness sharply changes (e.g., edges, corners).
+        
+- **Think of It As:**
+    
+    - Taking a picture, softening it to reduce clutter, and then finding the “interesting” spots where things change dramatically.
+        
+
+### **Difference of Gaussians (DoG)**
+
+- **What It Does:**
+    
+    - Create **two blurred versions** of the same image (one lightly blurred, one heavily blurred).
+        
+    - **Subtract the two images:** The result highlights areas where the image details differ between the two blurs.
+        
+- **Think of It As:**
+    
+    - Comparing two slightly different versions of a blurry picture to spot the differences—these differences mark the edges or important features.
+        
+- **Why Use DoG:**
+    
+    - **Faster and simpler:** It approximates what LoG does but with less computational effort.
+        
+
+---
+
+## C. Summary of Steps to Solve a SSIFT/K-Means Classification Problem
+
+1. **Preparation:**
+    
+    - List all key-points (SSIFT feature vectors) from training images.
+        
+    - Set initial centroids for k-means.
+        
+2. **Step 1: Initial Assignment:**
+    
+    - Compute squared Euclidean distances from each key-point to each centroid.
+        
+    - Assign key-points to the closest centroid (disregard ties).
+        
+3. **Step 2: Update Centroids:**
+    
+    - For each cluster, calculate the new centroid by averaging the key-points’ coordinates.
+        
+    - Reassign key-points using the new centroids.
+        
+    - Iterate until assignments no longer change (convergence).
+        
+4. **Final Testing:**
+    
+    - Take the testing image’s key-points.
+        
+    - Compute distances to the final centroids.
+        
+    - Build a histogram counting key-point assignments per centroid.
+        
+    - Apply the classification rule (e.g., more points in Centroid B yields one class; otherwise another).
+        
+5. **Additional Insights:**
+    
+    - **Geometric Invariance:**
+        
+        - SIFT/SSIFT is robust to scaling, rotation, and translation. Even if training images are modified, the key-points and centroids remain consistent.
+            
+    - **DoG vs. LoG:**
+        
+        - DoG is preferred in practice because it is much faster (using two levels of blur and subtraction) and nearly as effective in finding key features as the mathematically heavier LoG.
+            
+
+---
+
+These notes provide a concise outline of how to approach the problem and include examples based on our steps. Use this as a quick reference when studying similar image classification and key-point clustering problems.
