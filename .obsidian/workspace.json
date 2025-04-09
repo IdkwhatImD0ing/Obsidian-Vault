@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Midterm 2 Study Guide.md",
+                "file": "569/Midterm 2 Study Guide.md",
                 "mode": "source",
                 "source": false
               },
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Midterm 2 Study Guide.md",
+                "file": "569/Midterm 2 Study Guide.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,8 +205,9 @@
   },
   "active": "af10345fba494b22",
   "lastOpenFiles": [
+    "561/Midterm 2 Study.md",
+    "569/Midterm 2 Study Guide.md",
     "570/Max Flow.md",
-    "Midterm 2 Study Guide.md",
     "Untitled.canvas",
     "569/Midterm 1 Study Guide.md",
     "569/Midterm 1 Study Guide Chat GPT-ed.md",
@@ -235,7 +236,6 @@
     "570/NP Completeness Pt 2.md",
     "570/Max Flow Pt2.md",
     "570/Final Cheat Sheet.md",
-    "[.md",
     "569",
     "570",
     "544",
